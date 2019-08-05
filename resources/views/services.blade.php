@@ -23,17 +23,16 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="content-block">
-                    <h2>Clinical And <br>Medical Education</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius optio repellendus quasi nisi vitae laboriosam explicabo eligendi sapiente in.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorum esse tempora id architecto laboriosam.
-                    </p>
+                    <h2>Aperçu des services</h2>
+                    <p>Les armes que nous avons acquises au fil du temps et de l’expérience sont : la performance, la proximité, l’efficacité et l’apprentissage constant. Des valeurs qui ont pour objectif la satisfaction du client. 
+                      Nous vivons selon la règle d'or et traitons les clients de la façon dont nous aimerions être traités.</p>
                     <ul>
-                        <li><i class="fa fa-caret-right"></i>vitae laboriosam explicabo eligendi sapiente</li>
-                        <li><i class="fa fa-caret-right"></i>consectetur adipisicing elit. Beatae</li>
-                        <li><i class="fa fa-caret-right"></i>dolorum esse tempora id architecto</li>
-                        <li><i class="fa fa-caret-right"></i>optio repellendus quasi nisi vitae</li>
+                        <li><i class="fa fa-caret-right"></i>Conseil Stratégique</li>
+                        <li><i class="fa fa-caret-right"></i>Ingénierie applicative</li>
+                        <li><i class="fa fa-caret-right"></i>Production et infrastructure</li>
+                        <li><i class="fa fa-caret-right"></i>Big Data</li>
                     </ul>
-                    <a href="#" class="btn btn-style-one">Appoint</a>
+                    <a href="{{route("contact")}}" class="btn btn-style-one">Nous Contactez</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -44,19 +43,24 @@
                                 <div class="panel-heading" role="tab" id="headingOne">
                                     <h4 class="panel-title">
                                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Why Should I choose Medical Health
+                                        Conseil Stratégique
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
+                                                                      Nos clients sont confrontés à des impératifs de rationalisation de leurs systèmes d’information 
+                                  pour en contrôler le coût, de transformation pour répondre aux besoins de mises en conformité 
+                                  réglementaires et d’innovation de leurs directions métier.
+                                  Automatisation de processus, STPization des flux d’information, harmonisation des systèmes 
+                                  sont autant d’expertises et de thèmes couverts par nos Consultants.
+                                  En fonction de vos besoins spécifiques, Symane vous accompagne dans la mise en 
+                                  place de vos projets structurants et novateurs dans les domaines suivants : <br>
+                                  •  Assistance à maîtrise d’ouvrage / direction de projets  <br>
+                                  •  Audit des environnements informatiques <br>
+                                  •  Urbanisation des systèmes d’information <br>
+                                  •  Optimisation et amélioration de la performance des systèmes d’information <br>
+                                  •  Business Intelligence. </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
@@ -64,19 +68,29 @@
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseTwo">
-                                            What are the Centre’s visiting hours?
+                                            Ingénierie Applicative
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
+                                    Nous vous accompagne dans la conception et la mise en œuvre de votre système d’information 
+                                    et de solutions au cœur de votre métier..
+                                    Nous cultivons une éthique de travail orientée vers la satisfaction client fondée sur ses 
+                                    prestations de qualité et une grande proximité pour l'ensemble des compétences proposées: <br>
+                                    •  Recueil des besoins, chiffrage, élaboration de budgets <br>
+                                    •  Rédaction des spécifications fonctionnelles et techniques détaillées <br>
+                                    •  Développement <br>
+                                    •  Recette applicative (TRA, UAT) <br>
+                                    •  Tierce Maintenance Applicative <br>
+                                    •  Support applicatif niveau 1 et 2 <br>
+                                    La complémentarité des activités de SYMANE nous permet d’accompagner nos clients sur 
+                                    l’ensemble du cycle de vie de leurs projets, au travers des compétences suivantes : <br>
+                                    •  Chef de projet technique et fonctionnel <br>
+                                    •  Scrum Master <br>
+                                    •  Architecte <br>
+                                    •  Analyste Développeur <br>
+                                    •  Testeur </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
@@ -84,18 +98,54 @@
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                            How many visitors are allowed?
+                                            Production Et Infrastructure
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    Une infrastructure disponible et opérationnelle est primordiale pour nos clients qui font appel à 
+                                    ANOU Consulting pour des compétences sur les infrastructures et solutions du marché telles 
+                                    que CISCO, EMC, Microsoft, IBM, Oracle. <br>
+                                    Mobyssey met à disposition des ses clients des collaborateurs sur les activités suivantes :
+                                    •  Optimisation de la sécurité des systèmes d’information <br>
+                                    •  Implémentation de réseau d’entreprise et outils collaboratifs <br>
+                                    •  Gestion des licences utilisateurs et des relations de services avec les fournisseurs 
+                                    informatiques <br>
+                                    •  Administration de bases données <br>
+                                    •  Cloud / Stockage / Sauvegarde <br>
+                                    •  Virtualisation </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            BIG DATA
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                    Le Big Data étant un enjeu majeur pour nos clients, ANOU Consulting décide d’al louer une 
+                                    partie importante de ses efforts en recherche & développement afin de les aider à répondre à 
+                                    cette triple problématique à laquelle ils sont confrontés. <br>
+                                    •  Volume de données important à traiter, <br>
+                                    •  Variété importante d'informations (en provenance de plusieurs sources, non-structurées, 
+                                    structurées, Open...), <br>
+                                    •  Fort niveau de Vélocité à atteindre (c'est-à-dire de fréquence de création, collecte et 
+                                    partage de ces données). <br>
+                                    Nos consultants ont ainsi pu développer une expertise forte sur les domaines de compétences 
+                                    suivants : <br>
+                                    •  Hadoop / MongoDB, <br>
+                                    •  Unix Server, <br>
+                                    •  PIG Latin, <br>
+                                    •  Javascript / HTML5 / JSON, <br>
+                                    •  Map Reduce /YARN / H2O OxData <br>
+                                    Fort de cette expertise, ANOU Consulting développe ainsi une offre ‘data exclusive’ annonceur 
+                                    par annonceur dédiée à optimiser la comm unication digitale Multi-canal (pc, mobile & tablette, tv 
+                                    connectée et demain objets connectés)
                                     </div>
                                 </div>
                             </div>
@@ -103,148 +153,12 @@
                     </div>
                 </div>
             </div>
-            <div class="service-box col-md-12">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="images/services/service-one.jpg" alt="service-image">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="contents">
-                            <div class="section-title">
-                                <h3>pulmonary</h3>
-                            </div>
-                            <div class="text">
-                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                            </div>
-                            <ul class="content-list">
-                                <li>
-                                    <i class="fa fa-check-circle-o"></i>Whitening is among the most popular dental</li>
-                                <li>
-                                    <i class="fa fa-check-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                <li>
-                                    <i class="fa fa-check-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                            </ul>
-                            <a href="#" class="btn btn-style-one">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>
 
 <!--Service Section-->
-<section class="service-section bg-gray section">
-    <div class="container">
-        <div class="section-title text-center">
-            <h3>Provided
-                <span>Services</span>
-            </h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque <br>
-                fugiat officia corporis rerum eaque neque totam animi, sapiente culpa. Architecto!</p>
-        </div>
-        <div class="row items-container clearfix">
-            <div class="item">
-                <div class="inner-box">
-                    <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
-                        <a href="service.html">
-                            <h6>Dormitory</h6>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="inner-box">
-                    <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
-                        <a href="service.html">
-                            <h6>Germs Protection</h6>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="inner-box">
-                    <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
-                        <a href="service.html">
-                            <h6>Psycology</h6>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="inner-box">
-                    <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
-                        <a href="service.html">
-                            <h6>Dormitory</h6>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="inner-box">
-                    <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
-                        <a href="service.html">
-                            <h6>Germs Protection</h6>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="inner-box">
-                    <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
-                        <a href="service.html">
-                            <h6>Psycology</h6>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <!--End Service Section--> 
 @endsection

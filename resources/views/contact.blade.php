@@ -42,19 +42,19 @@ Nous vous recontacterons dans les meilleurs délais !</p>
                
                         <i class="fa fa-map-o"></i>
                         <div class="media-body">
-                            <h3>Location</h3>
-                            <p>PO Box 16122 Collins Street West
-                                <br>Victoria 8007 Canada</p>
+                            <h3>Adresse</h3>
+                            <p>70 Bis Boulevard Diderot
+                                <br>75012, Paris</p>
                         </div>
                     </div>
                     <!-- Phone -->
                     <div class="media">
                         <i class="fa fa-phone"></i>
                         <div class="media-body">
-                            <h3>Phone</h3>
+                            <h3>Téléphones</h3>
                             <p>
-                                (+48) 564-334-21-22-34
-                                <br>(+48) 564-334-21-22-38
+                            +33 1 73 70 86 97  <br>
+                            +33 6 36 34 95 40
                             </p>
                         </div>
                     </div>
@@ -64,8 +64,8 @@ Nous vous recontacterons dans les meilleurs délais !</p>
                         <div class="media-body">
                             <h3>Email</h3>
                             <p>
-                                info@templatepath.com
-                                <br>info@cleanxer.com
+                            contact@anou-dsi.eu
+                               
                             </p>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ Nous vous recontacterons dans les meilleurs délais !</p>
                     <form action="#" class="row">
                         <!-- name -->
                         <div class="col-md-6">
-                            <input type="text" name="name" class="form-control main" placeholder="Name" required>
+                            <input type="text" name="name" class="form-control main" placeholder="Nom complet" required>
                         </div>
                         <!-- email -->
                         <div class="col-md-6">
@@ -86,11 +86,11 @@ Nous vous recontacterons dans les meilleurs délais !</p>
                         </div>
                         <!-- phone -->
                         <div class="col-md-12">
-                            <input type="text" class="form-control main" placeholder="Phone" required>
+                            <input type="text" class="form-control main" placeholder="Téléphone" required>
                         </div>
                         <!-- message -->
                         <div class="col-md-12">
-                            <textarea name="message" rows="15" class="form-control main" placeholder="Your message"></textarea>
+                            <textarea name="message" rows="15" class="form-control main" placeholder="Votre message"></textarea>
                         </div>
                         <!-- submit button -->
                         <div class="col-md-12 text-right">

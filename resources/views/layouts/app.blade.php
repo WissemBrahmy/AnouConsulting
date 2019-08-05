@@ -79,7 +79,7 @@
             <div class="logo">
                   <figure>
                         <a href="{{route("index")}}">
-                              <img src="images/logo.png" alt="" width="150">
+                              <img src="images/ANOU.png" alt="" width="150">
                         </a>
                   </figure>
             </div>
@@ -92,7 +92,7 @@
                               <strong>Email</strong>
                               <br>
                               <a href="#">
-                                    <span>info@anou.com</span>
+                                    <span>contact@anou-dsi.eu</span>
                               </a>
                         </li>
                         <li class="item">
@@ -101,7 +101,7 @@
                               </div>
                               <strong>Téléphone</strong>
                               <br>
-                              <span>+ (88017) - 123 - 4567</span>
+                              <span>+33 1 73 70 86 97 || +33 6 36 34 95 40</span>
                         </li>
                   </ul>
                   <div class="link-btn">
@@ -148,7 +148,7 @@
                               <a href="{{route("actualites")}}">ACTUALITES</a>
                         </li>
                         <li class="active">
-                              <a href="{{route("apropos")}}">A PROPOS</a>
+                              <a href="{{route("apropos")}}">NOUS CONNAITRE</a>
                         </li>
                         <li class="active">
                               <a href="{{route("contact")}}">CONTACT</a>
@@ -173,25 +173,27 @@
             <div class="footer-logo">
               <figure>
                 <a href="index.html">
-                  <img src="images/logo-2.png" alt="">
+                  <img src="images/ANOU.png" alt="" width="325" height="150">
                 </a>
               </figure>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, temporibus?</p>
+            <p>ANOU Consulting est une société de conseil IT de nouvelle génération mise au service des stratégies de transformation 
+                et de Gestion d’infrastructure informatique et des systèmes d’informations des entreprises.</p>
             <ul class="location-link">
               <li class="item">
                 <i class="fa fa-map-marker"></i>
-                <p>Modamba, NY 80021, United States</p>
+                <p>70 Bis Boulevard Diderot, 75012, Paris</p>
               </li>
               <li class="item">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 <a href="#">
-                  <p>Support@medic.com</p>
+                  <p>contact@anou-dsi.eu</p>
                 </a>
               </li>
               <li class="item">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>(88017) +123 4567</p>
+                <p>+33 1 73 70 86 97  </p>
+               <p> +33 6 36 34 95 40</p>
               </li>
             </ul>
             <ul class="list-inline social-icons">
@@ -206,59 +208,38 @@
           <h6>Services</h6>
           <ul class="menu-link">
             <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Orthopadic Liabilities</a>
+              <a href="{{route("services")}}">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Conseil Stratégique</a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Dental Clinic</a>
+              <a href="{{route("services")}}">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Ingénierie Applicative</a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Dormamu Clinic</a>
+              <a href="{{route("services")}}">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Production Et Infrastructure</a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Psycological Clinic</a>
+              <a href="{{route("services")}}">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Big Data</a>
             </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Gynaecological Clinic</a>
-            </li>
+          
           </ul>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="social-links">
-            <h6>Recent Posts</h6>
+            <h6>CONTACT</h6>
             <ul>
               <li class="item">
                 <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
-                    </a>
-                  </div>
+                 
                   <div class="media-body">
-                    <h4 class="media-heading"><a href="#">Post Title</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
+                    <h4 class="media-heading"><a href="#">Prenez contact avec nous et démarrez votre projet !</a></h4>
+                    <a href="{{route("contact")}}" class="btn btn-style-one">Contactez ANOU consulting!</a>
                   </div>
                 </div>
               </li>
-              <li class="item">
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">
-                      <a href="#">Post Title</a>
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
-                  </div>
-                </div>
-              </li>
+         
             </ul>
           </div>
         </div>
@@ -274,13 +255,13 @@
       </div>
       <ul class="footer-bottom-link">
         <li>
-          <a href="index.html">Home</a>
+          <a href="{{route("index")}}">ACCUEIL</a>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <a href="{{route("apropos")}}">A PROPOS</a>
         </li>
         <li>
-          <a href="contact.html">Contact</a>
+          <a href="{{route("contact")}}">CONTACT</a>
         </li>
       </ul>
     </div>

@@ -98,8 +98,58 @@
             <h3>LISTE OFFRES 
                 <span>D’EMPLOI</span>
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum 
-                <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?</p>
+         <!-- End recherche Section -->
+         <section class=" section style-tow pb-0">
+            <div class="container">
+            <div class="row">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="contact-area style-one">
+                        
+                        <form name="contact_form" class="default-form contact-form" action="" method="post">
+                              <div class="row">
+                              <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                          <input type="text" name="query" placeholder="Entrer" required="">
+                                    </div>
+                              </div>  
+                              <div class="col-md-6 col-sm-12 col-xs-12"> 
+                                    <div class="form-group">
+                                          <select name="subject">
+                                          <option>Domaine</option>
+                                          <option>Développement web</option>
+                                          <option>Développement mobile</option>
+                                          <option>Réseau informatique</option>
+                                          </select>
+                                    </div>      
+                              </div>
+                              <div class="col-md-6 col-sm-12 col-xs-12"> 
+                                    <div class="form-group">
+                                          <select name="subject">
+                                          <option>Niveau d'etude</option>
+                                          <option>Bac</option>
+                                          <option>BAC+3</option>
+                                          <option>BAC+5</option>
+                                          <option>Autres</option>
+                                          </select>
+                                    </div>                     
+                              </div>
+                              
+                              
+                              <div class="col-md-6 col-sm-12 col-xs-12"> 
+                                    
+                                    <div class="form-group text-center">
+                                          <button type="submit" class="btn-style-one">Rechercher</button>
+                                    </div>                            
+                              </div>
+                              </div>
+                        </form>
+                  </div>                      
+                  </div>
+                  
+            </div>                    
+            </div>
+</section>
+<!--recherche section-->
         </div>
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">

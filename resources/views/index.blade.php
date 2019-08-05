@@ -44,14 +44,7 @@
             <div class="row">
                 <div class="col-12"  >
                     <!-- Slide Content Start -->
-                    <div class="content text-center style" style="padding-top:200px; padding-left:900px" >
-                      
-                        <p class="tag-text mb-3">Nous aidons les professionnels de l'informatique
-                             <br>à trouver les meilleurs rôles et à 
-                                 développer leur carrière! 
-                        </p>
-                        <a href="shop.html" class="btn btn-main btn-white">Découvrir</a>
-                    </div>
+                    
                     <!-- Slide Content End -->
                 </div>
             </div>
@@ -62,7 +55,14 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Slide Content Start -->
-                   
+                    <div class="content text-center style" style="padding-top:200px;" >
+                    <h2 class="text-white"> Votre vision = notre mission </H2>
+                        <p class="tag-text mb-3">Nous aidons les professionnels de l'informatique
+                             <br>à trouver les meilleurs rôles et à 
+                                 développer leur carrière! 
+                        </p>
+                        <a href="shop.html" class="btn btn-main btn-white">Découvrir</a>
+                    </div>
                     <!-- Slide Content End -->
                 </div>
             </div>
@@ -78,26 +78,24 @@
             <div class="col-md-12">
                 <div class="cta-block">
                     <div class="emmergency item">
-                        <i class="fa fa-phone"></i>
-                        <h2>Emegency Cases</h2>
-                        <a href="#">1-800-700-6200</a>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <i class="fa fa-television"></i>
+                        <h2>SUPPORT</h2>
+                        <a href="#">24/7</a>
+                        <p>Un support utilisateur Fiable et disponible 24/7.</p>
                     </div>
                     <div class="top-doctor item">
-                        <i class="fa fa-stethoscope"></i>
-                        <h2>24 Heure de Services</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dignissimos officia dicta suscipit vel eum</p>
+                        <i class="fa fa-handshake-o"></i>
+                        <h2>CONSEIL</h2>
+                        <p>Une organisation opérationnelle des processus de gestion</p>
                         <a href="#" class="btn btn-main">Voir plus</a>
                     </div>
                     <div class="working-time item">
-                        <i class="fa fa-hourglass-o"></i>
-                        <h2> Nos valeurs</h2>
-                        <ul class="w-hours">
-                        <p>Que ce soit envers nos partenaires ou nos consultants, nous véhiculerons toujours les quatre valeurs suivantes.</p>
-                            <li> Proximité- <span></span></li>
-                            <li> Respect-  <span></span></li>
-                            <li> Pragmatisme -  <span></span></li>
-                        </ul>
+                        <i class="fa fa-sitemap"></i>
+                        <h2> STRATIGIE</h2>
+                        
+                        <p>Nous vous amenons à formuler vos objectifs stratégiques
+                             à partir des améliorations que vous souhaitez pour votre entreprise</p>
+                          
                     </div>
                     
                 </div>
@@ -222,20 +220,14 @@
                                         <h3>BIG DATA</h3>
                                     </div>
                                     <div class="text">
-                                        <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added. then a
-                                            dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added. then a dental
-                                                prosthetic is added.then a dental pros- thetic is added.</p>
-                                    </div>
+                                        <p>Plus qu'un enjeu technologique, nous avons la conviction que les projets Big Data sont avant tout humains. 
+                                            Cela se traduit par la prise en compte des visions et expertises métier de nos clients,
+                                            d'un incontournable accompagnement au changement et de l'adaptation des solutions aux réalités opérationnelles des projets.</div>
                                     <ul class="content-list">
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-style-one">Read more</a>
+                                    Nos équipes d’experts (métiers, data scientists et techniques) vous accompagnent dans la
+                                    compréhension, la valorisation et la gouvernance de vos données, ainsi que dans la mise en
+                                    place de modèles d’aide à la décision.  </ul>
+                                    <a href="{{route("services")}}" class="btn btn-style-one">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -251,20 +243,18 @@
                                         <h3>DEGITALISATION</h3>
                                     </div>
                                     <div class="text">
-                                        <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                            then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                        <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                            then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                    Au fil des projets et expériences réussies, nous avons bâti une expertise permettant d’accompagner nos clients
+                                     tout au long du cycle de vie de leurs applications depuis la définition des besoins métiers et de l’architecture 
+                                     technique et les choix des technologies appropriées, jusqu'à la mise en production et la maintenance.
                                     </div>
                                     <ul class="content-list">
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
+                                        <p>
+                                        L’intégration des technologies digitales permettra de créer de nouvelles perspectives pour votre entreprise. 
+                                        Elles vous aideront à moderniser votre société et offriront de nouvelles sources de valeur pour vos clients, 
+                                        tout en créant de nouvelles opportunités génératrices de revenu.
+                                        </p>        
                                     </ul>
-                                    <a href="#" class="btn btn-style-one">Read more</a>
+                                    <a href="{{route("services")}}" class="btn btn-style-one">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -280,20 +270,22 @@
                                         <h3>CLOUD COMPUTING</h3>
                                     </div>
                                     <div class="text">
-                                        <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                            then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                        <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                            then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                        <p>
+                                        Des conseillers expérimentés vous accompagnent à chaque étape du cycle de vie du cloud.
+                                         Bénéficiez de l'assistance de spécialistes pour équiper rapidement et efficacement votre 
+                                         entreprise de services de cloud computing.
+                                        </p>
                                     </div>
                                     <ul class="content-list">
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
+                                        <p>
+                                            Nous proposons une gamme complète de services cloud pour vous aider à affiner votre stratégie,
+                                            à définir votre plan d’action pour le cloud, à transformer l’infrastructure, 
+                                            les applications et les processus existants. Par ailleurs, 
+                                            nous assurons la gestion et l’assistance requise pour les opérations en cours 
+                                            et pour le cycle de vie des investissements dans le cloud.   
+                                        </p>
                                     </ul>
-                                    <a href="#" class="btn btn-style-one">Read more</a>
+                                    <a href="{{route("services")}}" class="btn btn-style-one">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -312,20 +304,13 @@
                                         <h3>INTELLIGENCE ARTIFICIEL</h3>
                                     </div>
                                     <div class="text">
-                                        <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                            then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                        <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                            then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                    </div>
+                                        <p>Plus qu'une technologie, nous sommes convaincus que l'ntelligence artificielle est une réponse opérationnelle à des bouleversements métier qui doivent toujours prendre en compte la dimension humaine.
+                                            Nos méthodes agiles, nos expertises technologiques et métier apportent à nos clients l'assurance d'un excellent go to market sur leurs projets (Digitale factory) </div>
                                     <ul class="content-list">
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                        <li>
-                                            <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-style-one">Read more</a>
+                                   ANOU Consulting accompagne de bout en bout les grands groupes et les entreprises plus petites :
+                                            de la recherche , à la mise en place 
+                                            et au déploiement de solutions complètes d’intelligence artificielle.  </ul>
+                                    <a href="{{route("services")}}" class="btn btn-style-one">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -352,11 +337,11 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="service.html">
-                            <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
+                            <img src="images/gallery/cn.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
                     <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
+                        
                         <a href="service.html">
                             <h6>Conseil Stratégique</h6>
                         </a>
@@ -379,43 +364,51 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="service.html">
-                            <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
+                            <img src="images/gallery/app.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
-                    <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
-                        <a href="service.html">
-                            <h6>Ingénierie applicative</h6>
-                        </a>
-                        <p>Nous vous accompagne dans la conception et la mise en œuvre de votre système d’information 
-                            et de solutions au cœur de votre métier..
-                            Nous cultivons une éthique de travail orientée vers la satisfaction client fondée sur ses 
-                            prestations de qualité et une grande proximité pour l'ensemble des compétences proposées:
-                            •  Recueil des besoins, chiffrage, élaboration de budgets 
-                            •  Rédaction des spécifications fonctionnelles et techniques détaillées 
-                            •  Développement 
-                            •  Recette applicative (TRA, UAT) 
-                            •  Tierce Maintenance Applicative 
-                            •  Support applicatif niveau 1 et 2
-                            La complémentarité des activités de SYMANE nous permet d’accompagner nos clients sur 
-                            l’ensemble du cycle de vie de leurs projets, au travers des compétences suivantes :
-                            •  Chef de projet technique et fonctionnel
-                            •  Scrum Master
-                            •  Architecte
-                            •  Analyste Développeur
-                            •  Testeur</p>
-                    </div>
+                    <div class="accordion-section">
+                    <div class="accordion-holder">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="fa fa-sort-desc" aria-hidden="true"></span> Conseil Stratégique
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                                                      Nos clients sont confrontés à des impératifs de rationalisation de leurs systèmes d’information 
+                                  pour en contrôler le coût, de transformation pour répondre aux besoins de mises en conformité 
+                                  réglementaires et d’innovation de leurs directions métier.
+                                  Automatisation de processus, STPization des flux d’information, harmonisation des systèmes 
+                                  sont autant d’expertises et de thèmes couverts par nos Consultants.
+                                  En fonction de vos besoins spécifiques, Symane vous accompagne dans la mise en 
+                                  place de vos projets structurants et novateurs dans les domaines suivants : <br>
+                                  •  Assistance à maîtrise d’ouvrage / direction de projets  <br>
+                                  •  Audit des environnements informatiques <br>
+                                  •  Urbanisation des systèmes d’information <br>
+                                  •  Optimisation et amélioration de la performance des systèmes d’information <br>
+                                  •  Business Intelligence. </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                           
                 </div>
             </div>
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="service.html">
-                            <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
+                            <img src="images/gallery/i.png" alt="images" class="img-responsive">
                         </a>
                     </div>
                     <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
+                       
                         <a href="service.html">
                             <h6>Production et infrastructure</h6>
                         </a>
@@ -441,7 +434,7 @@
                         </a>
                     </div>
                     <div class="image-content text-center">
-                        <span>Better Service At Low Cost</span>
+                       
                         <a href="service.html">
                             <h6>BIG DATA</h6>
                         </a>
@@ -472,7 +465,59 @@
     </div>
 </section>
 <!--End Service Section-->
-
+<section class="team-section section">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>NOTRE 
+                <span>DÉMARCHE QUALITÉ</span>
+            </h3>
+            <p>Afin de garantir la qualité de nos prestations et la réussite de nos missions,
+                 nous déployons systématiquement une démarche qui permet : </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    
+                    <div class="contents text-center">
+                        <h4>Cadrage</h4>
+                        <p>garantir le bon cadrage de la mission et la définition de ses objectifs.</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    
+                    <div class="contents text-center">
+                        <h4>suivi</h4>
+                        <p>assurer un suivi régulier de l’avancement de la mission.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    
+                    <div class="contents text-center">
+                        <h4>traçabilité</h4>
+                        <p>assurer la traçabilité des actions réalisées tout au long de la prestation.</p>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    
+                    <div class="contents text-center">
+                        <h4>évaluation</h4>
+                        <p> faire évaluer nos consultants par nos clients au terme de chaque mission.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--team section-->
 <section class="team-section section">
     <div class="container">
@@ -480,8 +525,12 @@
             <h3>Nos 
                 <span>Expert</span>
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum 
-                <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?</p>
+            <p>Nos équipes de consulting réunissent des compétences clés dans le domaine de la sécurité des systèmes
+                d’information et fondent leur analyse autour de trois espaces de connaissance : <br> </p>
+                
+                + Une connaissance des métiers et des meilleures pratiques pour orienter votre projet. </li> <br>
+                + Une connaissance des solutions du marché pour vous proposer la solution la plus appropriée à votre besoin. <br>
+                + Une méthodologie éprouvée.
         </div>
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
@@ -490,17 +539,17 @@
                     <div class="contents text-center">
                         <h4>Dr. Robert Barrethion</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-                        <a href="#" class="btn btn-main">read more</a>
+                       
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="team-member">
-                    <img src="images/team/doctor-lab-3.jpg" alt="doctor" class="img-responsive">
+                    <img src="images/team/doctor-2.jpg" alt="doctor" class="img-responsive">
                     <div class="contents text-center">
                         <h4>Dr. Marry Lou</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-                        <a href="#" class="btn btn-main">read more</a>
+                        
                     </div>
                 </div>
             </div>
@@ -510,7 +559,7 @@
                     <div class="contents text-center">
                         <h4>Dr. Sansa Stark</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-                        <a href="#" class="btn btn-main">read more</a>
+                     
                     </div>
                 </div>
             </div>
@@ -641,135 +690,78 @@
 </section>
 <!--End testimonial-section-->
 
-<!-- Contact Section -->
-<section class="appoinment-section section">
+<!-- client Section -->
+<section class="service-section bg-gray section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="accordion-section">
-    <div class="section-title">
-        <h3>FAQ</h3>
-    </div>
-    <div class="accordion-holder">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Why Should I choose Medical Health
+        <div class="section-title text-center">
+            <h3>Ils nous ont fait 
+                <span> confiance</span>
+            </h3>
+              </div>
+        <div class="row items-container clearfix">
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="service.html">
+                            <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
                         </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
                     </div>
+                
                 </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-                            aria-controls="collapseTwo">
-                            What are the Centre’s visiting hours?
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="service.html">
+                            <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
                         </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
                     </div>
+                    
                 </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
-                            aria-controls="collapseThree">
-                            How many visitors are allowed?
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="service.html">
+                            <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
                         </a>
-                    </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
                     </div>
+                   
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="service.html">
+                            <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="service.html">
+                            <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="service.html">
+                            <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                   
                 </div>
             </div>
         </div>
-    </div>
-</div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="contact-area">
-    <div class="section-title">
-        <h3>Request
-            <span>Appointment</span>
-        </h3>
-    </div>
-    <form name="contact_form" class="default-form contact-form" action="sendmail.php" method="post">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="Name" placeholder="Name" required="">
-                </div>
-                <div class="form-group">
-                    <input type="email" name="Email" placeholder="Email" required="">
-                </div>
-                <div class="form-group">
-                    <select name="subject">
-                        <option>Departments</option>
-                        <option>Diagnostic</option>
-                        <option>Psychological</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="Phone" placeholder="Phone" required="">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="Date" placeholder="Date" required="" id="datepicker">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                </div>
-                <div class="form-group">
-                    <select name="subject">
-                        <option>Doctor</option>
-                        <option>Diagnostic</option>
-                        <option>Psychological</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <textarea name="form_message" placeholder="Your Message" required=""></textarea>
-                </div>
-                <div class="form-group text-center">
-                    <button type="submit" class="btn-style-one">submit now</button>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>                        
-            </div>
-        </div>                    
     </div>
 </section>
-<!-- End Contact Section -->
+<!-- End client Section -->
 
 @endsection
