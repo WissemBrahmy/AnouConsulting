@@ -572,119 +572,70 @@
 <section class="testimonial-section" style="background: url(images/testimonials/1.jpg);">
     <div class="container">
         <div class="section-title text-center">
-            <h3>What Our
-                <span>Patients Says</span>
+            <h3>Nos
+                <span> Références</span>
             </h3>
         </div>
         <div class="testimonial-carousel">
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/1.png" alt="">
-                        </figure>
+                    
+                
+                         <center>   <img src="images/references/semdee.png" alt="" class=" img-rounded"> <center>
+                       
+                    <h6></h6>
+                    <p>SEMDEE est pour l'analyse des données textuelles  :
+                     Le logiciel MyKnowledge de SEMDEE imaginé par des docteurs en psychologie cognitive pour analyser tous les contenus textuels
+                    </P>
                     </div>
-                    <h6>Adam Rose</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
+            </div>
+            <!--Slide Item-->
+            <div class="slide-item">
+                <div class="inner-box text-center">
+                <center>     <img src="images/references/smile.png" alt=""> </center>
+                   
+                    <p>Smile Has still believed in the potential of these solutions and completely identified with the values of open source: freedom, respect and openness! First adventure:
+                     the deployment of the Content Management System open source for CEA</p>
                 </div>
             </div>
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/2.png" alt="">
-                        </figure>
-                    </div>
-                    <h6>David Warner</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
+                    
+                       <center>     <img src="images/references/gael.png" alt=""> </center>
+                       
+                    
+                    <p>GAEL SYSTEM  est spécialisée dans le secteur d'activité de la programmation informatique.</p> </div>
+            </div>
+            <!--Slide Item-->
+            <div class="slide-item">
+                <div class="inner-box text-center">
+                    
+                <center>     <img src="images/references/n.png" alt=""> </center>
+                       
+                    <h6>NUMERYX</h6>
+                    <p>La startup NUMERYX est une entreprise innovante dont les expertises
+                     et la R&D sont proposées au service de ses clients PME et grands comptes.</p></div>
+            </div>
+            <!--Slide Item-->
+            <div class="slide-item">
+                <div class="inner-box text-center">
+                <center>     <img src="images/references/g.jpg" alt=""> </center>
+                    <h6>GLOBALNUM </h6>
+                    <p>Conseils et services informatiques</p>
                 </div>
             </div>
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/3.png" alt="">
-                        </figure>
-                    </div>
-                    <h6>Amy Adams</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
+                <center>     <img src="images/references/c.jpg" alt=""> </center>
+
+                    <h6>C17 Engineering</h6>
+                    <p>Cabinet de conseil indépendant spécialisé dans les technologies web</p>
                 </div>
             </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/1.png" alt="">
-                        </figure>
-                    </div>
-                    <h6>Adam Rose</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/2.png" alt="">
-                        </figure>
-                    </div>
-                    <h6>David Warner</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/3.png" alt="">
-                        </figure>
-                    </div>
-                    <h6>Amy Adams</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/1.png" alt="">
-                        </figure>
-                    </div>
-                    <h6>Adam Rose</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/2.png" alt="">
-                        </figure>
-                    </div>
-                    <h6>David Warner</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="inner-box text-center">
-                    <div class="image-box">
-                        <figure>
-                            <img src="images/testimonials/3.png" alt="">
-                        </figure>
-                    </div>
-                    <h6>Amy Adams</h6>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-                </div>
-            </div>
+          
         </div>
     </div>
 </section>
@@ -703,7 +654,7 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="service.html">
-                            <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
+                            <img src="images/references/g.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
                 
@@ -713,7 +664,7 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="service.html">
-                            <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
+                            <img src="images/references/n.png" alt="images" class="img-responsive">
                         </a>
                     </div>
                     
@@ -723,7 +674,7 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="service.html">
-                            <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
+                            <img src="images/references/smile.png" alt="images" class="img-responsive">
                         </a>
                     </div>
                    
@@ -733,7 +684,7 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="service.html">
-                            <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
+                            <img src="images/references/semdee.png" alt="images" class="img-responsive">
                         </a>
                     </div>
                   
@@ -743,22 +694,13 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="service.html">
-                            <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
+                            <img src="images/references/GAEL.png" alt="images" class="img-responsive">
                         </a>
                     </div>
                    
                 </div>
             </div>
-            <div class="item">
-                <div class="inner-box">
-                    <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
-                        </a>
-                    </div>
-                   
-                </div>
-            </div>
+           
         </div>
     </div>
 </section>
