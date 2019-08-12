@@ -30,8 +30,8 @@
                 <span>contacter</span>
             </h3>
             <p>Merci de compléter le formulaire ci-dessous pour vos demandes. 
-Nous vous recontacterons dans les meilleurs délais !</p>
-        </div><br><br>
+             Nous vous recontacterons dans les meilleurs délais !</p>
+     </div><br><br>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -73,20 +73,31 @@ Nous vous recontacterons dans les meilleurs délais !</p>
                 <!-- address end -->
             </div>
             <div class="col-md-8">
+          
                 <div class="contact-form">
+                <div class="row">
+            <div class="media">
+                @if(session('message'))
+                    <p class="alert alert-success">
+                        {{session('message')}}
+                    </p>
+                @endif
+            </div>
+        </div>
                     <!-- contact form start -->
-                    <form action="#" class="row">
+                    <form action="#" class="row" method="POST" action="{{ route('messages.store') }}">
+                    {{ csrf_field() }}
                         <!-- name -->
                         <div class="col-md-6">
-                            <input type="text" name="name" class="form-control main" placeholder="Nom complet" required>
+                            <input type="text" name="nom" class="form-control main" placeholder="Nom complet" required>
                         </div>
                         <!-- email -->
                         <div class="col-md-6">
-                            <input type="email" class="form-control main" placeholder="Email" required>
+                            <input type="email" name="email" class="form-control main" placeholder="Email" required>
                         </div>
                         <!-- phone -->
                         <div class="col-md-12">
-                            <input type="text" class="form-control main" placeholder="Téléphone" required>
+                            <input type="text" name="tel" class="form-control main" placeholder="Téléphone" required>
                         </div>
                         <!-- message -->
                         <div class="col-md-12">
@@ -111,7 +122,10 @@ Nous vous recontacterons dans les meilleurs délais !</p>
 =================================-->
 <section class="map">
     <!-- Google Map -->
-    <div id="map"></div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.609440761492!2d2.379286315175282!3d48.84658797928634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720e3f97978f%3A0xe722e6b75810a331!2sAnou+Consulting!5e0!3m2!1sfr!2stn!4v1565072604726!5m2!1sfr!2stn" width="1350" height="450" frameborder="1" style="border:1" allowfullscreen></iframe>
+  
+    </iframe>
 </section>
 <!--====  End of Google Map  ====-->
 

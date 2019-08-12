@@ -118,15 +118,15 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
+                                <div class="panel-heading" role="tab" id="headingFor">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFor" aria-expanded="false"
+                                            aria-controls="collapseFor">
                                             BIG DATA
                                         </a>
                                     </h4>
                                 </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div id="collapseFor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
                                     <div class="panel-body">
                                     Le Big Data étant un enjeu majeur pour nos clients, ANOU Consulting décide d’al louer une 
                                     partie importante de ses efforts en recherche & développement afin de les aider à répondre à 
@@ -152,6 +152,7 @@
                         </div>
                     </div>
                 </div>
+               
             </div>
             
         </div>

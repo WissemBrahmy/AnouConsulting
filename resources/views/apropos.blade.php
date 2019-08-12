@@ -6,12 +6,12 @@
 <section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
     <div class="container">
         <div class="title-text">
-            <h1>about us</h1>
+            <h1>À PROPOS</h1>
             <ul class="title-menu clearfix">
                 <li>
                     <a href="index.html">home &nbsp;/</a>
                 </li>
-                <li>about us</li>
+                <li>à propos</li>
             </ul>
         </div>
     </div>

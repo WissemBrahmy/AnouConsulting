@@ -105,7 +105,7 @@
                         </li>
                   </ul>
                   <div class="link-btn">
-                        <a href="#" class="btn-style-one">MESSAGE</a>
+                        <a href="{{route("contact")}}" class="btn-style-one">Contacter nos Experts</a>
                   </div>
             </div>
       </div>
@@ -136,11 +136,7 @@
                         <li class="active">
                               <a href="{{route("services")}}">SERVICES</a>
                         </li>
-                       
-                        <li class="active">
-                              <a href="{{route("equipes")}}">EQUIPES</a>
-                        </li>
-                      
+                   
                         <li class="active">
                               <a href="{{route("offres")}}">NOS OFFRES</a>
                         </li>
@@ -249,8 +245,8 @@
   <div class="footer-bottom">
     <div class="container clearfix">
       <div class="copyright-text">
-        <p>&copy; Copyright 2019. All Rights Reserved by
-          <a href="index.html">ANOU Consulting</a>
+        <p>&copy; ANOU Consulting, 2019 - Tous droits réservés
+          <a href="{{route("index")}}"></a>
         </p>
       </div>
       <ul class="footer-bottom-link">
