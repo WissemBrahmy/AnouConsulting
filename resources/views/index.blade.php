@@ -222,7 +222,7 @@
                             </li>
                           
                             <li role="presentation">
-                                <a href="#diagnostic" data-toggle="tab">INTELLIGENCE ARTIFICIEL</a>
+                                <a href="#diagnostic" data-toggle="tab">INTELLIGENCE ARTIFICIELLE</a>
                             </li>
                         </ul>
                     </div>
@@ -319,7 +319,7 @@
                             <div class="col-md-6">
                                 <div class="contents">
                                     <div class="section-title">
-                                        <h3>INTELLIGENCE ARTIFICIEL</h3>
+                                        <h3>INTELLIGENCE ARTIFICIELLE</h3>
                                     </div>
                                     <div class="text">
                                         <p>Plus qu'une technologie, nous sommes convaincus que l'ntelligence artificielle est une réponse opérationnelle à des bouleversements métier qui doivent toujours prendre en compte la dimension humaine.

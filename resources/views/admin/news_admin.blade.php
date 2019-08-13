@@ -55,7 +55,7 @@
                   
                   <div class="contact-area style-one">
                         
-                        <form  action="" method="post">
+                        <form  action="{{route('news_store')}}" method="post" enctype="multipart/form-data">
                               <div class="row">
                              <div class="col-md-8 col-sm-12 col-xs-12">
                                <input type="title" name="title" class="form-control main" placeholder="Titre" required>
@@ -63,7 +63,7 @@
                                
                              <div class="col-xs-8">
                                     <div class="form-group">
-                                      Attachez une photo <input type="File" name="cv" placeholder="image" required="" class="input-lg">
+                                      Attachez une photo <input type="File" name="image" placeholder="image" required="" class="input-lg">
                                     </div>
                              </div>
                              

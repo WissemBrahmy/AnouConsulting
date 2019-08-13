@@ -13,7 +13,9 @@
 
 /*user*/
 
-
+Route::get('/adminAnou', function () {
+    return view('auth.login');
+});
 Route::resource('messages','MessageController');
 Route::get('/', 'HomeController@index')->name('index');
 Route::get('/contact', 'HomeController@contact')->name('contact');
@@ -35,3 +37,4 @@ Route::get('/offres_admin',['middleware'=>'auth','uses'=>'HomeController@offres_
 Route::get('/news_admin',['middleware'=>'auth','uses'=>'HomeController@news_admin'] )->name('news_admin');
 Route::get('/candidatures_admin',['middleware'=>'auth','uses'=>'HomeController@candidatures_admin'] )->name('candidatures_admin');
 Route::get('/messages_admin',['middleware'=>'auth','uses'=>'HomeController@messages_admin'] )->name('messages_admin');
+Route::post('create',['middleware'=>'auth','uses'=>'NewsController@store'] )->name('news_store');

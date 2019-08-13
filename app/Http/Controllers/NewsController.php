@@ -13,7 +13,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.offres_admin');
     }
 
     /**
@@ -23,7 +23,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.offres_admin');
     }
 
     /**
@@ -34,7 +34,21 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data=$request->all();
+        $news=new News($data);
+        if($request->hasFile('image')){
+
+            $file=$request->file('image');
+            $fileName=uniqid("img_").'.'.$file->getClientOriginalExtension();
+
+            $file->move(public_path().'/files',$fileName);
+
+            $news->image='/files/'.$fileName;
+
+        }
+        
+        $news->save();
+        return redirect()->route("offres_admin")->with('message','offre publiée');
     }
 
     /**

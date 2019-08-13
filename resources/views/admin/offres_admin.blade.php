@@ -37,6 +37,7 @@
           <tr>
         </table>
 </div>
+
 <!-- The modal -->
 <div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabellarge" aria-hidden="true">
 <div class="modal-dialog modal-lg">
@@ -120,4 +121,5 @@
 </div>
 </div>
 @endsection
+
 
