@@ -376,7 +376,7 @@
                             •  Business Intelligence.
             </p>
             <div class="ficon">
-              <a href="{{route("services")}}" class="btn btn-default" role="button">Read more</a>
+              <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
             </div>
             </div>
           </div>
@@ -410,7 +410,7 @@
                                 •  Virtualisation
             </p>
             <div class="ficon">
-              <a href="{{route("services")}}" class="btn btn-default" role="button">Read more</a>
+              <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
             </div>
             </div>
           </div>
@@ -450,7 +450,7 @@
                     •  Testeur<br>
             </p>
             <div class="ficon">
-              <a href="{{route("services")}}" class="btn btn-default" role="button">Read more</a>
+              <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
             </div>
           </div>
         </div>
@@ -488,7 +488,7 @@
                                 connectée et demain objets connectés).
             </p>
             <div class="ficon">
-              <a href="#" class="btn btn-default" role="button">Read more</a>
+              <a href="#" class="btn btn-default" role="button">En savoir plus</a>
             </div>
           </div>
         </div>

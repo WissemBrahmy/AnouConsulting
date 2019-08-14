@@ -11,13 +11,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="{{ asset('plugins/slick/slick.css') }}">
+  
+  <link rel="stylesheet" href="{{ asset('plugins/slick/slick-theme.css') }}">
   <!-- FancyBox -->
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="{{asset ('plugins/fancybox/jquery.fancybox.min.css')}}">
   
   <!-- Stylesheets -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
   
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">

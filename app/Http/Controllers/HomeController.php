@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\News;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
@@ -70,8 +72,13 @@ class HomeController extends Controller
     }
     public function actualites()
 	{
+        
+        
+
+
+        return view("actualites");
 		
-		return view('actualites');
+		
     }
     public function offres()
 	{

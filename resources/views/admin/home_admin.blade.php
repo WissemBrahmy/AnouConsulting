@@ -3,7 +3,7 @@
 @section('content') 
 <BR>
 <!--Page Title-->
-<section class="page-title text-center" style="background-image:url(images/slider/v.png);">
+<section class="page-title text-center" style="background-image:url('{{asset('images/slider/v.png')}}');">
     <div class="container">
         <div class="title-text">
             <h1>HOME</h1>

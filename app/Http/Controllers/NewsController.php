@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\News;
+use App\Http\Controllers\Controller;
 
 class NewsController extends Controller
 {
@@ -11,11 +13,25 @@ class NewsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index_news()
     {
-        return view('admin.offres_admin');
+       
+
+        $news = DB::table('News')->paginate(2);
+
+
+        return view("admin.news_admin",compact('news'));
     }
 
+    public function actualites_home()
+    {
+       
+
+        $news = DB::table('News')->paginate(2);
+
+
+        return view("actualites",compact('news'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -23,14 +39,14 @@ class NewsController extends Controller
      */
     public function create()
     {
-        return view('admin.offres_admin');
+        return view('actualites');
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\News
      */
     public function store(Request $request)
     {
@@ -41,14 +57,14 @@ class NewsController extends Controller
             $file=$request->file('image');
             $fileName=uniqid("img_").'.'.$file->getClientOriginalExtension();
 
-            $file->move(public_path().'/files',$fileName);
+            $file->move(public_path().'/actualites',$fileName);
 
-            $news->image='/files/'.$fileName;
+            $news->image='/actualites/'.$fileName;
 
         }
         
         $news->save();
-        return redirect()->route("offres_admin")->with('message','offre publiée');
+        return redirect()->route("admin.news_admin")->with('message','actualité publiée');
     }
 
     /**

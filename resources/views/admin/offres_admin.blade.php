@@ -56,7 +56,7 @@
                   
                   <div class="contact-area style-one">
                         
-                        <form  action="" method="post">
+                  <form  action="{{route('offres_store')}}" method="post" enctype="multipart/form-data">
                               <div class="row">
                              <div class="col-md-4 col-sm-12 col-xs-12">
                                <input type="title" name="title" class="form-control main" placeholder="Titre" required>

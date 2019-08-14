@@ -5,34 +5,38 @@
   <meta charset="utf-8">
   <title>ANOU | Consulting</title>
 
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <link href="css/bootstrap-table.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{asset('plugins/slick/slick.css')}}">
+  <link rel="stylesheet" href="{{asset('plugins/slick/slick-theme.css')}}">
+  <link href="{{asset('css/bootstrap-table.css" rel="stylesheet')}}">
+  <link href="{{asset('css/bootstrap.min.css" rel="stylesheet')}}">
 
 <!-- Custom CSS -->
-<link href="css/landing-page.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/datepicker3.css" rel="stylesheet">
+<link href="{{asset('css/landing-page.css" rel="stylesheet')}}">
+<link href="{{asset('css/bootstrap.min.css" rel="stylesheet')}}">
+<link href="{{asset('css/datepicker3.css" rel="stylesheet')}}">
 
-<link href="css/bootstrap-table.css" rel="stylesheet">
-<link rel="stylesheet" href="css/messi.min.css" />
+<link href="{{asset('css/bootstrap-table.css" rel="stylesheet')}}">
+<link rel="stylesheet" href="{{asset('css/messi.min.css')}}" />
   <!-- FancyBox -->
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="{{asset ('plugins/fancybox/jquery.fancybox.min.css')}}">
   
   <!-- Stylesheets -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
   
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
+  <script src="{{asset('js/jquery-1.11.1.min.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+		<script src="{{asset('js/bootstrap-table.js')}}"></script>
 </head>
 
 
@@ -58,7 +62,7 @@
             <div class="logo">
                   <figure>
                         <a href="{{route("index")}}">
-                              <img src="images/ANOU.png" alt="" width="150">
+                              <img src="{{asset('images/ANOU.png')}}" alt="" width="150">
                         </a>
                   </figure>
             </div>
@@ -111,7 +115,7 @@
                               <a href="{{route("offres_admin")}}">ESPACE OFFRES</a>
                         </li>
                         <li class="active">
-                              <a href="{{route("news_admin")}}">ESPACE ACTUALITES</a>
+                              <a href="{{route("index_news")}}">ESPACE ACTUALITES</a>
                         </li>
                         <li class="active">
                               <a href="{{route("candidatures_admin")}}">ESPACE CONDIDATURES</a>
