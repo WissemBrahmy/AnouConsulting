@@ -17,7 +17,9 @@ Route::get('/adminAnou', function () {
     return view('auth.login');
 });
 Route::resource('messages','MessageController');
+
 Route::resource('news','NewsController');
+Route::resource('candidature','CandidatureController');
 Route::get('/', 'HomeController@index')->name('index');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::get('/apropos', 'HomeController@apropos')->name('apropos');
@@ -41,4 +43,13 @@ Route::get('admin/candidatures_admin',['middleware'=>'auth','uses'=>'HomeControl
 Route::get('admin/messages_admin',['middleware'=>'auth','uses'=>'HomeController@messages_admin'] )->name('messages_admin');
 Route::post('admin/news_admin/create',['middleware'=>'auth','uses'=>'NewsController@store'] )->name('news_store');
 Route::get('admin/index_news',['middleware'=>'auth','uses'=>'NewsController@index_news'] )->name('index_news');
-Route::post('admin/offres_admin/create',['middleware'=>'auth','uses'=>'NewsController@store'] )->name('news_store');
+Route::post('admin/offres_admin/create',['middleware'=>'auth','uses'=>'OffreController@store'] )->name('offres_store');
+Route::get('admin/index_offres',['middleware'=>'auth','uses'=>'OffreController@index_offres'] )->name('index_offres');
+Route::delete('admin/offre/{id}',['middleware'=>'auth','uses'=>'OffreController@destroy'])->name('offres_destroy');
+Route::delete('admin/news/{id}',['middleware'=>'auth','uses'=>'NewsController@destroy'])->name('news_destroy');
+Route::put('admin/news/update/{id}',['middleware'=>'auth','uses'=>'NewsController@update'])->name('news_update');
+Route::put('admin/offre/update/{id}',['middleware'=>'auth','uses'=>'OffreController@update'])->name('offres_update');
+Route::get('admin/index_candidatures',['middleware'=>'auth','uses'=>'CandidatureController@index_candidatures'] )->name('index_candidatures');
+Route::delete('admin/candidature/{id}',['middleware'=>'auth','uses'=>'CandidatureController@destroy'])->name('candidatures_destroy');
+Route::get('admin/index_messages',['middleware'=>'auth','uses'=>'MessageController@index_messages'] )->name('index_messages');
+Route::delete('admin/messages/{id}',['middleware'=>'auth','uses'=>'MessageController@destroy'])->name('messages_destroy');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Message;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 class MessageController extends Controller
 {
@@ -16,7 +17,15 @@ class MessageController extends Controller
     {
         //
     }
+    public function index_messages()
+    {
+       
 
+        $messages= DB::table('Messages')->paginate(2);
+
+
+        return view("admin.messages_admin",compact('messages'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -83,6 +92,10 @@ class MessageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $messages = Message::findOrFail($id);
+        $messages->delete();
+
+        return redirect('admin/index_messages')->with('message', 'message a été supprimé');
+    
     }
 }

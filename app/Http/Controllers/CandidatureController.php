@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Candidature;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Candidature;
 use App\Http\Controllers\Controller;
 class CandidatureController extends Controller
 {
@@ -13,9 +14,18 @@ class CandidatureController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
+    public function index_candidatures()
+    {
+       
+
+        $candidatures= DB::table('Candidatures')->paginate(2);
+
+
+        return view("admin.candidatures_admin",compact('candidatures'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -101,6 +111,10 @@ class CandidatureController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $candidature = Candidature::findOrFail($id);
+        $candidature->delete();
+
+        return redirect('admin/index_candidatures')->with('message', 'candidature a été supprimé');
+    
     }
 }

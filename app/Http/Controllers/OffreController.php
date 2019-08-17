@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Offre;
+use App\Http\Controllers\Controller;
 
 class OffreController extends Controller
 {
@@ -32,9 +34,23 @@ class OffreController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    public function index_offres()
+    {
+       
+
+        $off= DB::table('Offres')->paginate(3);
+
+
+        return view("admin.offres_admin",compact('off'));
+    }
     public function store(Request $request)
     {
-        //
+        $data=$request->all();
+        $offre=new Offre($data);
+       
+        $offre->save();
+        return redirect()->route("index_offres")->with('success','offres publiée');
     }
 
     /**
@@ -68,7 +84,11 @@ class OffreController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $data=Offre::findOrFail($id);  
+     $data->update($request->all());
+     $data->save();
+     return redirect('admin/index_offres')->with('success', 'offre modifiée');
     }
 
     /**
@@ -79,6 +99,10 @@ class OffreController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
+        $offre = Offre::findOrFail($id);
+        $offre->delete();
+
+        return redirect('admin/index_offres')->with('success', 'offre a été supprimée');
     }
 }

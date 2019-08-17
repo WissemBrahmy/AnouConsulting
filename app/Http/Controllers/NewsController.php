@@ -17,7 +17,7 @@ class NewsController extends Controller
     {
        
 
-        $news = DB::table('News')->paginate(2);
+        $news = DB::table('News')->paginate(1);
 
 
         return view("admin.news_admin",compact('news'));
@@ -64,7 +64,7 @@ class NewsController extends Controller
         }
         
         $news->save();
-        return redirect()->route("admin.news_admin")->with('message','actualité publiée');
+        return redirect()->route("index_news")->with('message','actualité publiée');
     }
 
     /**
@@ -96,9 +96,27 @@ class NewsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,$id)
     {
-        //
+
+        $data=News::findOrFail($id);  
+     $data->update($request->all());
+
+     
+     
+     if($request->hasFile('image')){
+
+         $file=$request->file('image');
+         $fileName=uniqid("img_").'.'.$file->getClientOriginalExtension();
+
+         $file->move(public_path().'/actualites',$fileName);
+
+         $data->image='/actualites/'.$fileName;
+
+     }
+     
+     $data->save();
+        return redirect()->to(route('index_news'))->with('message','actualité modifiée');
     }
 
     /**
@@ -109,6 +127,10 @@ class NewsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
+        $news = News::findOrFail($id);
+        $news->delete();
+
+        return redirect('admin/index_news')->with('success', 'actualité a été supprimée');
     }
 }

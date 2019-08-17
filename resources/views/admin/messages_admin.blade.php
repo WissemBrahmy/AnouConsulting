@@ -8,34 +8,72 @@
             </h4>
             
      </div><br><br>
-<div class="table-responsive">
-  <table class="table table-hover">
-    <tr><td>id</td><td>Nom</td><td>Email</td><td>Téléphone</td><td>Message</td><td>Action</td><tr>
-    <tr><td>02</td><td>44</td><td>01</td><td>01</td><td>01</td><td><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#largeShoes">Corbeille</button></td><tr>
-    <tr><td>124</td><td>8</td><td>03</td><td>01</td><td>01</td><td><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#largeShoes">Corbeille</button><tr>
-    <tr><td>112</td><td>78</td><td>87</td><td>01</td><td>01</td><td><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#largeShoes">Corbeille</button></td><tr>
-  </table>
-</div>
-<!-- The modal -->
-<div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabellarge" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
+     <div class="contact-form responsive text-center">
+                    @if(session('message'))
+                         <p class="alert alert-success">
+                         <b>    {{session('message')}}</b>
+                         </p>
+                    @endif
+      </div>
+  <!--Service Section-->
+  @if(count($messages))
 
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-<h4 class="modal-title" id="modalLabelSmall">Confirmation suppression</h4>
+@foreach($messages as $m)
+<div class="container">
+<div class="row">
+
+  <br>
+<div class="col-md-12">
+  <div class="wow bounceIn"  >
+  <div class="panel panel-default" >
+    <div class="align-center">
+    <div class="panel-body">
+  
+      <br>
+      <h4><i class="glyphicon glyphicon-envelope"></i>&nbsp Messages N°: {{$m->id}}</h4><br>
+      <h5>Nom: &nbsp {{$m->nom}} || Téléphone: &nbsp {{$m->tel}} <br><br> Email: &nbsp {{$m->email}}  </h5>
+      <p>
+      
+       <b>Message:</b><br>
+      {{$m->message}}.<br>
+                     <br>
+                     <i class="fad fa-alarm-clock"></i> Date: {{$m->created_at}}.
+      </p>
+      <div class="ficon">
+      <form action="{{ route('messages_destroy', $m->id)}}" method="post">
+            @csrf
+            @method('DELETE')
+            <button class="btn btn-info" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Supprimer
+            </button>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+@endforeach
+  <div class="row">
+                          <div class="col-md-4 col-md-offset-4">
+                              {{$messages->links()}}
+                          </div>
+  </div>
+ 
+        @else
+
+
+
+          <p class="alert alert-warning">
+                Pas des messages
+                </p>
+        @endif
+
+ 
 </div>
 
-<div class="modal-body">
-vous voulez vraiment le supprimer?
-</div>
-<div class="modal-footer">
-<a href="#" class="btn btn-danger " role="button">Oui</a>
-</div>
-</div>
-</div>
-</div>
+
 @endsection
 

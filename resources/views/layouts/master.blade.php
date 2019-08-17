@@ -37,6 +37,18 @@
   <script src="{{asset('js/jquery-1.11.1.min.js')}}"></script>
 	<script src="{{asset('js/bootstrap.min.js')}}"></script>
 		<script src="{{asset('js/bootstrap-table.js')}}"></script>
+
+
+            
+  
+    <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/icofont.css')}}">
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+    <script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>
 </head>
 
 
@@ -112,16 +124,16 @@
                               <a href="{{route("home_admin")}}">ACCUEIL</a>
                         </li>
                         <li class="active">
-                              <a href="{{route("offres_admin")}}">ESPACE OFFRES</a>
+                              <a href="{{route("index_offres")}}">ESPACE OFFRES</a>
                         </li>
                         <li class="active">
                               <a href="{{route("index_news")}}">ESPACE ACTUALITES</a>
                         </li>
                         <li class="active">
-                              <a href="{{route("candidatures_admin")}}">ESPACE CONDIDATURES</a>
+                              <a href="{{route("index_candidatures")}}">ESPACE CONDIDATURES</a>
                         </li>
                         <li class="active">
-                              <a href="{{route("messages_admin")}}">ESPACE MESSAGES</a>
+                              <a href="{{route("index_messages")}}">ESPACE MESSAGES</a>
                         </li>
                       
                   </ul>
