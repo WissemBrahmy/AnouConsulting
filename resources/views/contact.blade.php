@@ -105,7 +105,7 @@
                         </div>
                         <!-- submit button -->
                         <div class="col-md-12 text-right">
-                            <button class="btn btn-style-one" type="submit">ENVOYER UN MESSAGE</button>
+                            <button class="btn btn-style-one" type="submit"><i class="fa fa-send" aria-hidden="true"></i>&nbsp ENVOYER MESSAGE</button>
                         </div>
                     </form>
                     <!-- contact form end -->

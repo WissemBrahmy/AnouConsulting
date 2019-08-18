@@ -126,7 +126,7 @@
                               <div class="col-md-6 col-sm-12 col-xs-12"> 
                                     
                                     <div class="form-group text-center">
-                                          <button type="submit" class="btn-style-one">Postuler maintenant</button>
+                                          <button type="submit" class="btn-style-one"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Postuler maintenant</button>
                                     </div>                            
                               </div>
                               </div>
@@ -220,7 +220,7 @@
                               <div class="col-md-3"> 
                                     
                                     <div class="form-group text-center">
-                                          <button type="submit" class="btn-style-one">Rechercher</button>
+                                          <button type="submit" class="btn-style-one"><i class="fa fa-search" aria-hidden="true"></i>&nbsp Rechercher</button>
                                     </div>                            
                               </div>
                               </div>
