@@ -31,7 +31,7 @@ class CreateCandidaturesTable extends Migration
             
             $table->string('disponibilite');
             $table->string('contrat');
-            $table->string('commentaire');
+            $table->string('commentaire',1000)->change();
            
             $table->timestamps();
         });

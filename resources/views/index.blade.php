@@ -215,7 +215,7 @@
                                 <a href="#dormitory"  data-toggle="tab">BIG DATA</a>
                             </li>
                             <li role="presentation">
-                                <a href="#orthopedic" data-toggle="tab">DEGITALISATION</a>
+                                <a href="#orthopedic" data-toggle="tab">DEGITALIZATION</a>
                             </li>
                             <li role="presentation">
                                 <a href="#sonogram" data-toggle="tab">CLOUD COMPUTING</a>
@@ -258,7 +258,7 @@
                             <div class="col-md-6">
                                 <div class="contents">
                                     <div class="section-title">
-                                        <h3>DEGITALISATION</h3>
+                                        <h3>DEGITALIZATION</h3>
                                     </div>
                                     <div class="text">
                                     Au fil des projets et expériences réussies, nous avons bâti une expertise permettant d’accompagner nos clients

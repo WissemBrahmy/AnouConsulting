@@ -3,22 +3,18 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
-use App\Offre;
+use App\Postulation;
 use App\Http\Controllers\Controller;
-
-class OffreController extends Controller
+class PostulationController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function offres_home()
+    public function index()
     {
-        $off= DB::table('Offres')->paginate(1);
-
-
-        return view("offres",compact('off'));
+        //
     }
 
     /**
@@ -37,23 +33,24 @@ class OffreController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-
-    public function index_offres()
-    {
-       
-
-        $off= DB::table('Offres')->paginate(1);
-
-
-        return view("admin.offres_admin",compact('off'));
-    }
     public function store(Request $request)
     {
         $data=$request->all();
-        $offre=new Offre($data);
-       
-        $offre->save();
-        return redirect()->route("index_offres")->with('success','offres publiée');
+        $postulation=new Postulation($data);
+        if($request->hasFile('cv')){
+
+            $file=$request->file('cv');
+            $fileName=uniqid("cv_").'.'.$file->getClientOriginalExtension();
+
+            $file->move(public_path().'/postulations',$fileName);
+
+            $postulation->cv='/postulations/'.$fileName;
+
+        }
+        
+        $postulation->save();
+        return redirect()->route("offres")->with('message','Postulation effectuée');
+  
     }
 
     /**
@@ -87,11 +84,7 @@ class OffreController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
-        $data=Offre::findOrFail($id);  
-     $data->update($request->all());
-     $data->save();
-     return redirect('admin/index_offres')->with('success', 'offre modifiée');
+        //
     }
 
     /**
@@ -102,10 +95,6 @@ class OffreController extends Controller
      */
     public function destroy($id)
     {
-        
-        $offre = Offre::findOrFail($id);
-        $offre->delete();
-
-        return redirect('admin/index_offres')->with('success', 'offre a été supprimée');
+        //
     }
 }

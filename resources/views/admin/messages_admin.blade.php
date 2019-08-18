@@ -37,7 +37,8 @@
        <b>Message:</b><br>
       {{$m->message}}.<br>
                      <br>
-                     <i class="fad fa-alarm-clock"></i> Date: {{$m->created_at}}.
+                     <i class="fa fa-clock-o" aria-hidden="true"></i> Date: {{$m->created_at}}
+                    
       </p>
       <div class="ficon">
       <form action="{{ route('messages_destroy', $m->id)}}" method="post">

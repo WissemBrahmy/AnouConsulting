@@ -4,6 +4,12 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\News;
+use App\Offre;
+use App\Message;
+use App\Admin;
+use App\Candidature;
+use App\Postulation;
+use Auth;
 use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
@@ -27,7 +33,17 @@ class HomeController extends Controller
    
     public function home_admin()
     {
-        return view('admin.home_admin');
+      
+       
+        $data = [
+        'offres' => Offre::all()->count(),
+        'candidatures' => Candidature::all()->count(),
+        'messages' => Message::all()->count(),
+        'postulation' => Postulation::all()->count(),
+        'news' => News::all()
+        ];
+        return view('admin.home_admin')->with($data);
+       
     }
     public function offres_admin()
     {
@@ -84,5 +100,81 @@ class HomeController extends Controller
 	{
 		
 		return view('offres');
-	}
+    }
+    
+
+    public function listeoffres(Request $request)
+	{
+        
+        $region=($request->region)?$request->region:"0";
+        $domaine=($request->domaine)?$request->domaine:"0";
+        $niveau=($request->niveau)?$request->niveau:"0";
+        
+        
+  /* 1er if */
+        if(($domaine=="0")&&($niveau=="0")){
+
+            if($region=="0"){
+        
+            $offres=Offre::orderBy('id','desc')->paginate(2);
+            $count=Offre::count();
+        }else{
+        
+            $offres=Offre::where("region",$region)->orderBy('id','desc')->paginate(2);
+        $count=Offre::where("region",$region)->count();
+        
+        }
+            
+        }
+        /* end 1er if */
+
+         /* 2eme if */
+        if(($domaine!="0")&&($niveau=="0")){
+        
+            if($region=="0"){
+            $offres=Offre::where("domaine","LIKE",$domaine)->orderBy('id','desc')->paginate(2);
+        
+             $count=Offre::where("domaine","LIKE",$domaine)->count();}
+             else{
+            $offres=Offre::where("region",$type)->where("domaine","LIKE",$domaine)->orderBy('id','desc')->paginate(2);
+            $count=Offre::where("region",$type)->where("domaine","LIKE",$domaine)->count();
+        }
+        
+        }
+
+         /* end 2eme if */
+
+        /* 3eme if */
+        if(($domaine=="0")&&($niveau!="0")){
+               if($region=="0"){
+            $offres=Offre::where("niveau",$niveau)->orderBy('id','desc')->paginate(2);
+            $count=Offre::where("niveau",$niveau)->count();}
+            else{
+            $offres=Offre::where("region",$region)->where("niveau",$niveau)->orderBy('id','desc')->paginate(2);
+                $count=Offre::where("region",$region)->where("niveau",$niveau)->count();
+            }
+        }
+        /* end 3eme if */
+
+            /*  4eme if */
+        if(($domaine!="0")&&($niveau!="0")){
+        
+               if($region=="0"){
+            $offres=Offre::where("domaine","LIKE",$domaine)->where("niveau",$niveau)->orderBy('id','desc')->paginate(2);
+            $count=Offre::where("domaine","LIKE",$domaine)->where("niveau",$niveau)->count();}
+            else{
+            $offres=Offre::where("region",$region)->where("domaine","LIKE",$domaine)->where("niveau",$niveau)->orderBy('id','desc')->paginate(2);
+                $count=Offre::where("region",$region)->where("domaine","LIKE",$domaine)->where("niveau",$niveau)->count();}
+        
+        }
+        
+        return view("liste_offres")->with("offres",$offres)->with("count",$count)->with("niveau",$niveau)->with("region",$region)->with("region",$region);
+        }
+
+         /* end 4eme if */
+       
+
+
+   
+
 }

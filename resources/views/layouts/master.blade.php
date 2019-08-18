@@ -87,7 +87,7 @@
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             
-                                            <b>     Déconnexion </b>
+                                            <b> <i class="fa fa-lock" aria-hidden="true"></i>    Déconnexion </b>
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -152,24 +152,24 @@
     <div class="container clearfix">
       <div class="copyright-text">
       <p>&copy; ANOU Consulting, 2019 - Tous droits réservés
-          <a href="{{route("index")}}"></a>
+          <a href="{{route("home_admin")}}"></a>
         </p>
       </div>
       <ul class="footer-bottom-link">
         <li>
-          <a href="{{route("index")}}">ACCUEIL</a>
+          <a href="{{route("home_admin")}}">ACCUEIL</a>
         </li>
         <li>
-          <a href="{{route("apropos")}}">OFFRES</a>
+          <a href="{{route("index_offres")}}">OFFRES</a>
         </li>
         <li>
-          <a href="{{route("apropos")}}">NEWS</a>
+          <a href="{{route("index_news")}}">NEWS</a>
         </li>
         <li>
           <a href="{{route("apropos")}}">CANDUDATURES</a>
         </li>
         <li>
-          <a href="{{route("contact")}}">MESSAGES</a>
+          <a href="{{route("index_messages")}}">MESSAGES</a>
         </li>
       </ul>
     </div>

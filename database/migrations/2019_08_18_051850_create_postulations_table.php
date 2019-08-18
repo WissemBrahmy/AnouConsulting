@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOffresTable extends Migration
+class CreatePostulationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class CreateOffresTable extends Migration
      */
     public function up()
     {
-        Schema::create('offres', function (Blueprint $table) {
+        Schema::create('postulations', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title')->nullable();
-            $table->string('region')->nullable();
-            $table->string('domaine')->nullable();
-            $table->string('niveau')->nullable();
-            $table->string('description',2000)->change();
+            $table->string('nom');
+            $table->string('email');
+            $table->string('cv');
+            $table->string('lm',2000)->change();
+               $table->unsignedInteger('id_offre')
+                   ->refrences('id')
+                   ->on('offres');
             $table->timestamps();
         });
     }
@@ -31,6 +33,6 @@ class CreateOffresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('offres');
+        Schema::dropIfExists('postulations');
     }
 }

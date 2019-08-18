@@ -32,22 +32,21 @@
             </div>
             <div class="col-md-6">
                 <div class="story-content">
-                    <h2>{{$n->title}}</h2>
+                    <h2>Actualité N° {{$n->id}}</h2>
                     <H4>ANOU Consulting</H4>
-                    <h5 class="tagline"> <i class="fa fa-clock-o"></i><span> Créer le :
+                    <h5 class="tagline"> <i class="fa fa-clock-o"></i><span>  Le :
                                                    {{$n->created_at}} </span></li>
                                                    </h5>
-                  <p>  {{$n->content}}.</p>
+
+                 
+              <i class="fa fa-tag" aria-hidden="true"></i>&nbsp Titre: &nbsp {{$n->title}}</li>
+                              
+                                               
+                  <p><i class="fa fa-book" aria-hidden="true"></i>&nbsp Contenue:<br> 
+                  
+                   {{$n->content}}.</p>
                     <br>
-                    <ul class="content-list">
-                                <li>
-                                    <i class="fa fa-check-circle-o"></i>Actualité N° {{$n->id}}</li>
-                                <li>
-                                    <i class="fa fa-check-circle-o"></i>Titre: &nbsp {{$n->title}}</li>
-                                <li>
-                                    <i class="fa fa-check-circle-o"></i><span>
-                                                   {{$n->created_at}} </span></li>
-                            </ul>
+                    
                     <table><tr><td>
                             <form action="{{ route('news_destroy', $n->id)}}" method="post">
                   @csrf
@@ -56,7 +55,7 @@
                   <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Supprimer
                   </button>
                 </form></td><td> &nbsp
-                  <button type="button" class="btn btn-style-one" data-toggle="modal" data-target="#edit">
+                  <button type="button" onclick='update({{ json_encode($n)}})' class="btn btn-style-one" data-toggle="modal" data-target="#updateModal">
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                          &nbsp <b> Modifier</b>
                   </button></td></tr>
@@ -129,7 +128,7 @@
                               <br>
                              <div class="row">
                               <div class="col-md-3  ">
-                            <button class="btn btn-style-one" type="submit">Créer une actualité</button>
+                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Créer une actualité</button>
                             
                         </div>
                         </div>
@@ -146,7 +145,7 @@
 <!-- end The add modal -->
 
 <!-- The edit modal -->
-<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="modalLabellarge" aria-hidden="true">
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="modalLabellarge" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
 
@@ -170,24 +169,24 @@
                               <div class="row">
                              <div class="col-md-8 col-sm-12 col-xs-12">
                            
-                               <input type="title" name="title" id="title" class="form-control main" value="{{$n->title}}" required>
+                               <input type="title" name="title" id="title" class="form-control main"  required>
                              </div>
                                
                              <div class="col-xs-8">
                                     <div class="form-group">
-                                      Modifier la photo <input type="File" id="image" name="image" value="{{$n->image}}"  class="input-lg">
+                                      Modifier la photo <input type="File" id="image" name="image"   class="input-lg">
                                     </div>
                              </div>
                              
                               <div class="col-md-8 col-sm-12 col-xs-12">
-                            <textarea name="content"  rows="15" class="form-control main" >{{$n->content}}</textarea>
+                            <textarea name="content" id="content"  rows="15" class="form-control main" >{{$n->content}}</textarea>
                         </div>
                              </div>
                             
                               <br>
                              <div class="row">
                               <div class="col-md-3  ">
-                            <button class="btn btn-style-one" type="submit">Modifier actualité</button>
+                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Modifier actualité</button>
                             
                         </div>
                         </div>
@@ -201,6 +200,22 @@
 
 </div>
 </div>
+<script type="text/javascript">
 
+		function update(data) {
+			console.log(data);
+		
+			$("#updateModal #title").val(data.title);
+                  $("#updateModal #image").val(data.image);
+                  $("#updateModal #content").val(data.content);
+                  $("#updateModal #id").val(data.id);
+                 
+			
+			$('#updateModal').modal();
+
+
+
+		}
+	</script>
 @endsection
 

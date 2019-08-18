@@ -6,22 +6,50 @@
   <title>ANOU | Consulting</title>
 
   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="{{asset('plugins/slick/slick.css')}}">
+  <link rel="stylesheet" href="{{asset('plugins/slick/slick-theme.css')}}">
+  <link href="{{asset('css/bootstrap-table.css" rel="stylesheet')}}">
+  <link href="{{asset('css/bootstrap.min.css" rel="stylesheet')}}">
+
+<!-- Custom CSS -->
+<link href="{{asset('css/landing-page.css" rel="stylesheet')}}">
+<link href="{{asset('css/bootstrap.min.css" rel="stylesheet')}}">
+<link href="{{asset('css/datepicker3.css" rel="stylesheet')}}">
+
+<link href="{{asset('css/bootstrap-table.css" rel="stylesheet')}}">
+<link rel="stylesheet" href="{{asset('css/messi.min.css')}}" />
   <!-- FancyBox -->
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="{{asset ('plugins/fancybox/jquery.fancybox.min.css')}}">
   
   <!-- Stylesheets -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
   
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="{{asset('js/jquery-1.11.1.min.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+		<script src="{{asset('js/bootstrap-table.js')}}"></script>
+
+
+            
+  
+    <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/icofont.css')}}">
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+    <script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>
 
 </head>
 

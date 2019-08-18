@@ -13,9 +13,9 @@
 
 /*user*/
 
-Route::get('/adminAnou', function () {
-    return view('auth.login');
-});
+Route::get('/admin/login', 'Auth\LoginController@showLoginForm');
+
+Route::get('/admin/register', 'Auth\RegisterController@showRegistrationForm');
 Route::resource('messages','MessageController');
 
 Route::resource('news','NewsController');
@@ -26,16 +26,17 @@ Route::get('/apropos', 'HomeController@apropos')->name('apropos');
 Route::get('/services', 'HomeController@services')->name('services');
 
 Route::get('/actualites_home', 'NewsController@actualites_home')->name('actualites');
-Route::get('/offres', 'HomeController@offres')->name('offres');
+Route::get('/offres', 'OffreController@offres_home')->name('offres');
+
 Route::post('contact', 'MessageController@store')->name('messages.store');
 Route::post('candidatures', 'CandidatureController@store')->name('candidatures.store');
-
-
+Route::post('postulation', 'PostulationController@store')->name('postulation.store');
+Route::get("offre/recherche","HomeController@Listeoffres")->name('search');
 
 
 Auth::routes();
 
-Route::get('/admin',['middleware'=>'auth','uses'=>'HomeController@admin'] )->name('admin');
+Route::get('/adminanou',['middleware'=>'auth','uses'=>'HomeController@home_admin'] )->name('admin');
 Route::get('admin/home_admin',['middleware'=>'auth','uses'=>'HomeController@home_admin'] )->name('home_admin');
 Route::get('admin/offres_admin',['middleware'=>'auth','uses'=>'HomeController@offres_admin'] )->name('offres_admin');
 Route::get('admin/news_admin',['middleware'=>'auth','uses'=>'HomeController@news_admin'] )->name('news_admin');

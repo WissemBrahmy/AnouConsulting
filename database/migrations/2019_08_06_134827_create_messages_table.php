@@ -18,7 +18,7 @@ class CreateMessagesTable extends Migration
             $table->string('nom');
             $table->string('email');
             $table->string('tel');
-            $table->text('message');
+            $table->text('message',2000)->change();
         
             
             $table->timestamps();

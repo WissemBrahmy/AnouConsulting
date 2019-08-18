@@ -25,7 +25,7 @@
         @if(count($off))
 
             @foreach($off as $o)
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-8 col-sm-6 col-xs-12">
                 <div class="team-member">
                     
                     <div class="contents text-center">
@@ -46,7 +46,8 @@
                   </button>
                 </form></td><td> &nbsp
                
-                  <button type="button" class="btn btn-style-one" data-toggle="modal" data-target="#edit" >
+                  <button type="button" class="btn btn-style-one" data-toggle="modal"  
+                  onclick='update({{ json_encode($o)}})'>
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                          &nbsp <b> Modifier</b>
                   </button>
@@ -133,10 +134,23 @@
                                     <div class="form-group">
                                           <select name="region">
                                           <option>Region</option>
-                                          <option>Paris</option>
-                                          <option>Lille</option>
-                                          <option>Marseille</option>
-                                          <option>Bordeau</option>
+                                          <option value="Paris">Paris</option>
+                                          <option value="Lille">Lille</option>
+                                          <option value="Marseille">Marseille</option>
+                                          <option value="Bordeaux">Bordeaux</option>
+                                          <option value="Caen">Caen</option>
+                                          <option value="La Rochelle">La Rochelle</option>
+                                          <option value="Lyon">Lyon</option>
+                                          <option value="Montpellier">Montpellier</option>
+                                          <option value="Caen">Nantes</option>
+
+                                          <option value="Nice">Nice</option>
+                                          <option value="Perpignan">Perpignan</option>
+                                          <option value="Reims">Reims</option>
+                                          <option value="Rennes">Rennes</option>
+                                          <option value="Strasbourg">Strasbourg</option>
+                                          <option value="Toulouse">Toulouse</option>
+                                          <option value="Autre">Autre</option>
                                           </select>
                                     </div>                     
                               </div>
@@ -150,7 +164,7 @@
                               <br>
                              <div class="row">
                               <div class="col-md-3 ">
-                            <button class="btn btn-style-one" type="submit">Créer une offre</button>
+                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Créer une offre</button>
                             
                         </div>
                         </div>
@@ -161,7 +175,8 @@
             </div>
 
 </div>
-
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -170,7 +185,7 @@
 
 <!-- The edit modal -->
 
-<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="modalLabellarge" aria-hidden="true">
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="modalLabellarge" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
 
@@ -184,22 +199,23 @@
 <div class="modal-body">
 <div class="container">
             <div class="row">
-                  
+           
                   <div class="contact-area style-one">
-                
+                  
                   <form  action="{{ route('offres_update', $o->id)}}" method="post" enctype="multipart/form-data">
                   {{ csrf_field() }}
                   @method('PUT')
                               <div class="row">
-                              <input type="hidden" name="id" id="id" value="{{$o->id}}">
+                              
+                             
                              <div class="col-md-4 col-sm-12 col-xs-12">
-                               <input type="title" id="title" name="title" class="form-control main" value="{{$o->title}}" required>
+                               <input type="title" id="title" name="title" class="form-control main" required>
                              </div>
                                
                                   <div class="col-md-4 col-sm-12 col-xs-12">
                                     <div class="form-group" >
                                           <select name="domaine" id="domaine">
-                                          <option >{{$o->domaine}}</option>
+                                          <option ></option>
                                           <option>Développement web</option>
                                           <option>Développement mobile</option>
                                           <option>Réseau informatique</option>
@@ -211,7 +227,7 @@
                               <div class="col-md-4 col-sm-12 col-xs-12"> 
                                     <div class="form-group">
                                           <select name="niveau" id="niveau">
-                                          <option>{{$o->niveau}}</option>
+                                          <option></option>
                                           <option>Bac</option>
                                           <option>BAC+3</option>
                                           <option>BAC+5</option>
@@ -222,7 +238,7 @@
                               <div class="col-md-4 col-sm-12 col-xs-12"> 
                                     <div class="form-group">
                                           <select name="region" id="region">
-                                          <option>{{$o->region}}</option>
+                                          <option></option>
                                           <option>Paris</option>
                                           <option>Lille</option>
                                           <option>Marseille</option>
@@ -233,20 +249,21 @@
                               </div>
                               <div class="row">
                               <div class="col-md-8 col-sm-12 col-xs-12">
-                            <textarea id="description" name="description" rows="15" class="form-control main" > {{$o->description}}</textarea>
+                            <textarea id="description" name="description" rows="15" class="form-control main" > </textarea>
                         </div>
                              </div>
                               <div>
                               <br>
                              <div class="row">
                               <div class="col-md-3 ">
-                            <button class="btn btn-style-one" type="submit" >Modifier offre</button>
+                            <button class="btn btn-style-one" type="submit" ><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Modifier offre</button>
                             
                         </div>
                         </div>
                         </form>
                         
-                  </div>                      
+                  </div>    
+                               
                   </div> 
             </div>                    
             </div>
@@ -257,23 +274,21 @@
 </div>
 </div>
 </div>
-
-@endsection
-<!-- 
 <script type="text/javascript">
 
-function update(data) {
-      console.log(data);
-      $("#edit #title").val(data.title);
-      $("#edit #region").val(data.region);
-      $("#edit #domaine").val(data.domaine);
-      $("#edit #niveau").val(data.niveau);
-      $("#edit #description").val(data.description);
-$("#edit #id").val(data.id);
-      $('#edit').modal();
+		function update(data) {
+			console.log(data);
+		
+			$("#updateModal #title").val(data.title);
+                  $("#updateModal #region").val(data.region);
+                  $("#updateModal #domaine").val(data.domaine);
+                  $("#updateModal #niveau").val(data.niveau);
+                  $("#updateModal #description").val(data.description);
+			
+			$('#updateModal').modal();
 
 
-}
-</script>
- -->
 
+		}
+	</script>
+@endsection
