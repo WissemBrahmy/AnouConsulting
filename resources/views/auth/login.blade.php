@@ -65,7 +65,7 @@
                 
                         <div class="section-title text-center">
                         <figure>
-                                <a href="{{route("home_admin")}}">
+                                <a href="">
                                     <img src="images/ANOU.png" alt="" width="150">
                                 </a>
                         </figure>

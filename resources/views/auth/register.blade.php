@@ -57,11 +57,19 @@
 <body>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-primary">
                 <div class="panel-heading">{{ __('AJOUTER ADMINISTRATEUR') }}</div>
 
                 <div class="panel-body">
+                <div class="section-title text-center">
+                        <figure>
+                                <a href="">
+                                    <img src="{{asset('images/ANOU.png')}}" alt="" width="150">
+                                </a>
+                        </figure>
+                        </div>
+                        <br>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -80,7 +88,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __(' Adresse EMail') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __(' Adresse email') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -118,7 +126,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                <i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp    {{ __('Inscription') }}
+                                <i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp    {{ __('Ajouter admin') }}
                                 </button>
                             </div>
                         </div>

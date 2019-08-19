@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Offre;
+use App\Postulation;
 use App\Http\Controllers\Controller;
 
 class OffreController extends Controller
@@ -15,10 +16,13 @@ class OffreController extends Controller
      */
     public function offres_home()
     {
+     
         $off= DB::table('Offres')->paginate(1);
 
 
         return view("offres",compact('off'));
+
+
     }
 
     /**
@@ -46,6 +50,8 @@ class OffreController extends Controller
 
 
         return view("admin.offres_admin",compact('off'));
+       
+
     }
     public function store(Request $request)
     {

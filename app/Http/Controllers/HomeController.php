@@ -35,15 +35,19 @@ class HomeController extends Controller
     {
       
        
+
+       
         $data = [
         'offres' => Offre::all()->count(),
         'candidatures' => Candidature::all()->count(),
         'messages' => Message::all()->count(),
         'postulation' => Postulation::all()->count(),
         'news' => News::all()
-        ];
+        ]; 
         return view('admin.home_admin')->with($data);
-       
+    
+  
+
     }
     public function offres_admin()
     {

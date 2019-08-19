@@ -25,7 +25,7 @@
         @if(count($off))
 
             @foreach($off as $o)
-            <div class="col-md-8 col-sm-6 col-xs-12">
+            <div class="col-md-12 col-sm-6 col-xs-12">
                 <div class="team-member">
                     
                     <div class="contents text-center">
@@ -52,10 +52,51 @@
                          &nbsp <b> Modifier</b>
                   </button>
                 
-                  </td></tr>
+                  </td> 
+                  <td> 
+                  <a href="" class="btn btn-style-one" style="background:blue" role="button"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp Consulter les  candidatures</a>
+                  </td> 
+                  
+                  </tr>
+                  <!--
+            <div class="col-md-12">
+                <div class="accordion-section">
+                    <div class="accordion-holder">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                            <div class="panel panel-info">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Candidatures 
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                                                      Nos clients sont confrontés à des impératifs de rationalisation de leurs systèmes d’information 
+                                
+                                  •  Assistance à maîtrise d’ouvrage / direction de projets  <br>
+                                  •  Audit des environnements informatiques <br>
+                                  •  Urbanisation des systèmes d’information <br>
+                                  •  Optimisation et amélioration de la performance des systèmes d’information <br>
+                                  •  Business Intelligence. </div>
+                                </div>
+                            </div>
+                           
+                            
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            -->
+
                   <br>
                   </table>   
-
+           
+        </div>
                </div>
                 </div>
             </div>
