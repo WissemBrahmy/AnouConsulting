@@ -46,15 +46,19 @@
                   </button>
                 </form></td><td> &nbsp
                
-                  <button type="button" class="btn btn-style-one" data-toggle="modal"  
+                 <!-- <button type="button" class="btn btn-style-one" data-toggle="modal"  
                   onclick='update({{ json_encode($o)}})'>
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                          &nbsp <b> Modifier</b>
                   </button>
-                
+                -->
+
+                <a class="btn-style-one" href="{{route('edit_offre', $o->id) }}">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Modifier</a>
+                  
                   </td> 
                   <td> 
-                  <a href="" class="btn btn-style-one" style="background:blue" role="button"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp Consulter les  candidatures</a>
+                  <a href="{{route('show_candidatures', $o->id) }}" class="btn btn-style-one" style="background:blue" role="button"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp Candidatures</a>
                   </td> 
                   
                   </tr>
@@ -224,112 +228,5 @@
 </div>
 
 
-<!-- The edit modal -->
 
-<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="modalLabellarge" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-<h4 class="modal-title" id="modalLabelSmall">Modifier offre</h4>
-</div>
-
-<div class="modal-body">
-<div class="container">
-            <div class="row">
-           
-                  <div class="contact-area style-one">
-                  
-                  <form  action="{{ route('offres_update', $o->id)}}" method="post" enctype="multipart/form-data">
-                  {{ csrf_field() }}
-                  @method('PUT')
-                              <div class="row">
-                              
-                             
-                             <div class="col-md-4 col-sm-12 col-xs-12">
-                               <input type="title" id="title" name="title" class="form-control main" required>
-                             </div>
-                               
-                                  <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <div class="form-group" >
-                                          <select name="domaine" id="domaine">
-                                          <option ></option>
-                                          <option>Développement web</option>
-                                          <option>Développement mobile</option>
-                                          <option>Réseau informatique</option>
-                                          </select>
-                                     </div> 
-                              </div>
-                              </div>
-                              <div class="row">
-                              <div class="col-md-4 col-sm-12 col-xs-12"> 
-                                    <div class="form-group">
-                                          <select name="niveau" id="niveau">
-                                          <option></option>
-                                          <option>Bac</option>
-                                          <option>BAC+3</option>
-                                          <option>BAC+5</option>
-                                          <option>Autres</option>
-                                          </select>
-                                    </div>                     
-                              </div>
-                              <div class="col-md-4 col-sm-12 col-xs-12"> 
-                                    <div class="form-group">
-                                          <select name="region" id="region">
-                                          <option></option>
-                                          <option>Paris</option>
-                                          <option>Lille</option>
-                                          <option>Marseille</option>
-                                          <option>Bordeau</option>
-                                          </select>
-                                    </div>                     
-                              </div>
-                              </div>
-                              <div class="row">
-                              <div class="col-md-8 col-sm-12 col-xs-12">
-                            <textarea id="description" name="description" rows="15" class="form-control main" > </textarea>
-                        </div>
-                             </div>
-                              <div>
-                              <br>
-                             <div class="row">
-                              <div class="col-md-3 ">
-                            <button class="btn btn-style-one" type="submit" ><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Modifier offre</button>
-                            
-                        </div>
-                        </div>
-                        </form>
-                        
-                  </div>    
-                               
-                  </div> 
-            </div>                    
-            </div>
-
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-
-		function update(data) {
-			console.log(data);
-		
-			$("#updateModal #title").val(data.title);
-                  $("#updateModal #region").val(data.region);
-                  $("#updateModal #domaine").val(data.domaine);
-                  $("#updateModal #niveau").val(data.niveau);
-                  $("#updateModal #description").val(data.description);
-			
-			$('#updateModal').modal();
-
-
-
-		}
-	</script>
 @endsection

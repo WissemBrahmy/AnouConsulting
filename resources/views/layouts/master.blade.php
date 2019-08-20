@@ -151,7 +151,7 @@
   <div class="footer-bottom">
     <div class="container clearfix">
       <div class="copyright-text">
-      <p>&copy; ANOU Consulting, 2019 - Tous droits réservés
+      <p>&copy; ANOU Consulting 2019 - Tous droits réservés
           <a href="{{route("home_admin")}}"></a>
         </p>
       </div>

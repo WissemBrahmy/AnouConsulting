@@ -17,7 +17,7 @@ class OffreController extends Controller
     public function offres_home()
     {
      
-        $off= DB::table('Offres')->paginate(1);
+        $off= DB::table('Offres')->paginate(3);
 
 
         return view("offres",compact('off'));
@@ -30,11 +30,16 @@ class OffreController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function postule_offres($id)
     {
-        //
+        $offre = Offre::where('id', $id)->firstOrFail();
+        return view('postule_offre', compact('offre'));
     }
-
+    public function edit_offre($id)
+    {
+        $offre = Offre::where('id', $id)->firstOrFail();
+        return view('admin.edit_offre', compact('offre'));
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -46,7 +51,7 @@ class OffreController extends Controller
     {
        
 
-        $off= DB::table('Offres')->paginate(1);
+        $off= DB::table('Offres')->paginate(2);
 
 
         return view("admin.offres_admin",compact('off'));

@@ -3,7 +3,7 @@
 @section('content') 
 <BR>
 <div class="section-title text-center">
-            <h4>CONSULTER  
+            <h4>LISTE DES  
                 <span>CANDIDATURES</span>
             </h4>
             

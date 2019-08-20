@@ -27,9 +27,9 @@
                 <form class="form-inline">
                   <div class="form-group">
                     <a href="{{route("services")}}" target="_blank" class="btn btn-primary btn-lg btn-livedemo">Découvrir</a>
-                  </div>
+                  </div> &nbsp
                   <div class="form-group">
-                      <a href="{{route("contact")}}" target="_blank" class="btn btn-primary btn-lg btn-getnow">Nous Contacter</a>
+                      <a href="{{route("contact")}}" target="_blank" class="btn btn-primary btn-lg btn-getnow">Contactez-Nous </a>
                   </div>
                 </form>
               </div>
@@ -49,7 +49,7 @@
                     <div class="content style text-right ">
                         <h2 class="text-white">ANOU Consulting</h2>
                         <p class="tag-text" style="padding-left:700px;">Chaque projet est un nouvelle chalenge pour nos équipes commerciales et techniques. </p>
-                        <a href="#" class="btn btn-main btn-white">Découvrir</a>
+                        <a href="{{route("services")}}" class="btn btn-main btn-white">Découvrir</a>
                     </div>
                     <!-- Slide Content End-->
                 </div>
@@ -79,7 +79,7 @@
                              <br>à trouver les meilleurs rôles et à 
                                  développer leur carrière! 
                         </p>
-                        <a href="shop.html" class="btn btn-main btn-white">Découvrir</a>
+                        <a href="{{route("services")}}" class="btn btn-main btn-white">Découvrir</a>
                     </div>
                     <!-- Slide Content End -->
                 </div>
@@ -98,14 +98,14 @@
                     <div class="emmergency item">
                         <i class="fa fa-television"></i>
                         <h2>SUPPORT</h2>
-                        <a href="#">24/7</a>
+                        <a href="{{route("services")}}">24/7</a>
                         <p>Un support utilisateur Fiable et disponible 24/7.</p>
                     </div>
                     <div class="top-doctor item">
                         <i class="fa fa-handshake-o"></i>
                         <h2>CONSEIL</h2>
                         <p>Une organisation opérationnelle des processus de gestion</p>
-                        <a href="#" class="btn btn-main">Voir plus</a>
+                        <a href="{{route("services")}}" class="btn btn-main">Voir plus</a>
                     </div>
                     <div class="working-time item">
                         <i class="fa fa-sitemap"></i>
@@ -245,7 +245,7 @@
                                     Nos équipes d’experts (métiers, data scientists et techniques) vous accompagnent dans la
                                     compréhension, la valorisation et la gouvernance de vos données, ainsi que dans la mise en
                                     place de modèles d’aide à la décision.  </ul>
-                                    <a href="{{route("services")}}" class="btn btn-style-one">En savoir plus</a>
+                                    <a href="{{route("services")}}" class="btn btn-style-one"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -272,7 +272,7 @@
                                         tout en créant de nouvelles opportunités génératrices de revenu.
                                         </p>        
                                     </ul>
-                                    <a href="{{route("services")}}" class="btn btn-style-one">En savoir plus</a>
+                                    <a href="{{route("services")}}" class="btn btn-style-one"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -303,7 +303,7 @@
                                             et pour le cycle de vie des investissements dans le cloud.   
                                         </p>
                                     </ul>
-                                    <a href="{{route("services")}}" class="btn btn-style-one">En savoir plus</a>
+                                    <a href="{{route("services")}}" class="btn btn-style-one"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -328,7 +328,7 @@
                                    ANOU Consulting accompagne de bout en bout les grands groupes et les entreprises plus petites :
                                             de la recherche , à la mise en place 
                                             et au déploiement de solutions complètes d’intelligence artificielle.  </ul>
-                                    <a href="{{route("services")}}" class="btn btn-style-one">En savoir plus</a>
+                                    <a href="{{route("services")}}" class="btn btn-style-one"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -345,7 +345,7 @@
     <div class="section-title text-center">
             <h3>Nos
                 <span>Services</span>
-            </h3>
+            </h3> <br>
             <p>Nos consultants expérimentés vous accompagnent pour des projets ponctuels ou en mandats comme intervenant technologique tout au long de l’année</p>
         </div>
         <br>

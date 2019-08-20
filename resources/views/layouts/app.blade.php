@@ -44,7 +44,7 @@
             <div class="top-right">
                   <ul class="social-links">
                         <li>
-                              <a href="#">
+                              <a href="https://www.facebook.com/Anou-Consulting-112726333421947">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                               </a>
                         </li>
@@ -80,7 +80,7 @@
             <div class="logo">
                   <figure>
                         <a href="{{route("index")}}">
-                              <img src="images/ANOU.png" alt="" width="150">
+                              <img src="{{asset('images/ANOU.png')}}" alt="" width="150">
                         </a>
                   </figure>
             </div>
@@ -170,7 +170,7 @@
             <div class="footer-logo">
               <figure>
                 <a href="index.html">
-                  <img src="images/ANOU.png" alt="" width="325" height="150">
+                  <img src="{{asset('images/ANOU.png')}}" alt="" width="325" height="150">
                 </a>
               </figure>
             </div>

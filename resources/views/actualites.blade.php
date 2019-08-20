@@ -47,7 +47,7 @@
                   <br>
                 </div>
                              <div class="link-btn">
-                                <a href="single-blog.html" class="btn-style-one">En savoir plus</a>
+                                <a href="{{route("actualites")}}" class="btn-style-one">En savoir plus</a>
                               
                             </div>
             </div>

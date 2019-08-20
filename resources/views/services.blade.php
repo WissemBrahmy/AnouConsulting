@@ -32,7 +32,7 @@
                         <li><i class="fa fa-caret-right"></i>Production et infrastructure</li>
                         <li><i class="fa fa-caret-right"></i>Big Data</li>
                     </ul>
-                    <a href="{{route("contact")}}" class="btn btn-style-one">Nous Contactez</a>
+                    <a href="{{route("contact")}}" class="btn btn-style-one"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contactez-Nous </a>
                 </div>
             </div>
             <div class="col-md-6">

@@ -17,7 +17,7 @@ class NewsController extends Controller
     {
        
 
-        $news = DB::table('News')->paginate(1);
+        $news = DB::table('News')->paginate(3);
 
 
         return view("admin.news_admin",compact('news'));
@@ -32,6 +32,13 @@ class NewsController extends Controller
 
         return view("actualites",compact('news'));
     }
+
+    public function edit_news($id)
+    {
+        $news = News::where('id', $id)->firstOrFail();
+        return view('admin.edit_news', compact('news'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

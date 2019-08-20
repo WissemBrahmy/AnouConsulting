@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Postulation;
+use App\Offre;
 use App\Http\Controllers\Controller;
 class PostulationController extends Controller
 {
@@ -16,7 +17,13 @@ class PostulationController extends Controller
     {
         //
     }
-
+    public function show_candidatures($id)
+    {
+        $offre= Offre::where('id',$id)->first();
+        
+        $postulation = Postulation::where('id_offre',$offre->id)->orderBy('created_at','desc')->paginate(2);
+        return view('admin.show_candidatures')->with('postulation',$postulation)->with('offre',$offre);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -95,6 +102,10 @@ class PostulationController extends Controller
      */
     public function destroy($id)
     {
-        //
+        {
+            Postulation::destroy($id);
+            return redirect()->back()->with('message', 'candidature a été retirée');
+            //
+        }
     }
 }

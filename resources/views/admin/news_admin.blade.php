@@ -55,10 +55,11 @@
                   <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Supprimer
                   </button>
                 </form></td><td> &nbsp
-                  <button type="button" onclick='update({{ json_encode($n)}})' class="btn btn-style-one" data-toggle="modal" data-target="#updateModal">
-                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                         &nbsp <b> Modifier</b>
-                  </button></td></tr>
+                <a class="btn-style-one" href="{{route('edit_news', $n->id) }}">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Modifier</a>
+                  
+                  
+                  </td></tr>
                   <br>
                   </table>   
                 </div>

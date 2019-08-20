@@ -11,7 +11,7 @@
                 <li>
                     <a href="index.html">ACCUEIL &nbsp;/</a>
                 </li>
-                <li>Nos offres</li>
+                <li>Résultat de votre recherche</li>
             </ul>
         </div>
     </div>
@@ -66,10 +66,11 @@
                         <p>{{$o->region}}</p>
                         <p>{{$o->domaine}}||{{$o->niveau}}</p>
                         <p>{{$o->description}}</p>
-                         <button type="button" class="btn btn-style-one" style="background:blue" data-toggle="modal" data-target="#postule" >
+                        <!-- <button type="button" class="btn btn-style-one" style="background:blue" data-toggle="modal" data-target="#postule" >
                           
                          &nbsp <b> <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>&nbsp Postuler maintenant</b>
-                  </button>
+                  </button> -->
+                  <a class="btn-style-one" href="{{route('postule_offres', $o->id) }}"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>&nbsp Postuler maintenant</a>
                     </div>
                 </div>
                 
