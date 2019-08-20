@@ -15,7 +15,7 @@
 
 Route::get('/admin/login', 'Auth\LoginController@showLoginForm');
 
-Route::get('/admin/administrateur/ANOU1920/wmvzlsc/create_new/908anoudsi', 'Auth\RegisterController@showRegistrationForm');
+Route::get('/admin/register', 'Auth\RegisterController@showRegistrationForm');
 Route::resource('messages','MessageController');
 
 Route::resource('news','NewsController');
