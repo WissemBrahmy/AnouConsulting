@@ -4,7 +4,7 @@
 <BR>
 <div class="section-title text-center">
             <h4>LISTE DES  
-                <span>CANDIDATURES</span>
+                <span>CANDIDATURES SPONTANNEES</span>
             </h4>
             
      </div><br><br>
@@ -48,7 +48,7 @@
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-info" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
-                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Supprimer
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Retirer
                   </button>
                 </form>
             </div>

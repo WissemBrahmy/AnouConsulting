@@ -45,7 +45,7 @@
             @csrf
             @method('DELETE')
             <button class="btn btn-info" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
-            <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Supprimer
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Retirer
             </button>
           </form>
       </div>

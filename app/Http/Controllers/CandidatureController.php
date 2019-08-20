@@ -21,7 +21,7 @@ class CandidatureController extends Controller
     {
        
 
-        $candidatures= DB::table('Candidatures')->paginate(2);
+        $candidatures= DB::table('Candidatures')->orderBy('created_at','desc')->paginate(3);
 
 
         return view("admin.candidatures_admin",compact('candidatures'));

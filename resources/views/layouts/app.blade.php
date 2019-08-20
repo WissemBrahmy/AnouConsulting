@@ -170,7 +170,7 @@
             <div class="footer-logo">
               <figure>
                 <a href="index.html">
-                  <img src="{{asset('images/ANOU.png')}}" alt="" width="325" height="150">
+                  <img src="{{asset('images/ANOU.png')}}" alt="" width="325" height="150" >
                 </a>
               </figure>
             </div>

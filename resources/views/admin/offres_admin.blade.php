@@ -42,7 +42,7 @@
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
-                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Supprimer
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Retirer
                   </button>
                 </form></td><td> &nbsp
                
@@ -159,6 +159,30 @@
                                           <option>Développement web</option>
                                           <option>Développement mobile</option>
                                           <option>Réseau informatique</option>
+                                          <option>webmastering</option>
+                                          <option>Ingénierie de recherche</option>
+                                          <option>Réseau informatique</option>
+                                          <option>Webdesign</option>
+                                          <option>informatique embarqué</option>
+
+                                          <option>Conseil</option>
+                                          <option>Maintenance en informatique</option>
+                                        
+                                          <option>Rédacteur WEB</option>
+                                          <option>Cloud computing</option>
+                                          <option>Commercial Web</option>
+                                          <option>Architecture logiciels</option>
+                                          <option>Analyse de données</option>
+                                          <option>Sécurité</option>
+                                          <option>Gestion des projets informatiques</option>
+                                          <option>Assistance aux utilisateurs et formations</option>
+                                          <option>Infographie</option>
+                                          <option>BIG DATA</option>
+                                          <option>Analyse d'affaires</option>
+                                          <option>Conception</option>
+                                          <option>Administration systèmes</option>
+                                          <option>Autres</option>
+
                                           </select>
                                      </div> 
                               </div>
@@ -170,6 +194,7 @@
                                           <option>Niveau d'etude</option>
                                           <option>Bac</option>
                                           <option>BAC+3</option>
+                                          <option>BAC+4</option>
                                           <option>BAC+5</option>
                                           <option>Autres</option>
                                           </select>
@@ -195,7 +220,7 @@
                                           <option value="Rennes">Rennes</option>
                                           <option value="Strasbourg">Strasbourg</option>
                                           <option value="Toulouse">Toulouse</option>
-                                          <option value="Autre">Autre</option>
+                                          <option value="Autres">Autres</option>
                                           </select>
                                     </div>                     
                               </div>

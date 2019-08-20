@@ -374,6 +374,7 @@
                             •  Urbanisation des systèmes d’information <br>
                             •  Optimisation et amélioration de la performance des systèmes d’information <br>
                             •  Business Intelligence.
+                            <br><br><br>
             </p>
             <div class="ficon">
               <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
@@ -408,6 +409,8 @@
                                 •  Administration de bases données<br>
                                 •  Cloud / Stockage / Sauvegarde<br>
                                 •  Virtualisation
+                                <br><br><br><br><br><br><br><br><br><br><br>
+                                
             </p>
             <div class="ficon">
               <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
@@ -447,7 +450,8 @@
                     •  Scrum Master<br>
                     •  Architecte<br>
                     •  Analyste Développeur<br>
-                    •  Testeur<br>
+                    •  Testeur
+                    <br>
             </p>
             <div class="ficon">
               <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
@@ -468,7 +472,7 @@
             <br>
             <h4>Big Data </h4>
             <p>
-            Le Big Data étant un enjeu majeur pour nos clients, ANOU Consulting décide d’al louer une 
+            Le Big Data étant un enjeu majeur pour nos clients, ANOU Consulting décide d’allouer une 
                                 partie importante de ses efforts en recherche & développement afin de les aider à répondre à 
                                 cette triple problématique à laquelle ils sont confrontés.
                                 •  Volume de données important à traiter,
@@ -478,11 +482,11 @@
                                 partage de ces données).
                                 Nos consultants ont ainsi pu développer une expertise forte sur les domaines de compétences 
                                 suivants :
-                                •  Hadoop / MongoDB,
-                                •  Unix Server,
-                                •  PIG Latin,
-                                •  Javascript / HTML5 / JSon,
-                                •  Map Reduce /YARN / H2O OxData
+                                 Hadoop / MongoDB,
+                                 Unix Server,
+                                 PIG Latin,
+                                Javascript / HTML5 / JSon,
+                                 Map Reduce /YARN / H2O OxData <br>
                                 Fort de cette expertise, ANOU Consulting développe ainsi une offre ‘data exclusive’ annonceur 
                                 par annonceur dédiée à optimiser la comm unication digitale Multi-canal (pc, mobile & tablette, tv 
                                 connectée et demain objets connectés).

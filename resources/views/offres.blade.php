@@ -70,6 +70,30 @@
                                           <option>Développement web</option>
                                           <option>Développement mobile</option>
                                           <option>Réseau informatique</option>
+                                          <option>webmastering</option>
+                                          <option>Ingénierie de recherche</option>
+                                          <option>Réseau informatique</option>
+                                          <option>Webdesign</option>
+                                          <option>informatique embarqué</option>
+
+                                          <option>Conseil</option>
+                                          <option>Maintenance en informatique</option>
+                                        
+                                          <option>Rédacteur WEB</option>
+                                          <option>Cloud computing</option>
+                                          <option>Commercial Web</option>
+                                          <option>Architecture logiciels</option>
+                                          <option>Analyse de données</option>
+                                          <option>Sécurité</option>
+                                          <option>Gestion des projets informatiques</option>
+                                          <option>Assistance aux utilisateurs et formations</option>
+                                          <option>Infographie</option>
+                                          <option>BIG DATA</option>
+                                          <option>Analyse d'affaires</option>
+                                          <option>Conception</option>
+                                          <option>Administration systèmes</option>
+                                          <option>Autres</option>
+
                                           </select>
                                     </div>      
                               </div>
@@ -79,6 +103,7 @@
                                           <option>Niveau d'etude</option>
                                           <option>Bac</option>
                                           <option>BAC+3</option>
+                                          <option>BAC+4</option>
                                           <option>BAC+5</option>
                                           <option>Autres</option>
                                           </select>
@@ -102,6 +127,7 @@
                                           <option>Disponibilité</option>
                                           <option>Immédiate</option>
                                           <option>Préavis 1 mois</option>
+                                          <option>Préavis 2 mois</option>
                                           <option>Préavis 3 mois</option>
                                          
                                           </select>
@@ -173,9 +199,33 @@
                                     <div class="form-group">
                                           <select name="domaine">
                                           <option value="0" selected=selected >Tous les domaines</option>
-                                          <option value="Développement web">Développement web</option>
-                                          <option value="Développement mobile">Développement mobile</option>
-                                          <option value="Réseau informatique">Réseau informatique</option>
+                                          <option>Développement web</option>
+                                          <option>Développement mobile</option>
+                                          <option>Réseau informatique</option>
+                                          <option>webmastering</option>
+                                          <option>Ingénierie de recherche</option>
+                                          <option>Réseau informatique</option>
+                                          <option>Webdesign</option>
+                                          <option>informatique embarqué</option>
+
+                                          <option>Conseil</option>
+                                          <option>Maintenance en informatique</option>
+                                        
+                                          <option>Rédacteur WEB</option>
+                                          <option>Cloud computing</option>
+                                          <option>Commercial Web</option>
+                                          <option>Architecture logiciels</option>
+                                          <option>Analyse de données</option>
+                                          <option>Sécurité</option>
+                                          <option>Gestion des projets informatiques</option>
+                                          <option>Assistance aux utilisateurs et formations</option>
+                                          <option>Infographie</option>
+                                          <option>BIG DATA</option>
+                                          <option>Analyse d'affaires</option>
+                                          <option>Conception</option>
+                                          <option>Administration systèmes</option>
+                                          <option>Autres</option>
+
                                           </select>
                                      </div> 
                               </div>
@@ -211,7 +261,7 @@
                                           <option value="Rennes">Rennes</option>
                                           <option value="Strasbourg">Strasbourg</option>
                                           <option value="Toulouse">Toulouse</option>
-                                          <option value="Autre">Autre</option>
+                                          <option value="Autres">Autres</option>
                                           </select>
                                     </div>     
 

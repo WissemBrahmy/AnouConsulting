@@ -21,7 +21,7 @@ class MessageController extends Controller
     {
        
 
-        $messages= DB::table('Messages')->paginate(2);
+        $messages= DB::table('Messages')->orderBy('created_at','desc')->paginate(3);
 
 
         return view("admin.messages_admin",compact('messages'));

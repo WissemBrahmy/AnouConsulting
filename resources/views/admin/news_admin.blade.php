@@ -52,7 +52,7 @@
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
-                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Supprimer
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Retirer
                   </button>
                 </form></td><td> &nbsp
                 <a class="btn-style-one" href="{{route('edit_news', $n->id) }}">

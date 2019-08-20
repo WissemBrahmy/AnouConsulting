@@ -4,7 +4,7 @@
 <BR>
 
 <div class="container">
-Liste des candidatures reçues  à propos de l'offre <b> {{  $offre->title}} </b>
+<H4> Liste des candidatures reçues  à propos de l'offre: &nbsp  {{  $offre->title}} </h4>
 <br>
     <div class="row">
     <div class="contact-form responsive text-center">
@@ -23,9 +23,11 @@ Liste des candidatures reçues  à propos de l'offre <b> {{  $offre->title}} </b
         <div class="panel panel-default" >
           <div class="align-center">
           <div class="panel-body">
-                            •  Nom  &nbsp {{$c->nom}}  <br>
-                            •  Email &nbsp {{$c->email}}  <br>
-                            •  Télécharger cv <a href="{{$c->cv}}" > <img src="{{asset('images/pdf.png')}}" width="20" height="20"></a> <br>
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp  Nom  &nbsp {{$c->nom}}  <br>
+                             <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Email &nbsp {{$c->email}}  <br>
+                             <i class="fa fa-file-word-o" aria-hidden="true"></i>&nbsp Lettre de motivation <br>
+                             &nbsp {{$c->lm}}  <br>
+                             <i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp Télécharger cv <a href="{{$c->cv}}" > <img src="{{asset('images/pdf.png')}}" width="20" height="20"></a> <br>
         
            
             </div>
