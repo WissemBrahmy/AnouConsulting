@@ -9,7 +9,7 @@
             <h1>ACCUEIL</h1>
             <ul class="title-menu clearfix">
                 <li>
-                    <a href="index.html">ADMIN &nbsp;/</a>
+                    <a href="{{route("home_admin")}}">ADMIN &nbsp;/</a>
                 </li>
                 <li>Accueil</li>
             </ul>
@@ -23,7 +23,10 @@
 
      <section class="team-section section">
     <div class="container">
-       
+    <div class="section-title text-center">
+    <a class="btn-style-one" href="{{route("reg_admin")}}">
+                <i class="fa fa-plus" aria-hidden="true"></i>&nbsp Nouveau admin</a>
+                </div>
         <div class="row">
           
             <div class="col-md-4 col-sm-6 col-xs-12">

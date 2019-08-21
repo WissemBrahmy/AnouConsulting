@@ -16,7 +16,6 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        
     }
 
     /**
@@ -26,11 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \URL::forceScheme('https'); 
-
-        $table = config('admin.extensions.config.table', 'admin_config');
-        if (Schema::hasTable($table)) {
-            Config::load();
-        }
+        Schema::defaultStringLength(191);
     }
 }

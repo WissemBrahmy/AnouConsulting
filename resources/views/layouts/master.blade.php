@@ -81,13 +81,13 @@
             <div class="right-side">
             <h3>Admin Dashboard</h3>
             <br>
-                  <h6>anouConsulting</h6>
-           
+                  
+                        <h4><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp {{ Auth::user()->name }}</h4>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             
-                                            <b> <i class="fa fa-lock" aria-hidden="true"></i>    Déconnexion </b>
+                                            <b> <i class="fa fa-lock" aria-hidden="true"></i>&nbsp&nbsp     Déconnexion </b>
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

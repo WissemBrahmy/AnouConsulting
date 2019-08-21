@@ -124,7 +124,7 @@ class HomeController extends Controller
             $count=Offre::count();
         }else{
         
-            $offres=Offre::where("region",$region)->orderBy('id','desc')->paginate(2);
+            $offres=Offre::where("region",$region)->orderBy('id','desc')->paginate(3);
         $count=Offre::where("region",$region)->count();
         
         }
@@ -136,12 +136,13 @@ class HomeController extends Controller
         if(($domaine!="0")&&($niveau=="0")){
         
             if($region=="0"){
-            $offres=Offre::where("domaine","LIKE",$domaine)->orderBy('id','desc')->paginate(2);
+            $offres=Offre::where("domaine","LIKE",$domaine)->orderBy('id','desc')->paginate(3);
         
-             $count=Offre::where("domaine","LIKE",$domaine)->count();}
+             //$count=Offre::where("domaine","LIKE",$domaine)->count();
+            }
              else{
-            $offres=Offre::where("region",$type)->where("domaine","LIKE",$domaine)->orderBy('id','desc')->paginate(2);
-            $count=Offre::where("region",$type)->where("domaine","LIKE",$domaine)->count();
+            $offres=Offre::where("region",$type)->where("domaine","LIKE",$domaine)->orderBy('id','desc')->paginate(3);
+            //$count=Offre::where("region",$type)->where("domaine","LIKE",$domaine)->count();
         }
         
         }
@@ -151,11 +152,12 @@ class HomeController extends Controller
         /* 3eme if */
         if(($domaine=="0")&&($niveau!="0")){
                if($region=="0"){
-            $offres=Offre::where("niveau",$niveau)->orderBy('id','desc')->paginate(2);
-            $count=Offre::where("niveau",$niveau)->count();}
+            $offres=Offre::where("niveau",$niveau)->orderBy('id','desc')->paginate(3);
+            //$count=Offre::where("niveau",$niveau)->count();
+        }
             else{
-            $offres=Offre::where("region",$region)->where("niveau",$niveau)->orderBy('id','desc')->paginate(2);
-                $count=Offre::where("region",$region)->where("niveau",$niveau)->count();
+            $offres=Offre::where("region",$region)->where("niveau",$niveau)->orderBy('id','desc')->paginate(3);
+               // $count=Offre::where("region",$region)->where("niveau",$niveau)->count();
             }
         }
         /* end 3eme if */
@@ -164,21 +166,23 @@ class HomeController extends Controller
         if(($domaine!="0")&&($niveau!="0")){
         
                if($region=="0"){
-            $offres=Offre::where("domaine","LIKE",$domaine)->where("niveau",$niveau)->orderBy('id','desc')->paginate(2);
-            $count=Offre::where("domaine","LIKE",$domaine)->where("niveau",$niveau)->count();}
+            $offres=Offre::where("domaine","LIKE",$domaine)->where("niveau",$niveau)->orderBy('id','desc')->paginate(3);
+            //$count=Offre::where("domaine","LIKE",$domaine)->where("niveau",$niveau)->count();
+        }
             else{
-            $offres=Offre::where("region",$region)->where("domaine","LIKE",$domaine)->where("niveau",$niveau)->orderBy('id','desc')->paginate(2);
-                $count=Offre::where("region",$region)->where("domaine","LIKE",$domaine)->where("niveau",$niveau)->count();}
+            $offres=Offre::where("region",$region)->where("domaine","LIKE",$domaine)->where("niveau",$niveau)->orderBy('id','desc')->paginate(3);
+                //$count=Offre::where("region",$region)->where("domaine","LIKE",$domaine)->where("niveau",$niveau)->count();
+            }
         
         }
         
-        return view("liste_offres")->with("offres",$offres)->with("count",$count)->with("niveau",$niveau)->with("region",$region)->with("region",$region);
+        return view("liste_offres")->with("offres",$offres)->with("niveau",$niveau)->with("region",$region)->with("region",$region);
         }
 
          /* end 4eme if */
        
 
 
-   
+    
 
 }

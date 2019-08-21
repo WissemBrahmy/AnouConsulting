@@ -66,7 +66,7 @@
                         <div class="section-title text-center">
                         <figure>
                                 <a href="">
-                                    <img src="images/ANOU.png" alt="" width="150">
+                                    <img src="{{asset('images/ANOU.png')}}" alt="" width="150">
                                 </a>
                         </figure>
                         </div>
@@ -75,7 +75,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __(' Adresse E-Mail') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __(' Adresse email') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control main @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
