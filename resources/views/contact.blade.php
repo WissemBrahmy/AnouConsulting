@@ -72,6 +72,7 @@
                 </div>
                 <!-- address end -->
             </div>
+            <div class="contact-area style-one">
             <div class="col-md-8">
           
                 <div class="contact-form">
@@ -104,7 +105,7 @@
                             <textarea name="message" rows="15" class="form-control main" placeholder="Votre message"></textarea>
                         </div>
                         <!-- submit button -->
-                        <div class="col-md-12 text-right">
+                        <div class="col-md-5 text-right">
                             <button class="btn btn-style-one" type="submit"><i class="fa fa-send" aria-hidden="true"></i>&nbsp ENVOYER MESSAGE</button>
                         </div>
                     </form>
@@ -112,6 +113,7 @@
                 </div>
             </div>
         </div>
+       </div>
        </div>
     <!-- container end -->
 </section>

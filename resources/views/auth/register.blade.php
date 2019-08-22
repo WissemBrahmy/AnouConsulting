@@ -59,7 +59,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-primary">
-                <div class="panel-heading">{{ __('AJOUTER ADMINISTRATEUR') }}</div>
+                <div class="panel-heading">{{ __('AJOUTER UN NOUVEAU ADMINISTRATEUR') }}</div>
 
                 <div class="panel-body">
                 <div class="section-title text-center">
@@ -72,6 +72,7 @@
                         <br>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+                        <input id="role" type="hidden"  name="role" value="1">
 
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>

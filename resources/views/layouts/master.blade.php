@@ -135,6 +135,9 @@
                         <li class="active">
                               <a href="{{route("index_messages")}}">ESPACE MESSAGES</a>
                         </li>
+                        <li class="active">
+                              <a href="{{route("liste_admins")}}">ESPACE ADMINS</a>
+                        </li>
                       
                   </ul>
             </div>

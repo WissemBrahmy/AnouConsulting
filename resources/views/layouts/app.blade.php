@@ -190,7 +190,10 @@
               <li class="item">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <p>+33 1 73 70 86 97  </p>
-               <p> +33 6 36 34 95 40</p>
+                
+              </li>
+              <li class="item">
+              <i class="fa fa-phone" aria-hidden="true"></i><p> +33 6 36 34 95 40</p>
               </li>
             </ul>
             <ul class="list-inline social-icons">

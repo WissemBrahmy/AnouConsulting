@@ -61,3 +61,5 @@ Route::delete('admin/candidature/{id}',['middleware'=>'auth','uses'=>'Candidatur
 Route::get('admin/index_messages',['middleware'=>'auth','uses'=>'MessageController@index_messages'] )->name('index_messages');
 Route::delete('admin/messages/{id}',['middleware'=>'auth','uses'=>'MessageController@destroy'])->name('messages_destroy');
 Route::delete('admin/postulation/retirer/{id}',['middleware'=>'auth','uses'=>'PostulationController@destroy'])->name('postulation_destroy');
+Route::get('admin/liste_admins',['middleware'=>'auth','uses'=>'AdminController@getallAdmin'] )->name('liste_admins');
+Route::delete('admin/admins/{id}',['middleware'=>'auth','uses'=>'AdminController@destroy'])->name('admin_destroy');

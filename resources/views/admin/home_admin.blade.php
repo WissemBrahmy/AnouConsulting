@@ -62,7 +62,43 @@
         </div>
     </div>
 </section>
-     
+<div class="x_panel" >
+          <canvas  id="myChart"></canvas>
+
+</div>
+          <script  src="{{asset('js/Chart.min.js')}}" ></script>
+          <script type="text/javascript">
+          var ctx = document.getElementById('myChart').getContext('2d');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [ "Candidatures",'Postulations',"Messages"],
+      datasets: [
+        {
+          label: "Count ",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+          data: [{{$postulation}},{{$candidatures}},{{$messages}}]
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    },
+      legend: { display: false },
+      title: {
+        display: true,
+        text: ' Candidatures spontannées vs Postulation aux offres vs Messages: {{date("Y-m-d")}}'
+      }
+    }
+});
+
+          </script>
 
 @endsection
 
