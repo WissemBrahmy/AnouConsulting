@@ -18,7 +18,7 @@ class CreatePostulationsTable extends Migration
             $table->string('nom');
             $table->string('email');
             $table->string('cv');
-            $table->string('lm',2000)->change();
+            $table->string('lm',3000);
                $table->unsignedInteger('id_offre')
                    ->refrences('id')
                    ->on('offres');

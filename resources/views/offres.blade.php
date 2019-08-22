@@ -293,11 +293,12 @@
                     
                     <div class="contents text-center">
                     <h4> OFFRE N° {{$o->id}}</h4>
-                        <p>{{$o->title}}</p>
-                        <p>{{$o->region}}</p>
-                        <p>{{$o->domaine}}||{{$o->niveau}}</p>
-                        <p>{{$o->description}}</p>
-                     
+                        <h6>{{$o->title}}</h6>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp Region: &nbsp {{$o->region}}</p>
+                        <p>{{$o->domaine}} &nbsp|| &nbsp {{$o->niveau}}</p>
+                        <p>{{$o->description}}</p> 
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp {{\Carbon\Carbon::parse($o->created_at)->diffForHumans()}}
+                     <br>
                   <a class="btn-style-one" href="{{route('postule_offres', $o->id) }}"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>&nbsp Postuler maintenant</a>
                     </div>
                 </div>
@@ -311,7 +312,7 @@
    </div>
    @else
   <p class="alert alert-warning">
-        Pas des offres
+        Aucune Offre disponible !
         </p>
  @endif
     

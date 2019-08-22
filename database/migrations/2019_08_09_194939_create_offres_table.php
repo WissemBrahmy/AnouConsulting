@@ -19,7 +19,7 @@ class CreateOffresTable extends Migration
             $table->string('region')->nullable();
             $table->string('domaine')->nullable();
             $table->string('niveau')->nullable();
-            $table->string('description',2000)->change();
+            $table->string('description',3000);
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@
                   @method('PUT')
                               <div class="row">
                               
-                             
+                              <input type="hidden"  name="id" value="{{$offre->id}}" >
                              <div class="col-md-4 col-sm-12 col-xs-12">
                                <input type="title" id="title" name="title" value="{{$offre->title}}" class="form-control main" required>
                              </div>

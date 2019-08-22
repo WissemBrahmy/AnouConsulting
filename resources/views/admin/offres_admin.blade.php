@@ -118,7 +118,7 @@
    </div>
    @else
   <p class="alert alert-warning">
-        Pas des offres
+        Aucune offre !
         </p>
  @endif
 </section>

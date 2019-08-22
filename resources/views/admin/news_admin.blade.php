@@ -75,12 +75,12 @@
                                 </div>
         </div>
        
-              @else
+@else
   
   
   
   <p class="alert alert-warning">
-        Pas d'actualités
+        Aucune actualité !
         </p>
  @endif
 
@@ -145,78 +145,6 @@
 </div>
 <!-- end The add modal -->
 
-<!-- The edit modal -->
-<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="modalLabellarge" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
 
-<div class="modal-header ">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-<h4 class="modal-title" id="modalLabelSmall">Modifier actualité</h4>
-</div>
-
-<div class="modal-body">
-<div class="container">
-            <div class="row">
-                  
-                  <div class="contact-area style-one">
-                        
-                        <form  action="{{ route('news_update', $n->id)}}" method="post" enctype="multipart/form-data">
-                       
-                        {{ csrf_field() }}
-                         @method('PUT')
-                              <div class="row">
-                             <div class="col-md-8 col-sm-12 col-xs-12">
-                           
-                               <input type="title" name="title" id="title" class="form-control main"  required>
-                             </div>
-                               
-                             <div class="col-xs-8">
-                                    <div class="form-group">
-                                      Modifier la photo <input type="File" id="image" name="image"   class="input-lg">
-                                    </div>
-                             </div>
-                             
-                              <div class="col-md-8 col-sm-12 col-xs-12">
-                            <textarea name="content" id="content"  rows="15" class="form-control main" >{{$n->content}}</textarea>
-                        </div>
-                             </div>
-                            
-                              <br>
-                             <div class="row">
-                              <div class="col-md-3  ">
-                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Modifier actualité</button>
-                            
-                        </div>
-                        </div>
-                        </form>
-                  </div>                      
-                  </div> 
-            </div>                    
-            </div>
-
-</div>
-
-</div>
-</div>
-<script type="text/javascript">
-
-		function update(data) {
-			console.log(data);
-		
-			$("#updateModal #title").val(data.title);
-                  $("#updateModal #image").val(data.image);
-                  $("#updateModal #content").val(data.content);
-                  $("#updateModal #id").val(data.id);
-                 
-			
-			$('#updateModal').modal();
-
-
-
-		}
-	</script>
 @endsection
 

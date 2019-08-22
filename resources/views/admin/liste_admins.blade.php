@@ -21,11 +21,11 @@
         @if(count($admins))
 
             @foreach($admins as $o)
-            <div class="col-md-10 col-sm-6 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="team-member">
                     
                     <div class="contents text-center">
-                        <h4 class="team-member"> Admin ID {{$o->id}}</h4>
+                        <h4 > Admin ID {{$o->id}}</h4>
                         <p>{{$o->name}}</p>
                         <p>{{$o->email}}</p>
                         <p>Ajouté le:&nbsp {{$o->created_at}}</p>
@@ -44,7 +44,7 @@
     </div>
    @else
   <p class="alert alert-warning">
-        Pas des admins
+        Aucune  administrateur ajouté !
         </p>
     @endif
     </section>

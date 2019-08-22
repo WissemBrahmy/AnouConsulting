@@ -37,7 +37,7 @@ class OffreController extends Controller
     }
     public function edit_offre($id)
     {
-        $offre = Offre::where('id', $id)->firstOrFail()->orderBy('created_at','desc');
+        $offre = Offre::where('id', $id)->firstOrFail();
         return view('admin.edit_offre', compact('offre'));
     }
     /**

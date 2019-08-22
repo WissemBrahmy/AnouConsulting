@@ -47,7 +47,7 @@
                   <br>
                 </div>
                              <div class="link-btn">
-                                <a href="{{route("actualites")}}" class="btn-style-one">En savoir plus</a>
+                                <a href="{{route("actualites")}}" class="btn-style-one"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp En savoir plus</a>
                               
                             </div>
             </div>
@@ -57,7 +57,7 @@
     @endforeach   
     @else
   <p class="alert alert-warning">
-        Pas d'actualités
+       Aucune actualité !
         </p>
  @endif
 </section>

@@ -18,33 +18,35 @@
 <div class="container">
             <div class="row">
             <BR>
-            <div class="col-md-12 col-md-offset-2">
             <div class="panel panel-INFO" >
              
-                <br>
-                <div class="panel-body">
-               
-                  <div class="contact-area style-one">
-                  <div class="col-md-8 ">
-                  <div class="panel panel-primary" >
-                        
-                        <br>
-                        <div class="panel-body">
-                    <div class="section-title ">
-                    <h4>Postuler pour l'offre :  
-                        <span>{{$offre->title}}</span>
-                    </h4>
-                    <br>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Region: {{$offre->region}} &nbsp--&nbsp
-                    <i class="fa fa-desktop" aria-hidden="true"></i>&nbsp {{$offre->domaine}} </p>
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp Niveau d'etude demandé: {{$offre->niveau}}</p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp <b>Description:</b><br>
-                         <p>{{$offre->description}}</p>
-                        
-                        </div>                    
-            </div></div>
-            </div>
-             <br><br><br><br><br><br><br><br><br><br>
+             <br>
+             <div class="panel-body">
+            
+               <div class="contact-area style-one">
+               <div class="col-md-12 ">
+               <div class="panel panel-primary" >
+                     
+                     <br>
+                     <div class="panel-body">
+                 <div class="section-title ">
+                 <div class="section-title text-center">
+                 <h4>Postuler pour l'offre :  
+                     <span>{{$offre->title}}</span>
+                 </h4>
+                 <br>
+                 <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Region: {{$offre->region}} &nbsp--&nbsp
+                 <i class="fa fa-desktop" aria-hidden="true"></i>&nbsp {{$offre->domaine}} </p>
+                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp Niveau d'etude demandé: {{$offre->niveau}}</p>
+                     <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp <b>Description:</b><br>
+                      <p>{{$offre->description}}</p>
+                     </div>
+                     </div>                    
+         </div></div>
+         </div>
+            <div class="col-md-12 col-md-offset-2">
+          
+             
                   <form  action="{{ route('postulation.store') }}" method="post" enctype="multipart/form-data">
                   {{ csrf_field() }}
                             <input type="hidden"  name="id_offre" value="{{$offre->id}}">

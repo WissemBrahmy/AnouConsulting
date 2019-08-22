@@ -68,7 +68,7 @@
 
 
           <p class="alert alert-warning">
-                Pas des messages
+               Aucun message !
                 </p>
         @endif
 

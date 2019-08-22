@@ -71,7 +71,7 @@
   
   
                 <p class="alert alert-warning">
-                      Pas d'actualités
+                      Aucune  candidature
                       </p>
               @endif
 

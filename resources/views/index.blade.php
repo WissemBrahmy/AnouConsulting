@@ -377,7 +377,7 @@
                             <br><br><br>
             </p>
             <div class="ficon">
-              <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
+              <a href="{{route("services")}}" class="btn btn-default" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp En savoir plus</a>
             </div>
             </div>
           </div>
@@ -413,7 +413,7 @@
                                 
             </p>
             <div class="ficon">
-              <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
+              <a href="{{route("services")}}" class="btn btn-default" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp  En savoir plus</a>
             </div>
             </div>
           </div>
@@ -454,7 +454,7 @@
                     <br>
             </p>
             <div class="ficon">
-              <a href="{{route("services")}}" class="btn btn-default" role="button">En savoir plus</a>
+              <a href="{{route("services")}}" class="btn btn-default" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp En savoir plus</a>
             </div>
           </div>
         </div>
@@ -492,7 +492,7 @@
                                 connectée et demain objets connectés).
             </p>
             <div class="ficon">
-              <a href="#" class="btn btn-default" role="button">En savoir plus</a>
+              <a href="#" class="btn btn-default" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp En savoir plus</a>
             </div>
           </div>
         </div>

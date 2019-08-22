@@ -53,15 +53,14 @@
                         <div class="team-member">
                             
                             <div class="contents text-center">
-                            <h4> OFFRE N° {{$o->id}}</h4>
-                                <p>{{$o->title}}</p>
-                                <p>{{$o->region}}</p>
-                                <p>{{$o->domaine}}||{{$o->niveau}}</p>
-                                <p>{{$o->description}}</p>
-                                <!-- <button type="button" class="btn btn-style-one" style="background:blue" data-toggle="modal" data-target="#postule" >
-                                
-                                &nbsp <b> <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>&nbsp Postuler maintenant</b>
-                        </button> -->
+                                <h4> OFFRE N° {{$o->id}}</h4>
+                                <h6>{{$o->title}}</h6>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp Region: &nbsp {{$o->region}}</p>
+                                <p>{{$o->domaine}} &nbsp|| &nbsp {{$o->niveau}}</p>
+                                <p>{{$o->description}}</p><br>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp {{\Carbon\Carbon::parse($o->created_at)->diffForHumans()}}
+                                <br>
+                                    
                         <a class="btn-style-one" href="{{route('postule_offres', $o->id) }}"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>&nbsp Postuler maintenant</a>
                             </div>
                         </div>
@@ -72,15 +71,18 @@
                                     {{$offres->links()}}
                                 </div>
             </div>
-   @else
-        <p class="alert alert-warning col-md-8">
-        Pas  des offres associées à cette recherche  
-        </p>
-   @endif
+
+  
     
            </div>
         
       </div>
+       @else
+        <p class="alert alert-warning col-md-8">
+        Pas  d'offres associées à votre recherche  
+        </p>
+        
+   @endif
     </div>
 </div>
 

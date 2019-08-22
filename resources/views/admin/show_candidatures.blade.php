@@ -63,10 +63,10 @@
   
   
                 <p class="alert alert-warning">
-                      Pas des candidatures jusqu'à maintenant
+                      Pas de candidatures jusqu'à maintenant
                       </p>
               @endif
-       
+       </div>
         </div>
         </div>
   @endsection
