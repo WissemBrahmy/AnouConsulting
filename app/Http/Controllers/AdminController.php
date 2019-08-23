@@ -19,7 +19,27 @@ class AdminController extends Controller
 
         return view('admin.liste_admins')->with("admins",$admins);
        }
+
+       public function edit_admin()
+       {
+           return view('admin.edit_profil');
+       }
+       public function edit_profil(Request $request)
+       {
+  
+        $admin = Admin::find(Auth::user()->id);
+      $admin->name = $request->name;
+      $admin->email = $request->email;
       
+          $admin->password= bcrypt($request->password);
+      
+
+      $admin->save();
+      return redirect('admin/edit')->with('success', "informations sont modifiées avec success.");
+
+  }
+ 
+       
     
     public function destroy($id)
     {

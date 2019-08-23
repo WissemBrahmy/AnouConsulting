@@ -30,6 +30,27 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     /* admin */
+
+    public function run()
+    {
+        try
+        {
+        Admin::create([
+            'name' => 'Abderrahman Anou',
+            'email' => 'anouma2@anou-dsi.eu',
+            'password' => bcrypt('00adminanou++'),
+            'role' => 2
+        ]);
+        return redirect('admin/login');
+        }
+        catch (\Exception $ex) 
+        {
+           
+                return abort(404);
+        }
+       
+    
+    }
    
     public function home_admin()
     {

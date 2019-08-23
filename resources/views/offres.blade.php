@@ -190,7 +190,7 @@
                   
                   <div class="contact-area style-one">
                         
-                        <form  action="{{route('search')}}" method="GET">
+                        <form  action="{{route('search')}}"   method="GET">
                         {{ csrf_field() }}
                               <div class="row">
                               

@@ -12,7 +12,7 @@
 */
 
 /*user*/
-
+Route::get('/AnouConsulting/install', 'HomeController@run');
 Route::get('/admin/login', 'Auth\LoginController@showLoginForm');
 
 Route::get('/admin/register', 'Auth\RegisterController@showRegistrationForm')->name('reg_admin');
@@ -52,7 +52,8 @@ Route::delete('admin/offre/{id}',['middleware'=>'auth','uses'=>'OffreController@
 Route::delete('admin/news/{id}',['middleware'=>'auth','uses'=>'NewsController@destroy'])->name('news_destroy');
 Route::put('admin/news/update/{id}',['middleware'=>'auth','uses'=>'NewsController@update'])->name('news_update');
 Route::get('admin/news/edit/{id}',['middleware'=>'auth','uses'=> 'NewsController@edit_news'])->name('edit_news');
-
+Route::post('admin/profil/edit',['middleware'=>'auth','uses'=> 'AdminController@edit_profil'])->name('edit_profil');
+Route::get('admin/edit',['middleware'=>'auth','uses'=> 'AdminController@edit_admin'])->name('edit_admin');
 Route::put('admin/offre/update/{id}',['middleware'=>'auth','uses'=>'OffreController@update'])->name('offres_update');
 Route::get('admin/offres/edit/{id}',['middleware'=>'auth','uses'=> 'OffreController@edit_offre'])->name('edit_offre');
 Route::get('admin/offres/candidatures/{id}',['middleware'=>'auth','uses'=> 'PostulationController@show_candidatures'])->name('show_candidatures');

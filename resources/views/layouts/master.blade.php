@@ -82,19 +82,34 @@
             <h3>Admin Dashboard</h3>
             <br>
                   
-                        <h4><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp {{ Auth::user()->name }}</h4>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            
-                                            <b> <i class="fa fa-lock" aria-hidden="true"></i>&nbsp&nbsp     Déconnexion </b>
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
+                        <h4></h4>
+                                        
                                     
-                
+                                        <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp {{ Auth::user()->name }}
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+  <li><a href="{{route("edit_admin")}}"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp Modifier informations</a></li>
+  <li><a href="{{route("liste_admins")}}"><i class="fa fa-users" aria-hidden="true"></i>&nbsp Liste  des administrateurs</a></li>
+    
+  <li><a href="{{route("reg_admin")}}"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp Ajouter nouveau admin</a></li>
+    
+    <li role="separator" class="divider"></li>
+   
+
+    <li><a href="{{ route('logout') }}"
+      onclick="event.preventDefault();
+      document.getElementById('logout-form').submit();"                                      
+     <b> <i class="fa fa-lock" aria-hidden="true"></i>&nbsp&nbsp     Déconnexion </b>
+     </a>
+      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+      {{ csrf_field() }}
+      </form>
+      </li>
+  </ul>
+</div>
             </div>
       </div>
 </section>
@@ -135,9 +150,7 @@
                         <li class="active">
                               <a href="{{route("index_messages")}}">ESPACE MESSAGES</a>
                         </li>
-                        <li class="active">
-                              <a href="{{route("liste_admins")}}">ESPACE ADMINS</a>
-                        </li>
+                       
                       
                   </ul>
             </div>
