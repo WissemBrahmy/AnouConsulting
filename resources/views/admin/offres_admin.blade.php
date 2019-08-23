@@ -154,7 +154,7 @@
                                
                                   <div class="col-md-4 col-sm-12 col-xs-12">
                                     <div class="form-group">
-                                          <select name="domaine" >
+                                          <select name="domaine" required>
                                           <option>Domaine</option>
                                           <option>Développement web</option>
                                           <option>Développement mobile</option>
@@ -190,7 +190,7 @@
                               <div class="row">
                               <div class="col-md-4 col-sm-12 col-xs-12"> 
                                     <div class="form-group">
-                                          <select name="niveau">
+                                          <select name="niveau" required>
                                           <option>Niveau d'etude</option>
                                           <option>Bac</option>
                                           <option>BAC+3</option>
@@ -202,7 +202,7 @@
                               </div>
                               <div class="col-md-4 col-sm-12 col-xs-12"> 
                                     <div class="form-group">
-                                          <select name="region">
+                                          <select name="region" required>
                                           <option>Region</option>
                                           <option value="Paris">Paris</option>
                                           <option value="Lille">Lille</option>
@@ -227,7 +227,7 @@
                               </div>
                               <div class="row">
                               <div class="col-md-8 col-sm-12 col-xs-12">
-                            <textarea name="description" rows="15" class="form-control main" placeholder="Décrire l'offre"></textarea>
+                            <textarea name="description" rows="15" class="form-control main" placeholder="Décrire l'offre" required></textarea>
                         </div>
                              </div>
                               <div>

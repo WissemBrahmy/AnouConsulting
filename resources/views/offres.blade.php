@@ -99,7 +99,7 @@
                               </div>
                               <div class="col-md-6 col-sm-12 col-xs-12"> 
                                     <div class="form-group">
-                                          <select name="niveau">
+                                          <select name="niveau" required>
                                           <option>Niveau d'etude</option>
                                           <option>Bac</option>
                                           <option>BAC+3</option>
@@ -123,7 +123,7 @@
                              </div>
                              <div class="col-md-6 col-sm-12 col-xs-12"> 
                                     <div class="form-group">
-                                          <select name="disponibilite">
+                                          <select name="disponibilite" required>
                                           <option>Disponibilité</option>
                                           <option>Immédiate</option>
                                           <option>Préavis 1 mois</option>
@@ -135,7 +135,7 @@
                               </div>
                               <div class="col-md-6 col-sm-12 col-xs-12"> 
                                     <div class="form-group">
-                                          <select name="contrat">
+                                          <select name="contrat" required>
                                           <option>Type de contrat</option>
                                           <option>CDI</option>
                                           <option>CDD</option>

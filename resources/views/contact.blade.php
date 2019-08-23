@@ -102,7 +102,7 @@
                         </div>
                         <!-- message -->
                         <div class="col-md-12">
-                            <textarea name="message" rows="15" class="form-control main" placeholder="Votre message"></textarea>
+                            <textarea name="message" rows="15" class="form-control main" placeholder="Votre message" required></textarea>
                         </div>
                         <!-- submit button -->
                         <div class="col-md-5 text-right">

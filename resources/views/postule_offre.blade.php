@@ -62,21 +62,21 @@
                               
                               <div class="col-xs-8">
                                     <div class="form-group">
-                                    Votre cv <input type="File" id="cv" name="cv"   class="input-lg">
+                                    Votre cv <input type="File" id="cv" name="cv"   class="input-lg" required>
                                     </div>
                               </div>
                               </div>
                             
                               <div class="row">
                               <div class="col-md-8 col-sm-12 col-xs-12">
-                            <textarea name="lm" rows="15" class="form-control main" placeholder="Votre lettre de motivation"></textarea>
+                            <textarea name="lm" rows="15" class="form-control main" placeholder="Votre lettre de motivation" required></textarea>
                         </div>
                              </div>
                               <div>
                               <br>
                              <div class="row">
                               <div class="col-md-3 ">
-                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Postuler</button>
+                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true" ></i>&nbsp Postuler</button>
                             
                         </div>
                         </div>

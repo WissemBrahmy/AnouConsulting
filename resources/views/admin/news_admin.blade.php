@@ -122,7 +122,7 @@
                              </div>
                              
                               <div class="col-md-8 col-sm-12 col-xs-12">
-                            <textarea name="content" rows="15" class="form-control main" placeholder="Décrire le contenue"></textarea>
+                            <textarea name="content" rows="15" class="form-control main" placeholder="Décrire le contenue" required></textarea>
                         </div>
                              </div>
                             
