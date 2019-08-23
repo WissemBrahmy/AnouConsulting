@@ -98,7 +98,7 @@
                         </div>
                         <!-- phone -->
                         <div class="col-md-12">
-                            <input type="text" name="tel" class="form-control main" placeholder="Téléphone" required>
+                            <input type="number" name="tel" class="form-control main" placeholder="Téléphone" minlength="8" required>
                         </div>
                         <!-- message -->
                         <div class="col-md-12">

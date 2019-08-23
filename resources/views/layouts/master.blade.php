@@ -91,7 +91,7 @@
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
-  <li><a href="{{route("edit_admin")}}"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp Modifier informations</a></li>
+  <li><a href="{{route("edit_admin")}}"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp Modifier mes informations</a></li>
   <li><a href="{{route("liste_admins")}}"><i class="fa fa-users" aria-hidden="true"></i>&nbsp Liste  des administrateurs</a></li>
     
   <li><a href="{{route("reg_admin")}}"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp Ajouter nouveau admin</a></li>

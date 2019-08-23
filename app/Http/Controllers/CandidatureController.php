@@ -66,7 +66,7 @@ class CandidatureController extends Controller
 
         }
         $candidature->save();
-        return redirect()->route("offres")->with('message','candidature envoyée');
+        return redirect()->route("offres")->with('message','candidature a été envoyée');
     }
 
     /**

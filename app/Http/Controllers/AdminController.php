@@ -35,7 +35,7 @@ class AdminController extends Controller
       
 
       $admin->save();
-      return redirect('admin/edit')->with('success', "informations sont modifiées avec success.");
+      return redirect('admin/edit')->with('success', "informations ont été modifiées avec success.");
 
   }
  

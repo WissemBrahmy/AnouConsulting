@@ -47,7 +47,7 @@ class MessageController extends Controller
         $data=$request->all();
         $message=new Message($data);
         $message->save();
-        return redirect()->route("contact")->with('message','message envoyée');
+        return redirect()->route("contact")->with('message','Message a été envoyé');
     }
 
     /**
@@ -95,7 +95,7 @@ class MessageController extends Controller
         $messages = Message::findOrFail($id);
         $messages->delete();
 
-        return redirect('admin/index_messages')->with('message', 'message a été supprimé');
+        return redirect('admin/index_messages')->with('message', 'Message a été supprimé');
     
     }
 }

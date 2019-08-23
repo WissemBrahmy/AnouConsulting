@@ -56,7 +56,7 @@ class PostulationController extends Controller
         }
         
         $postulation->save();
-        return redirect()->route("offres")->with('message','Postulation effectuée');
+        return redirect()->route("offres")->with('message','Candidature a été envoyée');
   
     }
 
@@ -104,7 +104,7 @@ class PostulationController extends Controller
     {
         {
             Postulation::destroy($id);
-            return redirect()->back()->with('message', 'candidature a été retirée');
+            return redirect()->back()->with('message', 'Candidature a été retirée');
             //
         }
     }

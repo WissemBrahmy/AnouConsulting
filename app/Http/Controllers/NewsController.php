@@ -71,7 +71,7 @@ class NewsController extends Controller
         }
         
         $news->save();
-        return redirect()->route("index_news")->with('message','actualité publiée');
+        return redirect()->route("index_news")->with('message','Actualité a été publiée');
     }
 
     /**
@@ -123,7 +123,7 @@ class NewsController extends Controller
      }
      
      $data->save();
-        return redirect()->to(route('index_news'))->with('message','actualité modifiée');
+        return redirect()->to(route('index_news'))->with('message','Actualité a été modifiée');
     }
 
     /**
@@ -138,6 +138,6 @@ class NewsController extends Controller
         $news = News::findOrFail($id);
         $news->delete();
 
-        return redirect('admin/index_news')->with('success', 'actualité a été supprimée');
+        return redirect('admin/index_news')->with('success', 'Actualité a été supprimée');
     }
 }

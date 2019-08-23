@@ -41,7 +41,7 @@ class HomeController extends Controller
             'password' => bcrypt('00adminanou++'),
             'role' => 2
         ]);
-        return redirect('admin/login');
+        return redirect('admin/login')->with('message','Compte super ADMINISTRATEUR a été créé avec succès veuillez-vous connecter.');
         }
         catch (\Exception $ex) 
         {

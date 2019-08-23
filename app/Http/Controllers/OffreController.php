@@ -64,7 +64,7 @@ class OffreController extends Controller
         $offre=new Offre($data);
        
         $offre->save();
-        return redirect()->route("index_offres")->with('success','offres publiée');
+        return redirect()->route("index_offres")->with('success','Offres a été publiée');
     }
 
     /**
@@ -102,7 +102,7 @@ class OffreController extends Controller
         $data=Offre::findOrFail($id);  
      $data->update($request->all());
      $data->save();
-     return redirect('admin/index_offres')->with('success', 'offre modifiée');
+     return redirect('admin/index_offres')->with('success', 'Offre a été modifiée');
     }
 
     /**
@@ -117,6 +117,6 @@ class OffreController extends Controller
         $offre = Offre::findOrFail($id);
         $offre->delete();
 
-        return redirect('admin/index_offres')->with('success', 'offre a été supprimée');
+        return redirect('admin/index_offres')->with('success', 'Offre a été supprimée');
     }
 }
