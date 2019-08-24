@@ -84,6 +84,9 @@
                     </p>
                 @endif
             </div>
+
+
+            
         </div>
                     <!-- contact form start -->
                     <form action="#" class="row" method="POST" action="{{ route('messages.store') }}">
