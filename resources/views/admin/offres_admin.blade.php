@@ -9,7 +9,7 @@
             <br>
             <button type="button" class="btn btn-style-one" data-toggle="modal" data-target="#largeShoes"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp <b> Ajouter une nouvelle offre</b></button>
        <br><br>
-     </div><br><br>
+     </div>
      <div class="contact-form responsive text-center">
                     @if(session('success'))
                          <p class="alert alert-success">
@@ -46,56 +46,18 @@
                   </button>
                 </form></td><td> &nbsp
                
-                 <!-- <button type="button" class="btn btn-style-one" data-toggle="modal"  
-                  onclick='update({{ json_encode($o)}})'>
-                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                         &nbsp <b> Modifier</b>
-                  </button>
-                -->
+             
 
                 <a class="btn-style-one" href="{{route('edit_offre', $o->id) }}">
                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Modifier</a>
                   
                   </td> 
-                  <td> 
+                  <td> &nbsp
                   <a href="{{route('show_candidatures', $o->id) }}" class="btn btn-style-one" style="background:blue" role="button"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp Candidatures</a>
                   </td> 
                   
                   </tr>
-                  <!--
-            <div class="col-md-12">
-                <div class="accordion-section">
-                    <div class="accordion-holder">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
-                            <div class="panel panel-info">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Candidatures 
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body">
-                                                                      Nos clients sont confrontés à des impératifs de rationalisation de leurs systèmes d’information 
-                                
-                                  •  Assistance à maîtrise d’ouvrage / direction de projets  <br>
-                                  •  Audit des environnements informatiques <br>
-                                  •  Urbanisation des systèmes d’information <br>
-                                  •  Optimisation et amélioration de la performance des systèmes d’information <br>
-                                  •  Business Intelligence. </div>
-                                </div>
-                            </div>
-                           
-                            
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-            -->
+                  
 
                   <br>
                   </table>   

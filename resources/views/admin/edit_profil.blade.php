@@ -20,8 +20,11 @@
                         
                     </h4>
                     </div>
-                    <form  action="{{ route('edit_profil')}}" method="post" enctype="multipart/form-data">
-                       
+                    <div class="">
+                      <table class="table-responsive">
+                      <tr><td>
+                      <form  action="{{ route('edit_profil')}}" method="post" enctype="multipart/form-data">
+                        
                        {{ csrf_field() }}
                         @method('POST')
                              <div class="row">
@@ -47,15 +50,20 @@
                            
                              <br>
                             <div class="row">
-                             <div class="col-md-3  ">
+                             <div class="col-md-7  ">
                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Enregistrer modification</button>
                            
                        </div>
                        </div>
                        </form>
+                       </td>
+                       <td><img src="{{asset('images/ANOU.png')}}" alt="" width="225" height="100" ></td>
+                           </tr>
+                           </table>
+                           
                         <br>
                   </div>    
-                               
+                            
                   </div> 
             </div>                    
             </div>
