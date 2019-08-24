@@ -85,8 +85,8 @@
                         <h4></h4>
                                         
                                     
-                                        <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <div class="dropdown responsive">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp {{ Auth::user()->name }}
     <span class="caret"></span>
   </button>
