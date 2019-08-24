@@ -14,8 +14,8 @@ class AdminController extends Controller
         
     }
     public function getallAdmin(){
-       
-        $admins=Admin::where('role',1)->paginate(5);
+        $admin = Admin::find(Auth::user()->id);
+        $admins=Admin::where('role',1)->where('id', 'not like', $admin->id)->paginate(5);
 
         return view('admin.liste_admins')->with("admins",$admins);
        }

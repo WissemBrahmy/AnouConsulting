@@ -149,10 +149,10 @@
                                           <textarea  name="commentaire" placeholder="commentaire" required=""></textarea>
                                     </div>
                               </div>
-                              <div class="col-md-6 col-sm-12 col-xs-12"> 
+                              <div class="col-md-7 col-sm-12 col-xs-12"> 
                                     
                                     <div class="form-group text-center">
-                                          <button type="submit" class="btn-style-one"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Postuler maintenant</button>
+                                          <button type="submit" class="btn-style-one"><span class="fa fa-hand-pointer-o" aria-hidden="true"></span>&nbsp Postuler maintenant</button>
                                     </div>                            
                               </div>
                               </div>
@@ -178,9 +178,10 @@
     <div class="container">
        
             <div class="section-title text-center">
-            <h3>LISTE DES OFFRES 
-                <span>D’EMPLOI</span>
-                <p>Vous souhaitez rejoindre une société en pleine expansion et des projets à forte valeur ajoutée ?
+            <h3>Liste des offres 
+                <span>d'emploi</span>
+               
+                <p>  <br>Vous souhaitez rejoindre une société en pleine expansion et des projets à forte valeur ajoutée ?
                   Recherchez l’opportunité qui vous correspond et prenez part à l’aventure ANOU consulting ! </p>
                </div>
          <!-- End recherche Section -->
@@ -270,7 +271,7 @@
                               <div class="col-md-3"> 
                                     
                                     <div class="form-group text-center">
-                                          <button type="submit" class="btn-style-one"><i class="fa fa-search" aria-hidden="true"></i>&nbsp Rechercher</button>
+                                          <button type="submit" class="btn-style-one"><span class="fa fa-search" aria-hidden="true"></span>&nbsp Rechercher</button>
                                     </div>                            
                               </div>
                               </div>

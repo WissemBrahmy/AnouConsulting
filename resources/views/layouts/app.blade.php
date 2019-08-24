@@ -106,7 +106,7 @@
                         </li>
                   </ul>
                   <div class="link-btn">
-                        <a href="{{route("contact")}}" class="btn-style-one"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contacter nos Experts</a>
+                        <a href="{{route("contact")}}" class="btn-style-one"><i class="fa fa-envelope" ></i>&nbsp Contacter nos Experts</a>
                   </div>
             </div>
       </div>
@@ -235,7 +235,7 @@
                  
                   <div class="media-body">
                     <h4 class="media-heading"><a href="#">Prenez contact avec nous et démarrez votre projet !</a></h4>
-                    <a href="{{route("contact")}}" class="btn btn-style-one"> Contactez ANOU consulting!</a>
+                    <a href="{{route("contact")}}" class="btn btn-style-one"><span class="fa fa-envelope"> </span>&nbsp Contactez ANOU consulting! </a>
                   </div>
                 </div>
               </li>

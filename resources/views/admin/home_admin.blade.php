@@ -33,7 +33,9 @@
                 <div class="team-member">
                     
                     <div class="contents text-center">
-                        <h4>Total Messages</h4>
+                    <img src="{{asset('images/msg.png')}}"  width="50" height="50" class="inner-box " >
+                    
+                    <br><br>
                         <p>vous avez {{$messages}} messages.</p>
                         <a href="{{route("index_messages")}}" class="btn btn-default" role="button">En savoir plus</a>
                     </div>
@@ -43,7 +45,8 @@
                 <div class="team-member">
                     
                     <div class="contents text-center">
-                        <h4>Total candidatures</h4>
+                    <img src="{{asset('images/cand.png')}}"  width="50" height="50" class="inner-box " >
+                    <br><br>
                         <p>vous avez {{$candidatures}}  candidatures.</p>
                         <a href="{{route("index_candidatures")}}" class="btn btn-default" role="button">En savoir plus</a>
                     </div>
@@ -53,7 +56,8 @@
                 <div class="team-member">
                     
                     <div class="contents text-center">
-                        <h4>Total postulations aux offres</h4>
+                    <img src="{{asset('images/post.png')}}"  width="50" height="50" class="inner-box " >
+                       <br><br>
                         <p>vous avez {{$postulation}} postulations.</p>
                         <a href="{{route("index_offres")}}" class="btn btn-default" role="button">En savoir plus</a>
                     </div>
@@ -62,6 +66,14 @@
         </div>
     </div>
 </section>
+<section class=" text-center" >
+
+<img src="{{asset('images/postulation.png')}}" class="" width="15" height="15"> Postulations 
+&nbsp <img src="{{asset('images/candidature.png')}}" class="" width="15" height="15"> Candidatures 
+&nbsp <img src="{{asset('images/message.png')}}" class="" width="15" height="15"> Messages
+&nbsp || &nbsp {{date("Y-m-d")}}
+
+</div>
 <div class="x_panel" >
           <canvas  id="myChart"></canvas>
 
@@ -72,11 +84,11 @@
 new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: [ "Candidatures",'Postulations',"Messages"],
+      labels: [ 'Postulations Aux Offres',"Candidatures Spontannées","Messages"],
       datasets: [
         {
           label: "Count ",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+          backgroundColor: ["#3e95cd", "#03224C","#3cba9f"],
           data: [{{$postulation}},{{$candidatures}},{{$messages}}]
         }
       ]
@@ -93,7 +105,7 @@ new Chart(ctx, {
       legend: { display: false },
       title: {
         display: true,
-        text: ' Candidatures spontannées vs Postulation aux offres vs Messages: {{date("Y-m-d")}}'
+        text: ''
       }
     }
 });
