@@ -574,7 +574,7 @@
                 <div class="inner-box text-center">
                     
                 
-                         <center>   <img src="{{asset('images/references/SEMDEE.jpg')}}" alt="" > <center>
+                         <center>   <img src="{{asset('images/references/ss.png')}}" alt="" > <center>
                        
                     <h6></h6>
                     <p>SEMDEE est pour l'analyse des données textuelles  :
@@ -676,7 +676,7 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="{{route("services")}}">
-                            <img src="{{asset('images/confiances/SEMDEE.jpg')}}" alt="images" class="img-responsive">
+                            <img src="{{asset('images/confiances/ss.png')}}" alt="images" class="img-responsive">
                         </a>
                     </div>
                   
