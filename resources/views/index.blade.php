@@ -258,7 +258,7 @@
                             <div class="col-md-6">
                                 <div class="contents">
                                     <div class="section-title">
-                                        <h3>DEGITALIZATION</h3>
+                                        <h3>DIGITALISATION</h3>
                                     </div>
                                     <div class="text">
                                     Au fil des projets et expériences réussies, nous avons bâti une expertise permettant d’accompagner nos clients
