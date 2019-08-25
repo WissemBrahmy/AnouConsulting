@@ -16,13 +16,12 @@
               </div>
                   <div class="contact-area style-one">
                     <div class="section-title ">
-                    <h4> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Modifier mon profil  :  
+                    <h5> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Modifier mon profil : {{Auth::user()->name}}   
                         
-                    </h4>
+                    </h5>
                     </div>
                     <div class="">
-                      <table class="table-responsive">
-                      <tr><td>
+                     
                       <form  action="{{ route('edit_profil')}}" method="post" enctype="multipart/form-data">
                         
                        {{ csrf_field() }}
@@ -50,16 +49,13 @@
                            
                              <br>
                             <div class="row">
-                             <div class="col-md-7  ">
+                             <div class="col-md-3  ">
                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Enregistrer modification</button>
                            
                        </div>
                        </div>
                        </form>
-                       </td>
-                       <td><img src="{{asset('images/ANOU.png')}}" alt="" width="225" height="100" ></td>
-                           </tr>
-                           </table>
+                      
                            
                         <br>
                   </div>    

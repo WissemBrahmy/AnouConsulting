@@ -38,34 +38,33 @@
                 
 
                 <table><tr><td>
-                            <form action="{{ route('offres_destroy', $o->id)}}" method="post">
-                  @csrf
-                  @method('DELETE')
-                  <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
-                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Retirer
-                  </button>
-                </form></td><td> &nbsp
-               
-             
+                   <form action="{{ route('offres_destroy', $o->id)}}" method="post">
+                      @csrf
+                      @method('DELETE')
+                      <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
+                      <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Retirer
+                      </button>
+                    </form>
+                </td>
+                
+                   <td> &nbsp
 
-                <a class="btn-style-one" href="{{route('edit_offre', $o->id) }}">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Modifier</a>
-                  
-                  </td> 
-                  <td> &nbsp
-                  <a href="{{route('show_candidatures', $o->id) }}" class="btn btn-style-one" style="background:blue" role="button"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp Candidatures</a>
-                  </td> 
+                    <a class="btn-style-one" href="{{route('edit_offre', $o->id) }}">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Modifier</a>
+                      
+                    </td> 
+                   <td> &nbsp
+                     <a href="{{route('show_candidatures', $o->id) }}" class="btn btn-style-one" style="background:blue" role="button"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp Candidatures</a>
+                   </td> 
                   
                   </tr>
-                  
-
                   <br>
                   </table>   
            
-        </div>
-               </div>
+                  </div>
+                 </div>
                 </div>
-            </div>
+             </div>
           
             @endforeach
         </div>
@@ -109,7 +108,7 @@
                   <form  action="{{route('offres_store')}}" method="post" enctype="multipart/form-data">
                   {{ csrf_field() }}
                 
-                              <div class="row">
+                         <div class="row">
                              <div class="col-md-4 col-sm-12 col-xs-12">
                                <input type="title"  name="title" class="form-control main" placeholder="Titre" required>
                              </div>

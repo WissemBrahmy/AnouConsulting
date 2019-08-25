@@ -7,7 +7,8 @@
                 <span>CANDIDATURES SPONTANNEES</span>
             </h4>
             
-     </div><br><br>
+     </div>
+     <br><br>
      <div class="contact-form responsive text-center">
                     @if(session('message'))
                          <p class="alert alert-success">
@@ -55,10 +56,10 @@
             </div>
           </div>
         </div>
+       </div>
       </div>
-      </div>
-      </div>
-      </div>
+    </div>
+  </div>
       @endforeach
         <div class="row">
                                 <div class="col-md-4 col-md-offset-4">
@@ -67,8 +68,6 @@
         </div>
        
               @else
-  
-  
   
                 <p class="alert alert-warning">
                       Aucune  candidature

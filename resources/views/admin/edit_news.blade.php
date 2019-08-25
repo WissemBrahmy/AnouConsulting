@@ -18,36 +18,33 @@
                         @method('PUT')
                              <div class="row">
                             <div class="col-md-8 col-sm-12 col-xs-12">
-                          
                               <input type="title" name="title" value="{{$news->title}}" id="title" class="form-control main"  required>
                             </div>
                               
-                            <div class="col-xs-8">
-                                   <div class="form-group">
-                                     Modifier la photo <input type="File" id="image" name="image" value="{{$news->image}}"  class="input-lg">
-                                   </div>
-                            </div>
+                                <div class="col-xs-8">
+                                      <div class="form-group">
+                                        Modifier la photo <input type="File" id="image" name="image" value="{{$news->image}}"  class="input-lg">
+                                      </div>
+                                </div>
                             
                              <div class="col-md-8 col-sm-12 col-xs-12">
-                           <textarea name="content" id="content"  rows="15" class="form-control main" >{{$news->content}}</textarea>
-                       </div>
-                            </div>
+                             <textarea name="content" id="content"  rows="15" class="form-control main" >{{$news->content}}</textarea>
+                             </div>
+                             </div>
                            
                              <br>
                             <div class="row">
                              <div class="col-md-3  ">
-                           <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Enregistrer modification</button>
+                            <button class="btn btn-style-one" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp Enregistrer modification</button>
                            
+                        </div>
                        </div>
-                       </div>
-                       </form>
-                        <br>
-                  </div>    
-                               
+                      </form>
+                     <br>
+                    </div>              
                   </div> 
             </div>                    
-            </div>
-
+       </div>
 </div>
 
 @endsection

@@ -68,9 +68,9 @@
 </section>
 <section class=" text-center" >
 
-<img src="{{asset('images/postulation.png')}}" class="" width="15" height="15"> Postulations 
-&nbsp <img src="{{asset('images/candidature.png')}}" class="" width="15" height="15"> Candidatures 
-&nbsp <img src="{{asset('images/message.png')}}" class="" width="15" height="15"> Messages
+<img src="{{asset('images/postulation.png')}}"  width="15" height="15"> Postulations 
+&nbsp <img src="{{asset('images/candidature.png')}}"  width="15" height="15"> Candidatures 
+&nbsp <img src="{{asset('images/message.png')}}"  width="15" height="15"> Messages
 &nbsp || &nbsp {{date("Y-m-d")}}
 
 </div>

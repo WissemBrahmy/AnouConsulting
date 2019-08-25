@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-12">
                    
-                    /*
+                    
                     <div class="carousel-caption">
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
                 <h1><span>ANOU Consulting</span></h1>
@@ -35,7 +35,7 @@
               </div>
             </div>
 
-                    */
+                   
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
 								<div class="icon-box">
 									<figure>
 										<a href="#">
-											<img src="images/resource/1.png" alt="" width="50" height="50">
+											<img src="images/resource/1.png')}}" alt="" width="50" height="50">
 										</a>
 									</figure>
 								</div>
@@ -155,7 +155,7 @@
 								<div class="icon-box">
 									<figure>
 										<a href="#">
-											<img src="images/resource/2.png" alt="" width="50" height="50">
+											<img src="images/resource/2.png')}}" alt="" width="50" height="50">
 										</a>
 									</figure>
 								</div>
@@ -171,7 +171,7 @@
 								<div class="icon-box">
 									<figure>
 										<a href="#">
-											<img src="images/resource/3.png" alt=""  width="50" height="50">
+											<img src="images/resource/3.png')}}" alt=""  width="50" height="50">
 										</a>
 									</figure>
 								</div>
@@ -186,7 +186,7 @@
 								<div class="icon-box">
 									<figure>
 										<a href="#">
-											<img src="images/resource/4.png" alt="" width="50" height="50">
+											<img src="images/resource/4.png')}}" alt="" width="50" height="50">
 										</a>
 									</figure>
 								</div>
@@ -574,7 +574,7 @@
                 <div class="inner-box text-center">
                     
                 
-                         <center>   <img src="images/references/semdee.png" alt="" class=" img-rounded"> <center>
+                         <center>   <img src="{{asset('images/references/semdee.png')}}" alt="" > <center>
                        
                     <h6></h6>
                     <p>SEMDEE est pour l'analyse des données textuelles  :
@@ -585,7 +585,7 @@
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="inner-box text-center">
-                <center>     <img src="images/references/smile.png" alt=""> </center>
+                <center>     <img src="{{asset('images/references/smile.png')}}" alt=""> </center>
                    
                     <p>Smile Has still believed in the potential of these solutions and completely identified with the values of open source: freedom, respect and openness! First adventure:
                      the deployment of the Content Management System open source for CEA</p>
@@ -595,7 +595,7 @@
             <div class="slide-item">
                 <div class="inner-box text-center">
                     
-                       <center>     <img src="images/references/gael.png" alt=""> </center>
+                       <center>     <img src="{{asset('images/references/gael.png')}}" alt=""> </center>
                        
                     
                     <p>GAEL SYSTEM  est spécialisée dans le secteur d'activité de la programmation informatique.</p> </div>
@@ -604,7 +604,7 @@
             <div class="slide-item">
                 <div class="inner-box text-center">
                     
-                <center>     <img src="images/references/n.png" alt=""> </center>
+                <center>     <img src="{{asset('images/references/n.png')}}" alt=""> </center>
                        
                     <h6>NUMERYX</h6>
                     <p>La startup NUMERYX est une entreprise innovante dont les expertises
@@ -613,7 +613,7 @@
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="inner-box text-center">
-                <center>     <img src="images/references/g.jpg" alt=""> </center>
+                <center>     <img src="{{asset('images/references/g.jpg')}}" alt=""> </center>
                     <h6>GLOBALNUM </h6>
                     <p>Conseils et services informatiques</p>
                 </div>
@@ -621,7 +621,7 @@
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="inner-box text-center">
-                <center>     <img src="images/references/c.jpg" alt=""> </center>
+                <center>     <img src="{{asset('images/references/c.jpg')}}" alt=""> </center>
 
                     <h6>C17 Engineering</h6>
                     <p>Cabinet de conseil indépendant spécialisé dans les technologies web</p>
@@ -645,8 +645,8 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/confiances/glob.png" alt="images" class="img-responsive">
+                        <a href="{{route("services")}}">
+                            <img src="{{asset('images/confiances/glob.png')}}" alt="images" class="img-responsive">
                         </a>
                     </div>
                 
@@ -655,8 +655,8 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/confiances/n.png" alt="images" class="img-responsive">
+                        <a href="{{route("services")}}">
+                            <img src="{{asset('images/confiances/n.png')}}" alt="images" class="img-responsive">
                         </a>
                     </div>
                     
@@ -665,8 +665,8 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/confiances/smile.png" alt="images" class="img-responsive">
+                        <a href="{{route("services")}}">
+                            <img src="{{asset('images/confiances/smile.png')}}" alt="images" class="img-responsive">
                         </a>
                     </div>
                    
@@ -675,8 +675,8 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/confiances/semdee.png" alt="images" class="img-responsive">
+                        <a href="{{route("services")}}">
+                            <img src="{{asset('images/confiances/semdee.png')}}" alt="images" class="img-responsive">
                         </a>
                     </div>
                   
@@ -685,8 +685,8 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
-                            <img src="images/confiances/GAEL.png" alt="images" class="img-responsive">
+                        <a href="{{route("services")}}">
+                            <img src="{{asset('images/confiances/GAEL.png')}}" alt="images" class="img-responsive">
                         </a>
                     </div>
                    
