@@ -13,7 +13,7 @@ class CreateMessagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('messages', function (Blueprint $table) {
+        Schema::create('Messages', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nom');
             $table->string('email');
