@@ -109,7 +109,7 @@
                     </div>
                     <div class="working-time item">
                         <i class="fa fa-sitemap"></i>
-                        <h2> STRATIGIE</h2>
+                        <h2> STRATÉGIE</h2>
                         
                         <p>Nous vous amenons à formuler vos objectifs stratégiques
                              à partir des améliorations que vous souhaitez pour votre entreprise</p>
