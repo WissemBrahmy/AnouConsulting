@@ -215,7 +215,7 @@
                                 <a href="#dormitory"  data-toggle="tab">BIG DATA</a>
                             </li>
                             <li role="presentation">
-                                <a href="#orthopedic" data-toggle="tab">DEGITALIZATION</a>
+                                <a href="#orthopedic" data-toggle="tab">DIGITALISATION</a>
                             </li>
                             <li role="presentation">
                                 <a href="#sonogram" data-toggle="tab">CLOUD COMPUTING</a>
