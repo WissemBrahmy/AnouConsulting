@@ -140,7 +140,7 @@
 								<div class="icon-box">
 									<figure>
 										<a href="#">
-											<img src="images/resource/1.png')}}" alt="" width="50" height="50">
+											<img src="{{asset('images/resource/1.png')}}" alt="" width="50" height="50">
 										</a>
 									</figure>
 								</div>
@@ -155,7 +155,7 @@
 								<div class="icon-box">
 									<figure>
 										<a href="#">
-											<img src="images/resource/2.png')}}" alt="" width="50" height="50">
+											<img src="{{asset('images/resource/2.png')}}" alt="" width="50" height="50">
 										</a>
 									</figure>
 								</div>
@@ -171,7 +171,7 @@
 								<div class="icon-box">
 									<figure>
 										<a href="#">
-											<img src="images/resource/3.png')}}" alt=""  width="50" height="50">
+											<img src="{{asset('images/resource/3.png')}}" alt=""  width="50" height="50">
 										</a>
 									</figure>
 								</div>
@@ -186,7 +186,7 @@
 								<div class="icon-box">
 									<figure>
 										<a href="#">
-											<img src="images/resource/4.png')}}" alt="" width="50" height="50">
+											<img src="{{asset('images/resource/4.png')}}" alt="" width="50" height="50">
 										</a>
 									</figure>
 								</div>
@@ -574,7 +574,7 @@
                 <div class="inner-box text-center">
                     
                 
-                         <center>   <img src="{{asset('images/references/semdee.png')}}" alt="" > <center>
+                         <center>   <img src="{{asset('images/references/SEMDEE.jpg')}}" alt="" > <center>
                        
                     <h6></h6>
                     <p>SEMDEE est pour l'analyse des données textuelles  :
@@ -676,7 +676,7 @@
                 <div class="inner-box">
                     <div class="img_holder">
                         <a href="{{route("services")}}">
-                            <img src="{{asset('images/confiances/semdee.png')}}" alt="images" class="img-responsive">
+                            <img src="{{asset('images/confiances/SEMDEE.jpg')}}" alt="images" class="img-responsive">
                         </a>
                     </div>
                   
