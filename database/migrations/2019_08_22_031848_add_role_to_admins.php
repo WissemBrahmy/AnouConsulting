@@ -13,7 +13,7 @@ class AddRoleToAdmins extends Migration
      */
     public function up()
     {
-        Schema::table('Admins', function (Blueprint $table) {
+        Schema::table('admins', function (Blueprint $table) {
             $table->integer('role')->default(1);
         });
     }

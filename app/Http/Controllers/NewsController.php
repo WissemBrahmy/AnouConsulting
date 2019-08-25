@@ -17,7 +17,7 @@ class NewsController extends Controller
     {
        
 
-        $news = DB::table('News')->orderBy('created_at','desc')->paginate(3);
+        $news = DB::table('news')->orderBy('created_at','desc')->paginate(3);
 
 
         return view("admin.news_admin",compact('news'));
@@ -27,7 +27,7 @@ class NewsController extends Controller
     {
        
 
-        $news = DB::table('News')->orderBy('created_at','desc')->paginate(2);
+        $news = DB::table('news')->orderBy('created_at','desc')->paginate(2);
 
 
         return view("actualites",compact('news'));

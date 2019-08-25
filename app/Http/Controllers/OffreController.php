@@ -17,7 +17,7 @@ class OffreController extends Controller
     public function offres_home()
     {
      
-        $off= DB::table('Offres')->orderBy('created_at','desc')->paginate(3);
+        $off= DB::table('offres')->orderBy('created_at','desc')->paginate(3);
 
 
         return view("offres",compact('off'));
@@ -51,7 +51,7 @@ class OffreController extends Controller
     {
        
 
-        $off= DB::table('Offres')->orderBy('created_at','desc')->paginate(2);
+        $off= DB::table('offres')->orderBy('created_at','desc')->paginate(2);
 
 
         return view("admin.offres_admin",compact('off'));

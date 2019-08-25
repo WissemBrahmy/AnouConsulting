@@ -13,7 +13,7 @@ class CreateCandidaturesTable extends Migration
      */
     public function up()
     {
-        Schema::create('Candidatures', function (Blueprint $table) {
+        Schema::create('candidatures', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nom');
             $table->string('adresse');

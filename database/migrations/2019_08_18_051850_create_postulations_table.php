@@ -13,7 +13,7 @@ class CreatePostulationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('Postulations', function (Blueprint $table) {
+        Schema::create('postulations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nom');
             $table->string('email');
