@@ -576,7 +576,7 @@
                 
                          <center>   <img src="{{asset('images/references/ss.png')}}" alt="" > <center>
                        
-                    <h6></h6>
+                    
                     <p>SEMDEE est pour l'analyse des données textuelles  :
                      Le logiciel MyKnowledge de SEMDEE imaginé par des docteurs en psychologie cognitive pour analyser tous les contenus textuels
                     </P>

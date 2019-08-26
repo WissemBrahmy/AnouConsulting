@@ -146,7 +146,7 @@
                               </div>
                               <div class="col-md-14 col-sm-12 col-xs-12">
                                     <div class="form-group">
-                                          <textarea  name="commentaire" placeholder="commentaire" required=""></textarea>
+                                          <textarea  name="commentaire" placeholder="Commentaire" required=""></textarea>
                                     </div>
                               </div>
                               <div class="col-md-7 col-sm-12 col-xs-12"> 
