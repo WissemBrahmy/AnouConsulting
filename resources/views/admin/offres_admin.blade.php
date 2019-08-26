@@ -16,7 +16,7 @@
                          <b>    {{session('success')}}</b>
                          </p>
                     @endif
-              </div>
+      </div>
             
     <section class="team-section section">
     <div class="container">
@@ -72,6 +72,7 @@
 
                               </div>
                           </div>
+                        </div>
                         </div>
                           @endforeach
                       </div>
