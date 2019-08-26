@@ -43,53 +43,53 @@
                             <div class="row">
                                   
                                  
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group mr-2" role="group" aria-label="First group">
-  <form action="{{ route('offres_destroy', $o->id)}}" method="post">
-                              @csrf
-                              @method('DELETE')    
-                                            
-                         
-                              <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
-                              <span class="fa fa-shopping-basket" aria-hidden="true"></span>&nbsp Retirer
-                              </button>
-                          
-                                  
-                              </form> 
-  </div>
-  <div class="btn-group mr-2" role="group" aria-label="Second group">
-  <a class="btn-style-one" href="{{route('edit_offre', $o->id) }}">
-                    <span class="fa fa-pencil-square-o" aria-hidden="true"></span>&nbsp Modifier</a>
-                      
-  </div>
-  <div class="btn-group" role="group" aria-label="Third group">
-  <a href="{{route('show_candidatures', $o->id) }}" class="btn btn-style-one" style="background:blue" role="button">
-                                    <span class="fa fa-bars" aria-hidden="true"></span>&nbsp Candidatures</a>
-                      
-  </div>
-</div>
-</div>
-
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                <form action="{{ route('offres_destroy', $o->id)}}" method="post">
+                                            @csrf
+                                            @method('DELETE')    
+                                                          
+                                      
+                                            <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
+                                            <span class="fa fa-shopping-basket" aria-hidden="true"></span>&nbsp Retirer
+                                            </button>
+                                        
+                                                
+                                            </form> 
                 </div>
-             </div>
-          
-            @endforeach
-        </div>
-        </div>
-    </div>
-  </div>
-    <br><br><br>
-    <div class="row">
-                                <div class="col-md-4 col-md-offset-4">
-                                    {{$off->links()}}
-                                </div>
-   </div>
-   @else
-  <p class="alert alert-warning">
-        Aucune offre !
-        </p>
- @endif
-</section>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <a class="btn-style-one" href="{{route('edit_offre', $o->id) }}">
+                                  <span class="fa fa-pencil-square-o" aria-hidden="true"></span>&nbsp Modifier</a>
+                                    
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                <a href="{{route('show_candidatures', $o->id) }}" class="btn btn-style-one" style="background:blue" role="button">
+                                                  <span class="fa fa-bars" aria-hidden="true"></span>&nbsp Candidatures</a>
+                                    
+                </div>
+              </div>
+              </div>
+
+                              </div>
+                          </div>
+                        </div>
+                          @endforeach
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                  <br><br><br>
+                  <div class="row">
+                                              <div class="col-md-4 col-md-offset-4">
+                                                  {{$off->links()}}
+                                              </div>
+                </div>
+                @else
+                <p class="alert alert-warning">
+                      Aucune offre !
+                      </p>
+              @endif
+              </section>
 
 
 
