@@ -9,7 +9,7 @@
             <h1>CONTACT</h1>
             <ul class="title-menu clearfix">
                 <li>
-                    <a href="index.html">ACCUEIL &nbsp;/</a>
+                    <a href="{{route("home_admin")}}">ACCUEIL &nbsp;/</a>
                 </li>
                 <li>Contact</li>
             </ul>
@@ -101,7 +101,7 @@
                         </div>
                         <!-- phone -->
                         <div class="col-md-12">
-                            <input type="number" name="tel" class="form-control main" placeholder="Téléphone" minlength="8" required>
+                            <input type="number" name="tel" min="1" step="1" class="form-control main" placeholder="Téléphone" minlength="8" required>
                         </div>
                         <!-- message -->
                         <div class="col-md-12">
