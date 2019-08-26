@@ -49,29 +49,31 @@
                               
                                
                               <div class="col-md-3"> 
-                                    
-                                    <div class="form-group text-center">
-                                    <form action="{{ route('offres_destroy', $o->id)}}" method="post">
+                              <form action="{{ route('offres_destroy', $o->id)}}" method="post">
                       @csrf
-                      @method('DELETE')
+                      @method('DELETE')    
+                                    <div class="form-group text-center">
+                         
                       <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
-                      <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Retirer
+                      <span class="fa fa-shopping-basket" aria-hidden="true"></span>&nbsp Retirer
                       </button>
-                    </form>
-                      </div>                            
+                   
+                      </div>     
+                      </form>                       
                               </div>
                               <div class="col-md-3"> 
                                     
                                     <div class="form-group text-center">
                                     <a class="btn-style-one" href="{{route('edit_offre', $o->id) }}">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Modifier</a>
+                    <span class="fa fa-pencil-square-o" aria-hidden="true"></span>&nbsp Modifier</a>
                       
                        </div>                            
                               </div>
                               <div class="col-md-3"> 
                                     
                                     <div class="form-group text-center">
-                                    <a href="{{route('show_candidatures', $o->id) }}" class="btn btn-style-one" style="background:blue" role="button"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp Candidatures</a>
+                                    <a href="{{route('show_candidatures', $o->id) }}" class="btn btn-style-one" style="background:blue" role="button">
+                                    <span class="fa fa-bars" aria-hidden="true"></span>&nbsp Candidatures</a>
                       </div>                            
                               </div>
                               </div>
