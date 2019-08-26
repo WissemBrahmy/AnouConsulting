@@ -177,7 +177,7 @@
 								</div>
 								<h6>Performances</h6>
 								<p>Nous appliquons les méthodes «Scrum» & «Lean» pour une agilité et une amélioration continue 
-                                   de nos process et projets. Nos exigences qualité et nos process sont nos atouts p our garantir 
+                                   de nos process et projets. Nos exigences qualité et nos process sont nos atouts pour garantir 
                                     les meilleurs niveaux de performances et la robustesse de vos projets.</p>
 							</div>
 						</div>
@@ -595,7 +595,7 @@
             <div class="slide-item">
                 <div class="inner-box text-center">
                     
-                       <center>     <img src="{{asset('images/references/gael.png')}}" alt=""> </center>
+                       <center>     <img src="{{asset('images/references/gael.jpg')}}" alt=""> </center>
                        
                     
                     <p>GAEL SYSTEM  est spécialisée dans le secteur d'activité de la programmation informatique.</p> </div>

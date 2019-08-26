@@ -127,11 +127,7 @@
                                 <span class="fa fa-unlock-alt">    {{ __('Connecter') }}  </span>
                                 </button>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Mot de passe obliée?') }}
-                                    </a>
-                                @endif
+                               
                             </div>
                         </div>
                     </form>
