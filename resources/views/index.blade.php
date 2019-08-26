@@ -595,7 +595,7 @@
             <div class="slide-item">
                 <div class="inner-box text-center">
                     
-                       <center>     <img src="{{asset('images/references/gael.jpg')}}" alt=""> </center>
+                       <center>     <img src="{{asset('images/references/gg.jpg')}}" alt=""> </center>
                        
                     
                     <p>GAEL SYSTEM  est spécialisée dans le secteur d'activité de la programmation informatique.</p> </div>
