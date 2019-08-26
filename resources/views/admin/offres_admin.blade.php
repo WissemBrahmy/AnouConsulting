@@ -43,7 +43,7 @@
                             <div class="row">
                                   
                                   <div class="contact-area style-one">
-                             
+                              <div class="col-md-3"> 
                               <div class="form-group text-center">
                               <form action="{{ route('offres_destroy', $o->id)}}" method="post">
                               @csrf
@@ -56,8 +56,8 @@
                           
                                   
                               </form> 
-                                            
-                              </div>
+                      </div>                       
+                              </div><br>
                               <div class="col-md-3"> 
                                     
                                     <div class="form-group text-center">
