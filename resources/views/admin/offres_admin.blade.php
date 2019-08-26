@@ -49,20 +49,32 @@
                               
                                
                               <div class="col-md-3"> 
+                              <div class="form-group text-center">
                               <form action="{{ route('offres_destroy', $o->id)}}" method="post">
                       @csrf
                       @method('DELETE')    
-                                    <div class="form-group text-center">
+                                    
                          
                       <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
                       <span class="fa fa-shopping-basket" aria-hidden="true"></span>&nbsp Retirer
                       </button>
                    
-                      </div>     
-                      </form>                       
+                          
+                      </form> 
+                      </div>                       
                               </div>
                               <div class="col-md-3"> 
+                              <form action="{{ route('offres_destroy', $o->id)}}" method="post">
+                      @csrf
+                      @method('DELETE')    
                                     
+                         
+                      <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
+                      <span class="fa fa-shopping-basket" aria-hidden="true"></span>&nbsp Retirer
+                      </button>
+                   
+                          
+                      </form> 
                                     <div class="form-group text-center">
                                     <a class="btn-style-one" href="{{route('edit_offre', $o->id) }}">
                     <span class="fa fa-pencil-square-o" aria-hidden="true"></span>&nbsp Modifier</a>
