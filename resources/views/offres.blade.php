@@ -164,7 +164,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="appointment-image-holder">
                     <figure>
-                        <img src="images/background/appoinment.jpg" alt="Appointment"width="630" height="715" style="padding-top:50px">
+                        <img src="images/background/appoinment.jpg" width="630" height="715" style="padding-top:50px" class="responsive" >
                     </figure>
                 </div>                       
             </div>
