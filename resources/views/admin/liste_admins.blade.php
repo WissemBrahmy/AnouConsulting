@@ -32,9 +32,16 @@
                   <form action="{{ route('admin_destroy', $o->id)}}" method="post">
                   @csrf
                   @method('DELETE')
+                  if (Auth::user()->role=2){
                   <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
                   <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Bloquer
                   </button>
+                  }
+                  else {
+                    <p class="alert alert-warning">
+        vous n'avez pas aucune droit !
+        </p> 
+                  }
                 </form>  
                   </div>
                </div>
@@ -44,7 +51,7 @@
     </div>
    @else
   <p class="alert alert-warning">
-        Aucune  administrateur ajouté !
+        Aucun  administrateur ajouté !
         </p>
     @endif
     </section>
