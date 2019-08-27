@@ -283,12 +283,13 @@
             </div>
 
 <!--recherche section-->
-
-    <div class="container" style="margin-left:167px">
-    @if(count($off))
-
-@foreach($off as $o)
+<section class="team-section section">
+    <div class="container" >
+    
         <div class="row">
+           @if(count($off))
+
+            @foreach($off as $o)
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="team-member">
                     
@@ -306,21 +307,21 @@
                 
             </div>
             @endforeach
+
+            </div>
+            </div>
             <div class="row">
-                                <div class="col-md-4 col-md-offset-4">
-                                    {{$off->links()}}
-                                </div>
-   </div>
+               <div class="col-md-4 col-md-offset-4">
+                 {{$off->links()}}
+              </div>
+             </div>
    @else
   <p class="alert alert-warning">
         Aucune Offre disponible !
         </p>
- @endif
-    
- </div>
-        
- </div></div>
-   </div>
+      @endif
+ </section>  
+ 
 
 
 
