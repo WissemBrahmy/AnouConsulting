@@ -32,8 +32,8 @@
                   <form action="{{ route('admin_destroy', $o->id)}}" method="post">
                   @csrf
                   @method('DELETE')
-                  @if (Auth::user()->role=2)
-                  <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment supprimer?')">
+                  @if (Auth::user()->role==2)
+                  <button class="btn btn-style-one" type="submit" onclick="return confirm('voulez-vous vraiment bloquer?')">
                   <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp Bloquer
                   </button>
                   
