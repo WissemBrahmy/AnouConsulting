@@ -23,10 +23,12 @@
 
      <section class="team-section section">
     <div class="container">
+    @if (Auth::user()->role==2)
     <div class="section-title text-center">
     <a class="btn-style-one" href="{{route("reg_admin")}}">
                 <i class="fa fa-plus" aria-hidden="true"></i>&nbsp Nouveau admin</a>
-                </div>
+       </div>
+    @endif
         <div class="row">
           
             <div class="col-md-4 col-sm-6 col-xs-12">
