@@ -9,11 +9,12 @@
           
      </div>
      <br>
+     @if (Auth::user()->role==2)
      <div class="section-title text-center">
     <a class="btn-style-one" href="{{route("reg_admin")}}">
                 <i class="fa fa-plus" aria-hidden="true"></i>&nbsp Nouveau admin</a>
                 </div>
-            
+       @endif     
     <section class="team-section section">
     <div class="container">
        
