@@ -36,19 +36,11 @@
 <!--team section-->
 <section class="team-section section">
     <div class="container">
-       
-            
-         <!-- End recherche Section -->
-        
-           
-
-<!--recherche section-->
-
-    <div class="container" style="margin-left:167px">
-    @if(count($offres))
-
-            @foreach($offres as $o)
+   
                 <div class="row">
+                @if(count($offres))
+
+                    @foreach($offres as $o)
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="team-member">
                             
@@ -66,6 +58,8 @@
                         </div>
                     </div>
             @endforeach
+            </div>
+            </div>
             <div class="row">
                                 <div class="col-md-4 col-md-offset-4">
                                     {{$offres->links()}}
@@ -74,21 +68,18 @@
 
   
     
-           </div>
+          
         
-      </div>
+      
        @else
         <p class="alert alert-warning col-md-8">
-        Pas  d'offres associées à votre recherche  
+        Aucune offre associée à votre recherche  !
         </p>
         
-   @endif
-    </div>
-</div>
+        @endif
+   
 
-</div>
 
-</div>
 
    
 @endsection
