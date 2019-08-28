@@ -212,23 +212,23 @@
                     <div class="tabs">
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#dormitory"  data-toggle="tab">BIG DATA</a>
+                                <a href="#bigdata"  data-toggle="tab">BIG DATA</a>
                             </li>
                             <li role="presentation">
-                                <a href="#orthopedic" data-toggle="tab">DIGITALISATION</a>
+                                <a href="#DIGITALISATION" data-toggle="tab">DIGITALISATION</a>
                             </li>
                             <li role="presentation">
-                                <a href="#sonogram" data-toggle="tab">CLOUD COMPUTING</a>
+                                <a href="#Cloudcomuting" data-toggle="tab">CLOUD COMPUTING</a>
                             </li>
                           
                             <li role="presentation">
-                                <a href="#diagnostic" data-toggle="tab">INTELLIGENCE ARTIFICIELLE</a>
+                                <a href="#intelligence" data-toggle="tab">INTELLIGENCE ARTIFICIELLE</a>
                             </li>
                         </ul>
                     </div>
                     <!--Start single tab content-->
                     <div class="tab-content">
-                        <div class="service-box tab-pane fade in active row" id="dormitory">
+                        <div class="service-box tab-pane fade in active row" id="bigdata">
                             <div class="col-md-6">
                                 <img class="img-responsive" src="images/services/service-one.jpg" alt="service-image" width="730" height="570">
                             </div>
@@ -251,7 +251,7 @@
                         </div>
                         <!--End single tab content-->
                         <!--Start single tab content-->
-                        <div class="service-box tab-pane fade in" id="orthopedic">
+                        <div class="service-box tab-pane fade in" id="DIGITALISATION">
                             <div class="col-md-6">
                                 <img class="img-responsive" src="images/services/service-two.jpg" alt="service-image">
                             </div>
@@ -278,7 +278,7 @@
                         </div>
                         <!--End single tab content-->
                         <!--Start single tab content-->
-                        <div class="service-box tab-pane fade in" id="sonogram">
+                        <div class="service-box tab-pane fade in" id="Cloudcomuting">
                             <div class="col-md-6">
                                 <img class="img-responsive" src="images/services/service-three.jpg" alt="service-image">
                             </div>
@@ -312,7 +312,7 @@
                       
                         <!--End single tab content-->
                         <!--Start single tab content-->
-                        <div class="service-box tab-pane fade in" id="diagnostic">
+                        <div class="service-box tab-pane fade in" id="intelligence">
                             <div class="col-md-6">
                                 <img class="img-responsive" src="images/services/service-five.jpg" alt="service-image">
                             </div>
