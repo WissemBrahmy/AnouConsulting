@@ -602,6 +602,7 @@
                     
                     <p>GAEL SYSTEMS  est spécialisée dans le secteur d'activité de la programmation informatique.</p> </div>
             </div>
+            </div>
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="inner-box text-center">
@@ -611,6 +612,7 @@
                     <h6>NUMERYX</h6>
                     <p>La startup NUMERYX est une entreprise innovante dont les expertises
                      et la R&D sont proposées au service de ses clients PME et grands comptes.</p></div>
+            </div>
             </div>
             <!--Slide Item-->
             <div class="slide-item">
