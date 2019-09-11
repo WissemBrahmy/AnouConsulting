@@ -600,7 +600,9 @@
                        <center>     <img src="{{asset('images/references/gg.jpg')}}" alt=""> </center>
                        <BR>
                     
-                    <p>GAEL SYSTEMS  est spécialisée dans le secteur d'activité de la programmation informatique.</p> </div>
+                    <p>GAEL SYSTEMS  est spécialisée dans le secteur d'activité de la programmation informatique.</p>
+                    
+                     
             </div>
             </div>
             <!--Slide Item-->
@@ -611,7 +613,7 @@
                        
                     <h6>NUMERYX</h6>
                     <p>La startup NUMERYX est une entreprise innovante dont les expertises
-                     et la R&D sont proposées au service de ses clients PME et grands comptes.</p></div>
+                     et la R&D sont proposées au service de ses clients PME et grands comptes.</p>
             </div>
             </div>
             <!--Slide Item-->
