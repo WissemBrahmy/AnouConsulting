@@ -5,6 +5,7 @@
 =            Page Slider            =
 ==================================-->
 <div class="hero-slider">
+<br><br>
     <!-- Slider Item -->
     <div class="slider-item slide1" style="background-image:url(images/slider/slider-bg-1.jpg)">
         <div class="container">
