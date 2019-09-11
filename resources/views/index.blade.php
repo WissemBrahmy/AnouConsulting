@@ -702,6 +702,7 @@
 
 
 <!--Header Upper-->
+<!-- 
 <section class="header-uper">
       <div class="container clearfix">
             <div class="logo">
@@ -738,6 +739,7 @@
             </div>
       </div>
 </section>
+-->
 <!--Header Upper-->
 
 @endsection

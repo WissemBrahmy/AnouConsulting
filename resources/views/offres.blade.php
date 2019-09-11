@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<br><br>
 <!--Page Title-->
 <section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
     <div class="container">
