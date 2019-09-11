@@ -697,43 +697,7 @@
     </div>
 </section>
 <!-- End client Section -->
-<div class="header-top">
-      <div class="container clearfix">
-            <div class="top-left">
-                  <h6>Horaires de travail : Lundi - Vendredi - 8am à 5pm</h6>
-            </div>
-            <div class="top-right">
-                  <ul class="social-links">
-                        <li>
-                              <a href="https://www.facebook.com/Anou-Consulting-112726333421947">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                              </a>
-                        </li>
-                        <li>
-                              <a href="#">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                              </a>
-                        </li>
-                        <li>
-                              <a href="#">
-                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
-                              </a>
-                        </li>
-                        <li>
-                              <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                              </a>
-                        </li>
-                        <li>
-                              <a href="#">
-                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                              </a>
-                        </li>
-                  </ul>
-            </div>
-      </div>
-</div>
-<!--header top-->
+
 
 <!--Header Upper-->
 <section class="header-uper">
