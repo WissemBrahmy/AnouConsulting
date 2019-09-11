@@ -57,7 +57,7 @@
 
                          <li class="active" style="pa">
                          <a href="{{route("index")}}">
-                              <img src="{{asset('images/logo5.png')}}" alt="" width="100">
+                              <img src="{{asset('images/logo3.png')}}" alt="" width="100">
                         </a>
                          </li>
                         <li class="active">
