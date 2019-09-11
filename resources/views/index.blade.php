@@ -576,7 +576,7 @@
                 <div class="inner-box text-center">
                     
                 
-                         <center>   <img src="{{asset('images/references/ss.png')}}" alt="" > <center>
+                         <center>   <img src="{{asset('images/references/ss.png')}}" alt="" > </center>
                        
                     
                     <p>SEMDEE est pour l'analyse des données textuelles  :
