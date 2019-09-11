@@ -131,11 +131,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
 
-                         <li class="active">
-                         <a href="{{route("index")}}">
+                  <figure>
+                        <a href="{{route("index")}}">
                               <img src="{{asset('images/ANOU.png')}}" alt="" width="100">
                         </a>
-                         </li>
+                  </figure>
                         <li class="active">
                               <a href="{{route("index")}}">ACCUEIL</a>
                         </li>
