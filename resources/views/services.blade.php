@@ -21,21 +21,12 @@
 <section class="service-overview section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="content-block">
                     <h2>Aperçu des services</h2>
                     <p>Les armes que nous avons acquises au fil du temps et de l’expérience sont : la performance, la proximité, l’efficacité et l’apprentissage constant. Des valeurs qui ont pour objectif la satisfaction du client. 
                       Nous vivons selon la règle d'or et traitons les clients de la façon dont nous aimerions être traités.</p>
-                    <ul>
-                        <li><i class="fa fa-caret-right"></i>Conseil Stratégique</li>
-                        <li><i class="fa fa-caret-right"></i>Ingénierie applicative</li>
-                        <li><i class="fa fa-caret-right"></i>Production et infrastructure</li>
-                        <li><i class="fa fa-caret-right"></i>Big Data</li>
-                    </ul>
-                    <a href="{{route("contact")}}" class="btn btn-style-one"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contactez-Nous </a>
-                </div>
-            </div>
-            <div class="col-md-6">
+                  
                 <div class="accordion-section">
                     <div class="accordion-holder">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -152,7 +143,8 @@
                         </div>
                     </div>
                 </div>
-               
+               </div>
+               </div>
             </div>
             
         </div>
