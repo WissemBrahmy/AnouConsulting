@@ -55,11 +55,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
 
-                         <li class="active">
+                         <span class="active">
                          <a href="{{route("index")}}">
                               <img src="{{asset('images/logo3.png')}}" alt="" width="100">
                         </a>
-                         </li>
+                         </span>
                         <li class="active">
                               <a href="{{route("index")}}">ACCUEIL</a>
                         </li>
