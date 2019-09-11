@@ -9,7 +9,7 @@
             <h1>NOS OFFRES</h1>
             <ul class="title-menu clearfix">
                 <li>
-                    <a href="index.html">ACCUEIL &nbsp;/</a>
+                    <a href="{{route("index")}}">ACCUEIL &nbsp;/</a>
                 </li>
                 <li>Résultat de votre recherche</li>
             </ul>

@@ -9,7 +9,7 @@
             <h1>ACTUALITES</h1>
             <ul class="title-menu clearfix">
                 <li>
-                    <a href="index.html">ACCUEIL &nbsp;/</a>
+                    <a href="{{route("index")}}">ACCUEIL &nbsp;/</a>
                 </li>
                 <li>Actualités</li>
             </ul>

@@ -9,7 +9,7 @@
             <h1>CONTACT</h1>
             <ul class="title-menu clearfix">
                 <li>
-                    <a href="{{route("home_admin")}}">ACCUEIL &nbsp;/</a>
+                    <a href="{{route("index")}}">ACCUEIL &nbsp;/</a>
                 </li>
                 <li>Contact</li>
             </ul>
