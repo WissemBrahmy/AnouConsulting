@@ -133,7 +133,7 @@
 
                          <li class="active">
                          <a href="{{route("index")}}">
-                              <img src="{{asset('images/ANOU.png')}}" alt="" width="150">
+                              <img src="{{asset('images/ANOU.png')}}" alt="" width="100">
                         </a>
                          </li>
                         <li class="active">
