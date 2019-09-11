@@ -130,6 +130,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
+
+                         <li class="active">
+                         <a href="{{route("index")}}">
+                              <img src="{{asset('images/ANOU.png')}}" alt="" width="150">
+                        </a>
+                         </li>
                         <li class="active">
                               <a href="{{route("index")}}">ACCUEIL</a>
                         </li>
@@ -167,6 +173,7 @@
       <div class="row">
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="about-widget">
+          <!--
             <div class="footer-logo">
               <figure>
                 <a href="index.html">
@@ -176,6 +183,8 @@
             </div>
             <p>ANOU Consulting est une société de conseil IT de nouvelle génération mise au service des stratégies de transformation 
                 et de Gestion d’infrastructure informatique et des systèmes d’informations des entreprises.</p>
+          
+          -->
             <ul class="location-link">
               <li class="item">
                 <i class="fa fa-map-marker"></i>
@@ -183,9 +192,9 @@
               </li>
               <li class="item">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                <a href="#">
+                
                   <p>contact@anou-dsi.eu</p>
-                </a>
+                
               </li>
               <li class="item">
                 <i class="fa fa-phone" aria-hidden="true"></i>
