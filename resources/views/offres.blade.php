@@ -55,7 +55,7 @@
                               </div>  
                               <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="form-group">
-                                          <input type="text" name="diplome" placeholder="Diplome" required="">
+                                          <input type="text" name="diplome" placeholder="Diplôme" required="">
                                     </div>
                               </div>  
                               <div class="col-md-6 col-sm-12 col-xs-12">
