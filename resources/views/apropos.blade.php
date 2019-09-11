@@ -9,7 +9,7 @@
             <h1>À PROPOS</h1>
             <ul class="title-menu clearfix">
                 <li>
-                    <a href="{{route("index")}}">home &nbsp;/</a>
+                    <a href="{{route("index")}}">ACCUEIL &nbsp;/</a>
                 </li>
                 <li>à propos</li>
             </ul>
