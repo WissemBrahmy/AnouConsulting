@@ -601,10 +601,10 @@
                        <BR>
                     
                     <p>GAEL SYSTEMS  est spécialisée dans le secteur d'activité de la programmation informatique.</p>
-                    
+
                      
             </div>
-            </div>
+            
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="inner-box text-center">
