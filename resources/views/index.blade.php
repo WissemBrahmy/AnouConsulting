@@ -697,5 +697,81 @@
     </div>
 </section>
 <!-- End client Section -->
+<div class="header-top">
+      <div class="container clearfix">
+            <div class="top-left">
+                  <h6>Horaires de travail : Lundi - Vendredi - 8am à 5pm</h6>
+            </div>
+            <div class="top-right">
+                  <ul class="social-links">
+                        <li>
+                              <a href="https://www.facebook.com/Anou-Consulting-112726333421947">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="#">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="#">
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                  </ul>
+            </div>
+      </div>
+</div>
+<!--header top-->
+
+<!--Header Upper-->
+<section class="header-uper">
+      <div class="container clearfix">
+            <div class="logo">
+                  <figure>
+                        <a href="{{route("index")}}">
+                              <img src="{{asset('images/ANOU.png')}}" alt="" width="150">
+                        </a>
+                  </figure>
+            </div>
+            <div class="right-side">
+                  <ul class="contact-info">
+                        <li class="item">
+                              <div class="icon-box">
+                                    <i class="fa fa-envelope-o"></i>
+                              </div>
+                              <strong>Email</strong>
+                              <br>
+                              <a href="#">
+                                    <span>contact@anou-dsi.eu</span>
+                              </a>
+                        </li>
+                        <li class="item">
+                              <div class="icon-box">
+                                    <i class="fa fa-phone"></i>
+                              </div>
+                              <strong>Téléphone</strong>
+                              <br>
+                              <span>+33 1 73 70 86 97 || +33 6 36 34 95 40</span>
+                        </li>
+                  </ul>
+                  <div class="link-btn">
+                        <a href="{{route("contact")}}" class="btn-style-one"><i class="fa fa-envelope" ></i>&nbsp Contacter nos Experts</a>
+                  </div>
+            </div>
+      </div>
+</section>
+<!--Header Upper-->
 
 @endsection
