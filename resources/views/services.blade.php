@@ -122,21 +122,21 @@
                                     Le Big Data étant un enjeu majeur pour nos clients, ANOU Consulting décide d’al louer une 
                                     partie importante de ses efforts en recherche & développement afin de les aider à répondre à 
                                     cette triple problématique à laquelle ils sont confrontés. <br>
-                                    •  Volume de données important à traiter, <br>
+                                    •  Volume de données important à traiter. <br>
                                     •  Variété importante d'informations (en provenance de plusieurs sources, non-structurées, 
-                                    structurées, Open...), <br>
+                                    structurées, Open...). <br>
                                     •  Fort niveau de Vélocité à atteindre (c'est-à-dire de fréquence de création, collecte et 
                                     partage de ces données). <br>
                                     Nos consultants ont ainsi pu développer une expertise forte sur les domaines de compétences 
                                     suivants : <br>
-                                    •  Hadoop / MongoDB, <br>
-                                    •  Unix Server, <br>
-                                    •  PIG Latin, <br>
-                                    •  Javascript / HTML5 / JSON, <br>
+                                    •  Hadoop / MongoDB <br>
+                                    •  Unix Server <br>
+                                    
+                                    •  Javascript / HTML5 / JSON <br>
                                     •  Map Reduce /YARN / H2O OxData <br>
                                     Fort de cette expertise, ANOU Consulting développe ainsi une offre ‘data exclusive’ annonceur 
                                     par annonceur dédiée à optimiser la comm unication digitale Multi-canal (pc, mobile & tablette, tv 
-                                    connectée et demain objets connectés)
+                                    connectée et demain objets connectés).
                                     </div>
                                 </div>
                             </div>

@@ -486,9 +486,9 @@
                                 suivants :
                                  Hadoop / MongoDB,
                                  Unix Server,
-                                 PIG Latin,
+                                 
                                 Javascript / HTML5 / JSon,
-                                 Map Reduce /YARN / H2O OxData <br>
+                                Map Reduce /YARN / H2O OxData <br>
                                 Fort de cette expertise, ANOU Consulting développe ainsi une offre ‘data exclusive’ annonceur 
                                 par annonceur dédiée à optimiser la comm unication digitale Multi-canal (pc, mobile & tablette, tv 
                                 connectée et demain objets connectés).
